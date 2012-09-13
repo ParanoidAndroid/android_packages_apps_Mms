@@ -50,6 +50,13 @@
     <!-- Needed for QuickMessage -->
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 
+    <!-- Grant permission to system apps to access receiver -->
+    <permission android:name="android.permission.MMS_PUSH"
+            android:protectionLevel="signatureOrSystem"
+            android:label="@string/label_mms_push"
+            android:description="@string/desc_mms_push"/>
+    <uses-permission android:name="android.permission.MMS_PUSH"/>
+
     <application android:name="MmsApp"
             android:label="@string/app_label"
             android:icon="@mipmap/ic_launcher_smsmms"
@@ -206,6 +213,13 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".transaction.MmsSystemPushMsgReceiver"
+                android:permission="android.permission.MMS_PUSH">
+            <intent-filter>
+                <action android:name="android.intent.action.MMS_PUSH" />
             </intent-filter>
         </receiver>
 

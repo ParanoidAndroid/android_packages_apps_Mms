@@ -93,4 +93,6 @@
     <string name="menu_insert_contact_info">Insertar información de contacto</string>
     <string name="cannot_find_contact">No se ha podido insertar la información del contacto seleccionado</string>
     <string name="insert_contact_info_positive_button">Insertar</string>
+    <string name="label_mms_push">Enviar MMS pendientes</string>
+    <string name="desc_mms_push">Enviar mensajes MMS pendientes en la bandeja de salida a la red</string>
 </resources>

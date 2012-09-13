@@ -93,4 +93,6 @@
     <string name="pref_summary_enable_quick_emojis">Knop tonen naast tekstinvoer om snel toegang te krijgen tot Emoji\'s</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank-Emoji</string>
     <string name="pref_summary_enable_softbank_encoding">SoftBank-codering voor Emoji\'s gebruiken</string>
+    <string name="label_mms_push">Mms-push</string>
+    <string name="desc_mms_push">Mms-berichten naar het netwerk sturen vanuit Postvak UIT</string>
 </resources>

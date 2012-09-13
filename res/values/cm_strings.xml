@@ -151,4 +151,7 @@
     <string name="cannot_find_contact">Can\'t insert information of the chosen contact</string>
     <string name="insert_contact_info_positive_button">Insert</string>
 
+    <!-- MMS push permission -->
+    <string name="label_mms_push">MMS Push</string>
+    <string name="desc_mms_push">Pushes MMS from outbox to the network</string>
 </resources>

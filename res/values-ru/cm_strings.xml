@@ -92,4 +92,6 @@
     <string name="menu_insert_contact_info">Вставить контакт</string>
     <string name="cannot_find_contact">Не удаётся вставить информацию из выбранного контакта</string>
     <string name="insert_contact_info_positive_button">Вставить</string>
+    <string name="label_mms_push">Передача MMS</string>
+    <string name="desc_mms_push">Передавать MMS из исходящих в сеть</string>
 </resources>

@@ -822,9 +822,9 @@
     <string name="pref_summary_sms_split_counter">Adds counter to message ex. (1/2)</string>
 
     <!-- Sms templates -->
-    <string name="prefs_templates_settings">Sms templates</string>
+    <string name="prefs_templates_settings">SMS templates</string>
     <string name="pref_title_templates_manage">Templates</string>
-    <string name="pref_summary_templates_manage">Manage your sms templates</string>
+    <string name="pref_summary_templates_manage">Manage your SMS templates</string>
     <string name="pref_title_templates_show_gesture">Gesture</string>
     <string name="pref_summary_templates_show_gesture">Show gesture trace</string>
     <string name="pref_title_template_gestures_sensitivity">Gesture sensitivity</string>

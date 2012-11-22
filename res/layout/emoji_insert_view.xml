@@ -10,7 +10,7 @@
             android:layout_above="@+id/emoji_button"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:numColumns="auto_fit" 
+            android:numColumns="auto_fit"
             android:columnWidth="50dip" />
 
         <EditText

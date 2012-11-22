@@ -2968,7 +2968,7 @@ public class ComposeMessageActivity extends Activity
                 break;
             case MENU_INSERT_EMOJI:
                 showEmojiDialog();
-                break;            
+                break;
             case MENU_GROUP_PARTICIPANTS: {
                 Intent intent = new Intent(this, RecipientListActivity.class);
                 intent.putExtra(THREAD_ID, mConversation.getThreadId());

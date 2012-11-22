@@ -303,7 +303,7 @@ public class Conversation {
      * work is dispatched to a background thread. This function should
      * always be called from the UI thread.
      */
-    public void markAsRead() {
+    public void markAsRead(final boolean updateNotifications) {
         if (DELETEDEBUG) {
             Contact.logWithTrace(TAG, "markAsRead mMarkAsReadWaiting: " + mMarkAsReadWaiting +
                     " mMarkAsReadBlocked: " + mMarkAsReadBlocked);
@@ -354,11 +354,13 @@ public class Conversation {
                     }
                     setHasUnreadMessages(false);
                 }
-                // Always update notifications regardless of the read state, which is usually
-                // canceling the notification of the thread that was just marked read.
-                MessagingNotification.blockingUpdateAllNotifications(mContext,
-                        MessagingNotification.THREAD_NONE);
 
+                if (updateNotifications) {
+                	// Always update notifications regardless of the read state, which is usually
+	                // canceling the notification of the thread that was just marked read.
+	                MessagingNotification.blockingUpdateAllNotifications(mContext,
+	                        MessagingNotification.THREAD_NONE);
+				}
                 return null;
             }
         }.execute();
@@ -380,7 +382,7 @@ public class Conversation {
             if (!mMarkAsReadBlocked) {
                 if (mMarkAsReadWaiting) {
                     mMarkAsReadWaiting = false;
-                    markAsRead();
+                    markAsRead(true);
                 }
             }
         }

@@ -371,7 +371,7 @@ public class ComposeMessageActivity extends Activity
     /**
      * Whether this activity is currently running (i.e. not paused)
      */
-    private boolean mIsRunning;
+    public static boolean mIsRunning;
 
     // we may call loadMessageAndDraft() from a few different places. This is used to make
     // sure we only load message+draft once.
@@ -2377,7 +2377,7 @@ public class ComposeMessageActivity extends Activity
         // the thread. Unblocking occurs when we're done querying for the conversation
         // items.
         mConversation.blockMarkAsRead(true);
-        mConversation.markAsRead();         // dismiss any notifications for this convo
+        mConversation.markAsRead(true);         // dismiss any notifications for this convo
         startMsgListQuery();
         updateSendFailedNotification();
     }
@@ -2473,7 +2473,7 @@ public class ComposeMessageActivity extends Activity
 
         mIsRunning = true;
         updateThreadIdIfRunning();
-        mConversation.markAsRead();
+        mConversation.markAsRead(true);
     }
 
     @Override
@@ -2510,7 +2510,7 @@ public class ComposeMessageActivity extends Activity
             Log.v(TAG, "onPause: mSavedScrollPosition=" + mSavedScrollPosition);
         }
 
-        mConversation.markAsRead();
+        mConversation.markAsRead(true);
         mIsRunning = false;
     }
 

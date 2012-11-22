@@ -69,11 +69,15 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String ENABLE_EMOJIS             = "pref_key_enable_emojis";
     public static final String STRIP_UNICODE             = "pref_key_strip_unicode";
 
+	// Split sms
+    public static final String SMS_SPLIT_COUNTER        = "pref_key_sms_split_counter";
+
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
 
     private Preference mSmsLimitPref;
     private Preference mSmsDeliveryReportPref;
+    private CheckBoxPreference mSmsSplitCounterPref;
     private Preference mMmsLimitPref;
     private Preference mMmsDeliveryReportPref;
     private Preference mMmsGroupMmsPref;
@@ -115,6 +119,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mManageSimPref = findPreference("pref_key_manage_sim_messages");
         mSmsLimitPref = findPreference("pref_key_sms_delete_limit");
         mSmsDeliveryReportPref = findPreference("pref_key_sms_delivery_reports");
+        mSmsSplitCounterPref = (CheckBoxPreference) findPreference("pref_key_sms_split_counter");
         mMmsDeliveryReportPref = findPreference("pref_key_mms_delivery_reports");
         mMmsGroupMmsPref = findPreference("pref_key_mms_group_mms");
         mMmsReadReportPref = findPreference("pref_key_mms_read_reports");
@@ -159,6 +164,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             if (!MmsApp.getApplication().getTelephonyManager().hasIccCard()) {
                 getPreferenceScreen().removePreference(smsCategory);
             }
+        }
+
+        if (!MmsConfig.getSplitSmsEnabled()) {
+            // SMS Split disabled, remove SplitCounter pref
+            PreferenceCategory smsCategory =
+            (PreferenceCategory)findPreference("pref_key_sms_settings");
+            smsCategory.removePreference(mSmsSplitCounterPref);
         }
 
         if (!MmsConfig.getMmsEnabled()) {

@@ -35,6 +35,7 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.provider.SearchRecentSuggestions;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -80,6 +81,18 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String GESTURE_SENSITIVITY      = "pref_key_templates_gestures_sensitivity";
     public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
 
+	// Timestamps
+    public static final String FULL_TIMESTAMP            = "pref_key_mms_full_timestamp";
+    public static final String SENT_TIMESTAMP            = "pref_key_mms_use_sent_timestamp";
+
+	// Vibrate pattern
+    public static final String NOTIFICATION_VIBRATE_PATTERN = "pref_key_mms_notification_vibrate_pattern";
+    public static final String NOTIFICATION_VIBRATE_PATTERN_CUSTOM = "pref_key_mms_notification_vibrate_pattern_custom";
+    public static final String NOTIFICATION_VIBRATE_CALL ="pre_key_mms_notification_vibrate_call";
+
+    // Keyboard input type
+    public static final String INPUT_TYPE                = "pref_key_mms_input_type";
+
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
 
@@ -102,6 +115,11 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private static final int CONFIRM_CLEAR_SEARCH_HISTORY_DIALOG = 3;
     private CharSequence[] mVibrateEntries;
     private CharSequence[] mVibrateValues;
+
+    // Keyboard input type
+    private ListPreference mInputTypePref;
+    private CharSequence[] mInputTypeEntries;
+    private CharSequence[] mInputTypeValues;
 
     @Override
     protected void onCreate(Bundle icicle) {
@@ -141,6 +159,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
 
+        // Keyboard input type
+        mInputTypePref = (ListPreference) findPreference(INPUT_TYPE);
+        mInputTypeEntries = getResources().getTextArray(R.array.pref_entries_input_type);
+        mInputTypeValues = getResources().getTextArray(R.array.pref_values_input_type);
+
+        // Vibration
         mVibrateEntries = getResources().getTextArray(R.array.prefEntries_vibrateWhen);
         mVibrateValues = getResources().getTextArray(R.array.prefValues_vibrateWhen);
 
@@ -253,6 +277,13 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         setMmsDisplayLimit();
 
         adjustVibrateSummary(mVibrateWhenPref.getValue());
+
+        // Read the input type value and set the summary
+        String inputType = sharedPreferences.getString(MessagingPreferenceActivity.INPUT_TYPE,
+                Integer.toString(InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE));
+        mInputTypePref.setValue(inputType);
+        adjustInputTypeSummary(mInputTypePref.getValue());
+        mInputTypePref.setOnPreferenceChangeListener(this);
     }
 
     private void setEnabledNotificationsPref() {
@@ -408,6 +439,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         if (preference == mVibrateWhenPref) {
             adjustVibrateSummary((String)newValue);
             result = true;
+        } else if (preference == mInputTypePref) {
+            adjustInputTypeSummary((String)newValue);
+            result = true;
         }
         return result;
     }
@@ -421,6 +455,17 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             }
         }
         mVibrateWhenPref.setSummary(null);
+    }
+
+    private void adjustInputTypeSummary(String value) {
+        int len = mInputTypeValues.length;
+        for (int i = 0; i < len; i++) {
+            if (mInputTypeValues[i].equals(value)) {
+                mInputTypePref.setSummary(mInputTypeEntries[i]);
+                return;
+            }
+        }
+        mInputTypePref.setSummary(R.string.pref_keyboard_unknown);
     }
 
     // For the group mms feature to be enabled, the following must be true:

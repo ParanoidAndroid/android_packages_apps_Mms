@@ -855,6 +855,26 @@
     <string name="pref_title_mms_notification_vibrate_custom">Custom vibrate pattern</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on in milliseconds: off, on, off, on, ...</string>
 
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">Full timestamps</string>
+    <string name="pref_summary_mms_full_timestamp">Display both date and time in timestamps</string>
+
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">Original timestamps</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Display sent date instead of received date in timestamps</string>
+
+    <!-- Add menu for 'Add SMS to calendar remind' -->
+    <string name="menu_add_to_calendar">Add to calendar</string>
+
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">Show the Emoticons key</string>
+    <string name="pref_keyboard_new_line">Show the Enter key</string>
+    <string name="pref_keyboard_unknown">Unknown, please reselect</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">Soft keyboard type</string>
+    <string name="pref_summary_input_type">Select the soft keyboard to use when composing messages</string>
+
 	<!-- CYANOGENMOD EDITS END -->
 
 </resources>

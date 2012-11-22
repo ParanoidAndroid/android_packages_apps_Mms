@@ -107,4 +107,31 @@
       <item>12</item>
     </string-array>
 
+    <string-array name="pref_mms_notification_vibrate_pattern_entries">
+        <item>Normal</item>
+        <item>Medium Vibrate</item>
+        <item>Long Vibrate</item>
+        <item>Multiple Short</item>
+        <item>Multiple Long</item>
+        <item>@string/pref_title_mms_notification_vibrate_custom</item>
+    </string-array>
+
+    <string-array name="pref_mms_notification_vibrate_pattern_values" translatable="false">
+        <item></item>
+        <item>0,1200</item>
+        <item>0,2500</item>
+        <item>0,300,100,300,100,300,100,300,100,300</item>
+        <item>0,800,200,800,200,800</item>
+        <item>custom</item>
+    </string-array>
+
+    <string-array name="pref_entries_input_type" translatable="false">
+        <item>@string/pref_keyboard_emoji</item>
+        <item>@string/pref_keyboard_new_line</item>
+    </string-array>
+
+    <string-array name="pref_values_input_type" translatable="false">
+        <item>64</item> <!-- InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE constant  -->
+        <item>80</item> <!-- InputType.TYPE_TEXT_VARIATION_LONG_MESSAGE constant  -->
+    </string-array>
 </resources>

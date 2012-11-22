@@ -132,6 +132,25 @@
             android:entries="@array/prefEntries_vibrateWhen"
             android:entryValues="@array/prefValues_vibrateWhen"
             android:dialogTitle="@string/prefDialogTitle_vibrateWhen" />
+
+        <com.android.mms.preferences.CustomVibrateListPreference
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:key="pref_key_mms_notification_vibrate_pattern"
+            android:dependency="pref_key_vibrateWhen"
+            android:defaultValue=""
+            android:title="@string/pref_title_mms_notification_vibrate_pattern"
+            android:summary="@string/pref_summary_mms_notification_vibrate_pattern"
+            android:entries="@array/pref_mms_notification_vibrate_pattern_entries"
+            android:entryValues="@array/pref_mms_notification_vibrate_pattern_values"
+            android:dialogTitle="@string/pref_title_mms_notification_vibrate_pattern" />
+
+        <CheckBoxPreference
+            android:key="pref_key_mms_notification_vibrate_call"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:dependency="pref_key_enable_notifications"
+            android:defaultValue="true"
+            android:title="@string/pref_title_mms_notification_vibrate_call"
+            android:summary="@string/pref_summary_mms_notification_vibrate_call" />
     </PreferenceCategory>
 
     <!-- Templates Settings -->
@@ -169,6 +188,23 @@
             android:summary="@string/pref_summary_enable_emojis"
             android:defaultValue="false" />
 
-    </PreferenceCategory>
+        <CheckBoxPreference
+            android:key="pref_key_mms_full_timestamp"
+            android:title="@string/pref_title_mms_full_timestamp"
+            android:summary="@string/pref_summary_mms_full_timestamp"
+            android:defaultValue="false" />
 
+        <CheckBoxPreference
+            android:key="pref_key_mms_use_sent_timestamp"
+            android:title="@string/pref_title_mms_use_sent_timestamp"
+            android:summary="@string/pref_summary_mms_use_sent_timestamp"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="pref_key_mms_input_type"
+            android:title="@string/pref_title_input_type"
+            android:summary="@string/pref_summary_input_type"
+            android:entries="@array/pref_entries_input_type"
+            android:entryValues="@array/pref_values_input_type" />
+    </PreferenceCategory>
 </PreferenceScreen>

@@ -134,6 +134,27 @@
             android:dialogTitle="@string/prefDialogTitle_vibrateWhen" />
     </PreferenceCategory>
 
+    <!-- Templates Settings -->
+    <PreferenceCategory android:title="@string/prefs_templates_settings" >
+        <Preference
+            android:key="pref_key_templates_manage"
+            android:persistent="false"
+            android:summary="@string/pref_summary_templates_manage"
+            android:title="@string/pref_title_templates_manage" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_key_templates_show_gesture"
+            android:summary="@string/pref_summary_templates_show_gesture"
+            android:title="@string/pref_title_templates_show_gesture" />
+
+        <ListPreference
+            android:entries="@array/pref_templates_gestures_sensitivity_entries"
+            android:entryValues="@array/pref_templates_gestures_sensitivity_values"
+            android:key="pref_key_templates_gestures_sensitivity"
+            android:title="@string/pref_title_template_gestures_sensitivity" />
+    </PreferenceCategory>
+
     <!-- Extra Settings -->
     <PreferenceCategory android:title="@string/pref_extra_settings">
         <CheckBoxPreference

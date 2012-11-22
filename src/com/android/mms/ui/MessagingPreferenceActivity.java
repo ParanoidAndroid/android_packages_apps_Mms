@@ -33,6 +33,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
+import android.preference.Preference.OnPreferenceClickListener;
 import android.provider.SearchRecentSuggestions;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -41,6 +42,7 @@ import android.view.MenuItem;
 import com.android.mms.MmsApp;
 import com.android.mms.MmsConfig;
 import com.android.mms.R;
+import com.android.mms.templates.TemplatesListActivity;
 import com.android.mms.transaction.TransactionService;
 import com.android.mms.util.Recycler;
 
@@ -72,6 +74,12 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 	// Split sms
     public static final String SMS_SPLIT_COUNTER        = "pref_key_sms_split_counter";
 
+	// Templates
+    public static final String MANAGE_TEMPLATES         = "pref_key_templates_manage";
+    public static final String SHOW_GESTURE             = "pref_key_templates_show_gesture";
+    public static final String GESTURE_SENSITIVITY      = "pref_key_templates_gestures_sensitivity";
+    public static final String GESTURE_SENSITIVITY_VALUE = "pref_key_templates_gestures_sensitivity_value";
+
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
 
@@ -89,6 +97,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private CheckBoxPreference mMmsAutoRetrievialPref;
     private Recycler mSmsRecycler;
     private Recycler mMmsRecycler;
+    private Preference mManageTemplate;
+    private ListPreference mGestureSensitivity;
     private static final int CONFIRM_CLEAR_SEARCH_HISTORY_DIALOG = 3;
     private CharSequence[] mVibrateEntries;
     private CharSequence[] mVibrateValues;
@@ -128,6 +138,8 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mEnableNotificationsPref = (CheckBoxPreference) findPreference(NOTIFICATION_ENABLED);
         mMmsAutoRetrievialPref = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
         mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
+        mManageTemplate = findPreference(MANAGE_TEMPLATES);
+        mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
 
         mVibrateEntries = getResources().getTextArray(R.array.prefEntries_vibrateWhen);
         mVibrateValues = getResources().getTextArray(R.array.prefValues_vibrateWhen);
@@ -201,7 +213,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         setEnabledNotificationsPref();
 
         // If needed, migrate vibration setting from a previous version
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         if (!sharedPreferences.contains(NOTIFICATION_VIBRATE_WHEN) &&
                 sharedPreferences.contains(NOTIFICATION_VIBRATE)) {
             int stringId = sharedPreferences.getBoolean(NOTIFICATION_VIBRATE, false) ?
@@ -209,6 +221,29 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                     R.string.prefDefault_vibrate_false;
             mVibrateWhenPref.setValue(getString(stringId));
         }
+
+        mManageTemplate.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference preference) {
+                Intent intent = new Intent(MessagingPreferenceActivity.this,
+                        TemplatesListActivity.class);
+                startActivity(intent);
+                return false;
+            }
+        });
+
+        String gestureSensitivity = String.valueOf(sharedPreferences.getInt(GESTURE_SENSITIVITY_VALUE, 3));
+        mGestureSensitivity.setSummary(gestureSensitivity);
+        mGestureSensitivity.setValue(gestureSensitivity);
+        mGestureSensitivity.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                int value = Integer.parseInt((String) newValue);
+                sharedPreferences.edit().putInt(GESTURE_SENSITIVITY_VALUE, value).commit();
+                mGestureSensitivity.setSummary(String.valueOf(value));
+                return true;
+            }
+        });
 
         mSmsRecycler = Recycler.getSmsRecycler();
         mMmsRecycler = Recycler.getMmsRecycler();

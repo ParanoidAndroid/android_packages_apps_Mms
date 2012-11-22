@@ -39,4 +39,7 @@
     <color name="widget_subject_text_color_read">#777777</color>
     <color name="widget_subject_text_color_unread">#555555</color>
 
+    <!-- Color of the text for buttons in the action bar  -->
+    <color name="action_bar_button_text_color">#FFFFFF</color>
+
 </resources>

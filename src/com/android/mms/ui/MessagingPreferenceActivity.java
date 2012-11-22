@@ -65,6 +65,10 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String AUTO_DELETE              = "pref_key_auto_delete";
     public static final String GROUP_MMS_MODE           = "pref_key_mms_group_mms";
 
+	// Emoji and Unicode
+    public static final String ENABLE_EMOJIS             = "pref_key_enable_emojis";
+    public static final String STRIP_UNICODE             = "pref_key_strip_unicode";
+
     // Menu entries
     private static final int MENU_RESTORE_DEFAULTS    = 1;
 
@@ -255,6 +259,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                     mSmsRecycler.getMessageMinLimit(),
                     mSmsRecycler.getMessageMaxLimit(),
                     R.string.pref_title_sms_delete).show();
+
         } else if (preference == mMmsLimitPref) {
             new NumberPickerDialog(this,
                     mMmsLimitListener,
@@ -262,11 +267,14 @@ public class MessagingPreferenceActivity extends PreferenceActivity
                     mMmsRecycler.getMessageMinLimit(),
                     mMmsRecycler.getMessageMaxLimit(),
                     R.string.pref_title_mms_delete).show();
+
         } else if (preference == mManageSimPref) {
             startActivity(new Intent(this, ManageSimMessages.class));
+
         } else if (preference == mClearHistoryPref) {
             showDialog(CONFIRM_CLEAR_SEARCH_HISTORY_DIALOG);
             return true;
+
         } else if (preference == mEnableNotificationsPref) {
             // Update the actual "enable notifications" value that is stored in secure settings.
             enableNotifications(mEnableNotificationsPref.isChecked(), this);

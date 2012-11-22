@@ -44,4 +44,17 @@
   <string-array name="empty_subject_strings">
     <item msgid="7691141505407124426">"без темы"</item>
   </string-array>
+  <string-array name="pref_mms_notification_vibrate_pattern_entries">
+    <item>Нормальный</item>
+    <item>Средняя вибрация</item>
+    <item>Длинная вибрация</item>
+    <item>Несколько коротких</item>
+    <item>Несколько длинных</item>
+    <item>@string/pref_title_mms_notification_vibrate_custom</item>
+  </string-array>
+    <string-array name="pref_entries_input_type">
+       <item>Emoji</item>
+       <item>Отправить</item>
+       <item>Вставка новой строки</item>
+    </string-array>
 </resources>

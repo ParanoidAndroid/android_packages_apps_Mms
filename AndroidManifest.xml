@@ -368,7 +368,14 @@
             android:excludeFromRecents="true"
             android:exported="true" />
 
-        <receiver android:name=".quickmessage.ClearAllReceiver" />
+         <activity
+            android:name=".quickmessage.QmMarkRead"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:exported="true" />
+
+         <receiver android:name=".quickmessage.ClearAllReceiver" />
 
         </application>
 </manifest>

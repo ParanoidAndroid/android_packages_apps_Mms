@@ -24,6 +24,7 @@ import android.os.Bundle;
 
 import com.android.mms.data.Conversation;
 import com.android.mms.transaction.MessagingNotification;
+import com.android.mms.ui.MessagingPreferenceActivity;
 
 public class QmMarkRead extends Activity {
     private static final String LOG_TAG = "QmMarkRead";
@@ -52,6 +53,17 @@ public class QmMarkRead extends Activity {
             if (con != null) {
                 // Mark thread as read
                 con.markAsRead(false);
+
+                // See if we have to also remove the popup messages and do so
+                if (MessagingPreferenceActivity.getQuickMessageEnabled(this)) {
+                    Intent qmIntent = new Intent();
+                    qmIntent.setClass(this, QuickMessagePopup.class);
+                    qmIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP |
+                            Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+                    qmIntent.putExtra(QuickMessagePopup.QR_REMOVE_MESSAGES_EXTRA, true);
+                    qmIntent.putExtra(QuickMessagePopup.QR_THREAD_ID_EXTRA, threadId);
+                    startActivity(qmIntent);
+                }
 
                 // Dismiss the notification that brought us here.
                 NotificationManager notificationManager =

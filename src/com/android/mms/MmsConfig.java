@@ -217,10 +217,6 @@ public class MmsConfig {
         return mEnableSplitSMS;
     }
 
-    public static boolean getSprintVVMEnabled() {
-        return mEnableSprintVVM;
-    }
-
     public static boolean getSlideDurationEnabled() {
         return mEnableSlideDuration;
     }
@@ -267,6 +263,10 @@ public class MmsConfig {
 
     public static boolean getGroupMmsEnabled() {
         return mEnableGroupMms;
+    }
+
+    public static boolean isSuppressedSprintVVM(String address) {
+        return mEnableSprintVVM && address.contentEquals("9016");
     }
 
     public static final void beginDocument(XmlPullParser parser, String firstElementName) throws XmlPullParserException, IOException

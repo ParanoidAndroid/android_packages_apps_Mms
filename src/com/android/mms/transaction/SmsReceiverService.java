@@ -53,6 +53,7 @@ import android.widget.Toast;
 
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.mms.LogTag;
+import com.android.mms.MmsConfig;
 import com.android.mms.R;
 import com.android.mms.data.Contact;
 import com.android.mms.data.Conversation;
@@ -435,6 +436,8 @@ public class SmsReceiverService extends Service {
             return null;
         } else if (sms.isReplace()) {
             return replaceMessage(context, msgs, error);
+        } else if (MmsConfig.isSuppressedSprintVVM(sms.getOriginatingAddress())) {
+            return null;
         } else {
             return storeMessage(context, msgs, error);
         }

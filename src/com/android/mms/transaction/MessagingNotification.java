@@ -1027,14 +1027,6 @@ public class MessagingNotification {
                 noti.addAction(R.drawable.ic_reply, qmText, qmPendingIntent);
             }
 
-            // Add the Call action
-            CharSequence callText = context.getText(R.string.menu_call);
-            Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(mostRecentNotification.mSender.getPhoneUri());
-            PendingIntent callPendingIntent = PendingIntent.getActivity(context, 0, callIntent,
-                    PendingIntent.FLAG_UPDATE_CURRENT);
-            noti.addAction(R.drawable.ic_menu_call, callText, callPendingIntent);
-
             // Add the 'Mark as read' action
             CharSequence markReadText = context.getText(R.string.qm_mark_read);
             Intent mrIntent = new Intent();
@@ -1044,6 +1036,15 @@ public class MessagingNotification {
             PendingIntent mrPendingIntent = PendingIntent.getActivity(context, 0, mrIntent,
                     PendingIntent.FLAG_UPDATE_CURRENT);
             noti.addAction(R.drawable.ic_menu_done_holo_dark, markReadText, mrPendingIntent);
+
+            // Add the Call action
+            CharSequence callText = context.getText(R.string.menu_call);
+            Intent callIntent = new Intent(Intent.ACTION_CALL);
+            callIntent.setData(mostRecentNotification.mSender.getPhoneUri());
+            PendingIntent callPendingIntent = PendingIntent.getActivity(context, 0, callIntent,
+                    PendingIntent.FLAG_UPDATE_CURRENT);
+            noti.addAction(R.drawable.ic_menu_call, callText, callPendingIntent);
+
         }
 
         if (messageCount == 1) {

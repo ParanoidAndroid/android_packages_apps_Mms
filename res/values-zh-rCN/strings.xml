@@ -421,15 +421,15 @@
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
-    <string name="pref_quickmessage">快速信息与回复</string>
-    <string name="pref_quickmessage_title">显示快速信息</string>
-    <string name="pref_quickmessage_summary">收到短信时显示快速信息对话框</string>
+    <string name="pref_quickmessage">快速回复</string>
+    <string name="pref_quickmessage_title">显示弹出窗口</string>
+    <string name="pref_quickmessage_summary">收到短信时弹出快速信息对话框</string>
     <string name="pref_wake_unlock_title">唤醒和解锁</string>
     <string name="pref_wake_unlock_summary">收到消息时唤醒和解锁设备 (仅在非安全锁定屏幕时有效)</string>
     <string name="pref_close_all_title">全部关闭</string>
-    <string name="pref_close_all_summary">“关闭”按钮将关闭所有的消息</string>
+    <string name="pref_close_all_summary">\'关闭\' 按钮将关闭所有的消息</string>
     <string name="pref_dark_theme_title">使用暗色主题</string>
-    <string name="pref_dark_theme_summary">如果未被选中，默认的\'淡色\'主题将会被使用</string>
+    <string name="pref_dark_theme_summary">如果未被选中，默认的 \'淡色\' 主题将会被使用</string>
     <string name="message_counter_separator">之</string>
 
     <!-- QM Dialog box buttons -->
@@ -444,7 +444,8 @@
     <string name="toast_sending_message">信息发送中</string>
 
     <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">快速回复</string>
+    <string name="qm_quick_reply">回复</string>
+    <string name="qm_mark_read">已读</string>
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">添加日历提醒</string>

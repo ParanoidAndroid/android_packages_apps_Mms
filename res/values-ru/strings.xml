@@ -430,7 +430,8 @@
     <string name="toast_sending_message">Отправка сообщения</string>
 
     <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Быстрый ответ</string>
+    <string name="qm_quick_reply">Ответить</string>
+    <string name="qm_mark_read">Прочтено</string>
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Тип клавиатуры</string>

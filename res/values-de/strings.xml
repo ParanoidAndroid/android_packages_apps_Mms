@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
 /*
  * Copyright (C) 2007-2008 Esmertec AG.
  * Copyright (C) 2007-2008 The Android Open Source Project
@@ -351,10 +351,11 @@
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 
-    <!-- additional CyanogenMod features -->
+    <!-- **** CYANOGENMOD EDITS START **** -->
 
     <!-- Settings item for boolean option for SMS Split Counter -->
     <string name="pref_title_sms_split_counter">Zähler für Aufteilung</string>
+
     <!-- Settings item description for boolean SMS Split 160 characters setting -->
     <string name="pref_summary_sms_split_counter">Der Nachricht einen Zähler anhängen, z.B. (1/2)</string>
 
@@ -367,7 +368,7 @@
     <string name="pref_title_template_gestures_sensitivity">Empfindlichkeit der Gesten</string>
     <string name="template_save">Speichern</string>
     <string name="template_insert_hint">Vorlagentext hier eingeben</string>
-    <string name="template_empty_text">Das Textfeld darf nicht leer sein</string>
+    <string name="template_empty_text">Das Textfeld darf nicht leer sein!</string>
     <string name="template_explanation">Vorlagentext eingeben oder ändern. Optional kann eine Geste gezeichnet und mit der Vorlage verknüpft werden.</string>
     <string name="template_edit">Bearbeiten</string>
     <string name="template_delete">Löschen</string>
@@ -404,9 +405,10 @@
     <string name="pref_title_enable_emojis">Emoji-Unterstützung</string>
     <string name="pref_summary_enable_emojis">Unterstützung für Emojis aktivieren</string>
 
-        <!-- Full timestamps -->
+    <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Volle Datumsangabe</string>
     <string name="pref_summary_mms_full_timestamp">Datum und Zeit der Nachricht anzeigen</string>
+
     <!-- Which timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Originale Datumsangabe</string>
     <string name="pref_summary_mms_use_sent_timestamp">Statt Empfangszeitpunkt den Sendezeitpunkt der Nachricht anzeigen und speichern</string>
@@ -421,10 +423,11 @@
     <string name="pref_keyboard_unknown">Unbekannt. Neue Auswahl treffen</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
+
     <!-- Preferences -->
-    <string name="pref_quickmessage">Schnellnachricht und Antwort</string>
-    <string name="pref_quickmessage_title">Schnellnachrichten anzeigen</string>
-    <string name="pref_quickmessage_summary">Das Schnellnachricht-Pop-up bei Eingang von SMS anzeigen</string>
+    <string name="pref_quickmessage">Schnell antworten</string>
+    <string name="pref_quickmessage_title">Pop-up anzeigen</string>
+    <string name="pref_quickmessage_summary">Ein Pop-up bei Eingang von SMS anzeigen, um schnell antorten zu können</string>
     <string name="pref_wake_unlock_title">Wecken und Entsperren</string>
     <string name="pref_wake_unlock_summary">Gerät bei Nachrichteneingang wecken und entsperren. (Nicht bei Sicherheits-Sperrbildschirmen möglich)</string>
     <string name="pref_close_all_title">Alle schließen</string>
@@ -442,8 +445,11 @@
     <string name="type_to_reply_text_enter_to_send">Nachricht schreiben</string>
 
     <!-- QM Toast -->
-    <string name="toast_sending_message">Nachricht senden...</string>
+    <string name="toast_sending_message">Nachricht senden&#8230;</string>
 
     <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Schnellantwort</string>
+    <string name="qm_quick_reply">Antworten</string>
+    <string name="qm_mark_read">Gelesen</string>
+
+    <!-- **** CYANOGENMOD EDITS END **** -->
 </resources>

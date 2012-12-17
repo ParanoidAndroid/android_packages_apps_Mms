@@ -434,7 +434,8 @@
     <string name="toast_sending_message">Sender besked...</string>
 
     <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Hurtigt svar</string>
+    <string name="qm_quick_reply">Svar</string>
+    <string name="qm_mark_read">Læst</string>
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Type af softwaretastatur</string>

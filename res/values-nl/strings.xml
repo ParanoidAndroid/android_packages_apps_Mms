@@ -351,13 +351,9 @@
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 
     <!-- CYANOGENMOD EDITS -->
-
-    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="qm_mark_read">Gelezen</string>
     <string name="pref_title_sms_split_counter">Sms-teller</string>
-    <!-- Settings item description for boolean SMS Split 160 characters setting -->
     <string name="pref_summary_sms_split_counter">Teller toevoegen aan sms-berichten, zoals: (1/2)</string>
-
-    <!-- Sms templates -->
      <string name="prefs_templates_settings">Sms-sjablonen</string>
     <string name="pref_title_templates_manage">Sjablonen</string>
     <string name="pref_summary_templates_manage">Sms-sjablonen beheren</string>
@@ -379,10 +375,8 @@
     <string name="template_not_present_error_title">Fout</string>
     <string name="template_select">Sjabloon selecteren</string>
     <string name="template_cancel_confirm_title">Let op</string>
-    <string name="template_cancel_confirm_text">Wilt u annuleren?</string>
-    <string name="gestures_already_present">Let op: een soortgelijk gebaar is al toegewezen aan een ander sjabloon.</string>
-
-    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="template_cancel_confirm_text">Weet u zeker dat u wilt annuleren?</string>
+    <string name="gestures_already_present">Let op: een soortgelijk gebaar wordt al gebruikt.</string>
     <string name="pref_title_mms_notification_vibrate_settings">Trillen</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Trilpatroon</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Trilpatroon wijzigen</string>
@@ -390,33 +384,19 @@
     <string name="pref_summary_mms_notification_vibrate_call">Trillen tijdens het bellen toestaan</string>
     <string name="pref_title_mms_notification_vibrate_custom">Aangepast trilpatroon</string>
     <string name="pref_text_mms_notification_vibrate_custom">Indeling uit/aan in miliseconden: uit, aan, uit, aan, enz.</string>
-
-    <!-- Extra Settings: -->
     <string name="pref_extra_settings">Meer\u2026</string>
-
-    <!-- Strip unicode -->
     <string name="pref_title_strip_unicode">Unicode-compatibiliteit</string>
     <string name="pref_summary_strip_unicode">Niet-ondersteunde karakters in sms-berichten automatisch vervangen</string>
-
-    <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Emoji</string>
     <string name="pref_summary_enable_emojis">Unicode-emoji\'s, 471 leuke smiley\'s, inschakelen</string>
     <string name="menu_insert_emoji">Emoji invoegen</string>
-
-    <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Volledige tijdsaanduiding</string>
     <string name="pref_summary_mms_full_timestamp">Datum en tijd tonen in tijdsaanduidingen</string>
-    <!-- Which timestamps -->
-    <string name="pref_title_mms_use_sent_timestamp">Oorspr. tijdsaanduiding</string>
+    <string name="pref_title_mms_use_sent_timestamp">Oorspronkelijke tijdsaanduiding</string>
     <string name="pref_summary_mms_use_sent_timestamp">Verzenddatum tonen i.p.v. ontvangstdatum in tijdsaanduidingen</string>
-
-    <!-- Soft Keyboard Type -->
     <string name="pref_keyboard_emoji">Smiley-knop</string>
     <string name="pref_keyboard_new_line">Enter-toets</string>
     <string name="pref_keyboard_unknown">Onbekend, selecteer opnieuw a.u.b.</string>
-
-    <!-- QUICKMESSAGE SUPPORT -->
-    <!-- Preferences -->
     <string name="pref_quickmessage">Snelbericht en -beantwoorden</string>
     <string name="pref_quickmessage_title">Snelbericht tonen</string>
     <string name="pref_quickmessage_summary">Snelbericht-pop-up tonen voor inkomende sms-berichten</string>
@@ -427,25 +407,13 @@
     <string name="pref_dark_theme_title">Donker thema</string>
     <string name="pref_dark_theme_summary">Donkere i.p.v. lichte kleuren gebruiken</string>
     <string name="message_counter_separator">van</string>
-
-    <!-- QM Dialog box buttons -->
     <string name="button_close">Sluiten</string>
     <string name="button_view">Tonen</string>
     <string name="button_templates">Sjablonen</string>
-
-    <!-- Hint text in message body field when keyboard is exposed -->
     <string name="type_to_reply_text_enter_to_send">Typ om te beantwoorden</string>
-
-    <!-- QM Toast -->
     <string name="toast_sending_message">Bericht wordt verzonden\u2026</string>
-
-    <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Snel beantwoorden</string>
-
-    <!-- Settings item for the soft keyboard picker -->
-    <string name="pref_title_input_type">Type softwaretoetsenbord</string>
-    <string name="pref_summary_input_type">Kies het te gebruiken softwaretoetsenbord tijdens het opstellen van berichten</string>
-
-    <!-- Add menu for 'Add SMS to calendar remind' -->
+    <string name="pref_title_input_type">Invoermethode</string>
+    <string name="pref_summary_input_type">Kies de te gebruiken invoermethode om berichten op te stellen</string>
     <string name="menu_add_to_calendar">Toevoegen aan agenda</string>
 </resources>

@@ -340,7 +340,7 @@
   <plurals name="recipient_count">
     <item quantity="other" msgid="7338580381574463136">"<xliff:g id="NUMBER">%1$s</xliff:g> személy"</item>
   </plurals>
-    <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Ne engedélyezze az ismétlődő üzenetekkel kapcsolatos értesítéseket az alapértelmezett üzenetekküldő alkalmazásból?"</string>
+    <string name="disable_notifications_dialog_message" msgid="7644011234972074096">"Ne engedélyezze az ismétlődő üzenetekkel kapcsolatos értesítéseket az alapértelmezett üzenetküldő alkalmazásból?"</string>
     <string name="view_more_conversations" msgid="7275920132410734671">"További beszélgetések megtekintése"</string>
     <string name="attachment_audio" msgid="2867960243300539143">"Hang"</string>
     <string name="attachment_slideshow" msgid="5867689101881763318">"Diavetítés"</string>
@@ -442,6 +442,7 @@
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Válasz</string>
+    <string name="qm_mark_read">Elolvasva</string>
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Hozzáadás a naptárhoz</string>

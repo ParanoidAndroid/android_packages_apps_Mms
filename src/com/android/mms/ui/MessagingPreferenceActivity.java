@@ -20,6 +20,7 @@ package com.android.mms.ui;
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -36,6 +37,7 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.provider.SearchRecentSuggestions;
 import android.text.InputType;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -114,6 +116,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private ListPreference mVibrateWhenPref;
     private CheckBoxPreference mEnableNotificationsPref;
     private CheckBoxPreference mMmsAutoRetrievialPref;
+    private CheckBoxPreference mMmsRetrievalDuringRoamingPref;
     private Recycler mSmsRecycler;
     private Recycler mMmsRecycler;
     private Preference mManageTemplate;
@@ -166,10 +169,18 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mMmsLimitPref = findPreference("pref_key_mms_delete_limit");
         mClearHistoryPref = findPreference("pref_key_mms_clear_history");
         mEnableNotificationsPref = (CheckBoxPreference) findPreference(NOTIFICATION_ENABLED);
-        mMmsAutoRetrievialPref = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
         mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
+
+        // Get the MMS retrieval settings. Defaults to enabled with roaming disabled
+        mMmsAutoRetrievialPref = (CheckBoxPreference) findPreference(AUTO_RETRIEVAL);
+        ContentResolver resolver = getContentResolver();
+        mMmsAutoRetrievialPref.setChecked(Settings.System.getInt(resolver,
+                Settings.System.MMS_AUTO_RETRIEVAL, 1) == 1);
+        mMmsRetrievalDuringRoamingPref = (CheckBoxPreference) findPreference(RETRIEVAL_DURING_ROAMING);
+        mMmsRetrievalDuringRoamingPref.setChecked(Settings.System.getInt(resolver,
+                Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING, 0) == 1);
 
         // QuickMessage
         mEnableQuickMessagePref = (CheckBoxPreference) findPreference(QUICKMESSAGE_ENABLED);
@@ -421,8 +432,17 @@ public class MessagingPreferenceActivity extends PreferenceActivity
             // Update the actual "enable dark theme" value that is stored in secure settings.
             enableQmDarkTheme(mEnableQmDarkThemePref.isChecked(), this);
 
+        } else if (preference == mMmsRetrievalDuringRoamingPref) {
+            // Update the value in Settings.System
+            Settings.System.putInt(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL_ON_ROAMING,
+                    mMmsRetrievalDuringRoamingPref.isChecked() ? 1 : 0);
+
         } else if (preference == mMmsAutoRetrievialPref) {
-            if (mMmsAutoRetrievialPref.isChecked()) {
+            // Update the value in Settings.System
+            boolean checked = mMmsAutoRetrievialPref.isChecked();
+            Settings.System.putInt(getContentResolver(), Settings.System.MMS_AUTO_RETRIEVAL,
+                    checked ? 1 : 0);
+            if (checked) {
                 startMmsDownload();
             }
         }

@@ -106,7 +106,7 @@
     <string name="cannot_send_message" msgid="3414307479833622644">"Impossible d\'envoyer le message"</string>
     <string name="cannot_send_message_reason" msgid="8745080126044054343">"Aucun destinataire valide n\'a été spécifié pour votre message."</string>
     <string name="cannot_forward_drm_obj" msgid="5047623751430559077">"Impossible de transférer l\'objet GDN inclus dans le message."</string>
-    <string name="converting_to_picture_message" msgid="2980023239017588627">"Conversion en message multimédia..."</string>
+    <string name="converting_to_picture_message" msgid="2980023239017588627">"Conversion en message multimédia\u2026"</string>
     <string name="cannot_add_slide_anymore" msgid="4631404749618820994">"Impossible d\'ajouter d\'autres diapositives."</string>
     <string name="cannot_add_picture_and_video" msgid="4954353772391381447">"Impossible d\'ajouter une vidéo et une image sur une même diapositive."</string>
     <string name="cannot_save_message" msgid="3375907366965264446">"Impossible d\'enregistrer le message."</string>
@@ -377,7 +377,7 @@
     <string name="template_not_present_error_title">Erreur</string>
     <string name="template_select">Séléctionner un modèle</string>
     <string name="template_cancel_confirm_title">Attention</string>
-    <string name="template_cancel_confirm_text">Le modèle va être supprimer. Continuer?</string>
+    <string name="template_cancel_confirm_text">Le modèle va être supprimé. Continuer?</string>
     <string name="gestures_already_present">Attention: Un geste similaire est associé à un autre modèle!</string>
     <string name="pref_title_mms_notification_vibrate_settings">Paramètres de vibration</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Style de vibration</string>
@@ -387,23 +387,27 @@
     <string name="pref_title_mms_notification_vibrate_custom">Style de vibration personnalisé</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on en millisecondes: off, on, off, on, ...</string>
     <string name="pref_extra_settings">Paramètres supplémentaires</string>
+
     <!-- Strip unicode -->
     <string name="pref_title_strip_unicode">Conversion unicode</string>
     <string name="pref_summary_strip_unicode">Remplace les caractères qui ne sont pas pris en charge dans les 160 caractères des messages SMS</string>
+
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Activer Emoji</string>
-    <string name="pref_summary_enable_emojis">Activer la reconnaissance des emojis, 471 beaux émoticônes</string>
+    <string name="pref_summary_enable_emojis">Activer la reconnaissance des emojis, 471 belles émoticônes</string>
     <string name="menu_insert_emoji">Insérer des emojis</string>
     <string name="pref_title_mms_full_timestamp">Date complète</string>
     <string name="pref_summary_mms_full_timestamp">Afficher la date et l\'heure des messages</string>
     <string name="pref_title_mms_use_sent_timestamp">Date originale</string>
     <string name="pref_summary_mms_use_sent_timestamp">Afficher la date d\'envoi au lieu de la date de récéption</string>
-    <string name="pref_keyboard_emoji">Emoji</string>
-    <string name="pref_keyboard_new_line">Entrer pour aller à la ligne</string>
+    <string name="pref_keyboard_emoji">Afficher la touche des Emoji</string>
+    <string name="pref_keyboard_new_line">Afficher la touche Entrée</string>
+    <string name="pref_keyboard_unknown">Inconnu, veuillez resélectionner</string>
+
     <!-- QuickMessage -->
-    <string name="pref_quickmessage">QuickMessage</string>
-    <string name="pref_quickmessage_title">Activer QuickMessage</string>
-    <string name="pref_quickmessage_summary">Afficher le pop-up QuickMessage</string>
+    <string name="pref_quickmessage">Réponse Rapide</string>
+    <string name="pref_quickmessage_title">Afficher le pop-up</string>
+    <string name="pref_quickmessage_summary">Afficher le pop-up pour les SMS entrants</string>
     <string name="pref_wake_unlock_title">Réveiller et déverrouiller</string>
     <string name="pref_wake_unlock_summary">Réveiller et déverrouiller l\'appareil à l\'arrivée de messages (écran de verrouillage non sécurisé seulement)</string>
     <string name="pref_close_all_title">Tout fermer</string>
@@ -414,9 +418,11 @@
     <string name="button_close">Fermer</string>
     <string name="button_view">Afficher</string>
     <string name="button_templates">Modèles</string>
-    <string name="type_to_reply_text_enter_to_send">Entrer pour répondre</string>
+    <string name="type_to_reply_text_enter_to_send">Saisissez une réponse</string>
     <string name="toast_sending_message">Envoi du message</string>
-    <string name="qm_quick_reply">Réponse rapide</string>
+    <string name="qm_quick_reply">Répondre</string>
+    <string name="qm_mark_read">Lu</string>
+
     <!-- Calendar -->
     <string name="menu_add_to_calendar">Ajouter au calendrier</string>
 </resources>

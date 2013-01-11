@@ -20,7 +20,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="1503967887341230795">"סמס"</string>
+    <string name="app_label" msgid="1503967887341230795">"הודעות"</string>
     <string name="new_message" msgid="1530369762346003973">"הודעה חדשה"</string>
     <string name="menu_call_back" msgid="7538482331117914146">"התקשר אל <xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="menu_send_email" msgid="671366308915241664">"שלח דוא\"ל אל <xliff:g id="NAME">%s</xliff:g>"</string>
@@ -305,9 +305,9 @@
     <string name="edit_slide_activity" msgid="8752829671778696983">"ערוך שקופית"</string>
     <string name="slideshow_activity" msgid="5658249461317434432">"מצגת"</string>
     <string name="class_0_message_activity" msgid="6631339964159861048">"הודעה ברמה 0"</string>
-    <string name="search_label" msgid="6042598929386174964">"סמס"</string>
+    <string name="search_label" msgid="6042598929386174964">"הודעות"</string>
     <string name="search_hint" msgid="7273727663577472044">"חפש בהעברת הודעות"</string>
-    <string name="search" msgid="7560238620274735199">"סמס"</string>
+    <string name="search" msgid="7560238620274735199">"הודעות"</string>
     <string name="search_setting_description" msgid="4104004595086437572">"טקסט בהודעות"</string>
     <string name="search_empty" msgid="2109551478056039278">"אין התאמות."</string>
   <plurals name="search_results_title">
@@ -318,7 +318,7 @@
     <string name="confirm_clear_search_title" msgid="8510295993632032904">"נקה"</string>
     <string name="confirm_clear_search_text" msgid="8731877031837077478">"היסטוריית החיפושים תנוקה."</string>
     <string name="pref_mms_clear_search_history_title" msgid="6159758850628148164">"נקה את היסטוריית החיפושים"</string>
-    <string name="pref_mms_clear_search_history_summary" msgid="7960005384066460035">"נקה את החיפושים הקודמים של \'סמס\' כדי שלא יופיעו בתיבה \'חפש\'"</string>
+    <string name="pref_mms_clear_search_history_summary" msgid="7960005384066460035">"נקה את החיפושים הקודמים של \"הודעות\" כדי שלא יופיעו בתיבת החיפוש"</string>
     <string name="save" msgid="6847069284991531310">"שמור"</string>
     <string name="storage_limits_title" msgid="7074684882530693016">"הגבל הודעות"</string>
     <string name="storage_limits_message" msgid="2010501485394745696">"האם להגביל את מספר ההודעות שאתה שומר בכל שיחה?"</string>
@@ -349,4 +349,110 @@
     <string name="notification_separator" msgid="2334673105226536422">"  "</string>
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
+
+    <!-- **** CYANOGENMOD ADDITIONS START **** -->
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">הגדרות נוספות</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">הסר תווי Unicode</string>
+    <string name="pref_summary_strip_unicode">החלף תווים נפוצים שאינם נתמכים בהודעות SMS של 160 תווים בתווים דומים (אזהרה: כולל את כל האלפבית העברי!)</string>
+
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">תמיכה ב-Emoji</string>
+    <string name="pref_summary_enable_emojis">אפשר תמיכה ב-Emoji, סט של 471 רגשונים נחמדים</string>
+
+    <!-- Emoji Menu item -->
+    <string name="menu_insert_emoji">הוסף Emoji</string>
+
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">מונה פיצולים</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_counter">מוסיף מונה להודעה מפוצלת, לדוג\' (1/2)</string>
+
+    <!-- Sms templates -->
+    <string name="prefs_templates_settings">תבניות SMS</string>
+    <string name="pref_title_templates_manage">תבניות</string>
+    <string name="pref_summary_templates_manage">נהל את תבניות ה-SMS שלך</string>
+    <string name="pref_title_templates_show_gesture">מחווה</string>
+    <string name="pref_summary_templates_show_gesture">הצג קו בעת ציור המחווה</string>
+    <string name="pref_title_template_gestures_sensitivity">רגישות המחווה</string>
+    <string name="template_save">שמור</string>
+    <string name="template_insert_hint">הזן כאן את מלל התבנית</string>
+    <string name="template_empty_text">שדה המלל אינו יכול להשאר ריק</string>
+    <string name="template_explanation">הזן או ערוך את מלל התבנית, באפשרותך לצייר מחוות קיצור שתשוייך לה</string>
+    <string name="template_edit">ערוך</string>
+    <string name="template_delete">מחק</string>
+    <string name="template_ctx_menu_title">פעולות</string>
+    <string name="template_list_title">תבניות</string>
+    <string name="template_new_title">תבנית חדשה</string>
+    <string name="template_insert">הוסף תבנית</string>
+    <string name="template_gesture_draw">צייר את המחווה במרחב שמתחת</string>
+    <string name="template_not_present_error">אין תבניות מוגדרות</string>
+    <string name="template_not_present_error_title">שגיאה</string>
+    <string name="template_select">בחר תבנית</string>
+    <string name="template_cancel_confirm_title">אזהרה</string>
+    <string name="template_cancel_confirm_text">התבנית תמחק. להמשיך?</string>
+    <string name="gestures_already_present">אזהרה: מחווה דומה משוייכת לתבנית אחרת!</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">הגדרות רטט</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">תבנית רטט</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">שנה את תבנית הרטט</string>
+    <string name="pref_title_mms_notification_vibrate_call">רטוט בעת שיחה</string>
+    <string name="pref_summary_mms_notification_vibrate_call">אפשר למכשיר לרטוט בזמן שיחה</string>
+    <string name="pref_title_mms_notification_vibrate_custom">תבנית רטט מותאמת אישית</string>
+    <string name="pref_text_mms_notification_vibrate_custom">מבנה: כבוי/פועל במילישניות (כבוי,פועל,כבוי,פועל...)</string>
+
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">חותם זמן מלא</string>
+    <string name="pref_summary_mms_full_timestamp">הצג גם תאריך וגם שעה בחותמי הזמן של הודעות</string>
+
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">חותמי זמן מקוריים</string>
+    <string name="pref_summary_mms_use_sent_timestamp">הצג את חותם הזמן של רגע השליחה במקום רגע הקבלה</string>
+
+    <!-- Add menu for 'Add SMS to calendar remind' -->
+    <string name="menu_add_to_calendar">הוסף ליומן</string>
+
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">הצג את מקש הרגשונים</string>
+    <string name="pref_keyboard_new_line">הצג את מקש האנטר</string>
+    <string name="pref_keyboard_unknown">לא ידוע, בחר שוב בבקשה</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">סוג מקלדת וירטואלית</string>
+    <string name="pref_summary_input_type">בחר את סוג המקלדת בה יעשה שימוש לכתיבת הודעות</string>
+
+    <!-- QUICKMESSAGE SUPPORT -->
+    <!-- Preferences -->
+    <string name="pref_quickmessage">תגובה מהירה</string>
+    <string name="pref_quickmessage_title">הצג חלון קופץ</string>
+    <string name="pref_quickmessage_summary">הצג חלון תגובה מהירה קופץ להודעות SMS נכנסות</string>
+    <string name="pref_wake_unlock_title">הער ושחרר מנעילה</string>
+    <string name="pref_wake_unlock_summary">הער את המכשיר ושחרר אותו מנעילתו בקבלת הודעה (במסכי נעילה לא מאובטחים בלבד)</string>
+    <string name="pref_close_all_title">סגור הכל</string>
+    <string name="pref_close_all_summary">כפתור הסגירה סוגר את כל ההודעות הקופצות</string>
+    <string name="pref_dark_theme_title">השתמש בערכת נושא כהה</string>
+    <string name="pref_dark_theme_summary">אם לא מסומן, יעשה שימוש בברירת המחדל הבהירה</string>
+    <string name="message_counter_separator">מתוך</string>
+
+    <!-- QM Dialog box buttons -->
+    <string name="button_close">סגור</string>
+    <string name="button_view">הצג</string>
+    <string name="button_templates">תבניות</string>
+
+    <!-- Hint text in message body field when keyboard is exposed -->
+    <string name="type_to_reply_text_enter_to_send">הקלד כדי להגיב</string>
+
+    <!-- QM Toast -->
+    <string name="toast_sending_message">שולח הודעה</string>
+
+    <!-- QM - Quick reply -->
+    <string name="qm_quick_reply">הגב</string>
+    <string name="qm_mark_read">נקראה</string>
+
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
+
 </resources>

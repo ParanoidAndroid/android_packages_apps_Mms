@@ -430,7 +430,7 @@
     <!-- Preferences -->
     <string name="pref_quickmessage">Schnell antworten</string>
     <string name="pref_quickmessage_title">Pop-up anzeigen</string>
-    <string name="pref_quickmessage_summary">Ein Pop-up bei Eingang von SMS anzeigen, um schnell antorten zu können</string>
+    <string name="pref_quickmessage_summary">Ein Pop-up bei Eingang von SMS anzeigen, um schnell antworten zu können</string>
     <string name="pref_wake_unlock_title">Wecken und Entsperren</string>
     <string name="pref_wake_unlock_summary">Gerät bei Nachrichteneingang wecken und entsperren. (Nicht bei Sicherheits-Sperrbildschirmen möglich)</string>
     <string name="pref_close_all_title">Alle schließen</string>

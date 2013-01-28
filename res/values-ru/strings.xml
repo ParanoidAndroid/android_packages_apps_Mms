@@ -21,7 +21,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_label" msgid="1503967887341230795">"SMS/MMS"</string>
+    <string name="app_label" msgid="1503967887341230795">"Сообщения"</string>
     <string name="new_message" msgid="1530369762346003973">"Новое сообщение"</string>
     <string name="menu_call_back" msgid="7538482331117914146">"Вызов: <xliff:g id="NAME">%s</xliff:g>"</string>
     <string name="menu_send_email" msgid="671366308915241664">"Написать письмо пользователю <xliff:g id="NAME">%s</xliff:g>"</string>
@@ -35,7 +35,7 @@
     <string name="menu_view" msgid="7448852683948080108">"Просмотреть цепочку"</string>
     <string name="menu_debug_dump" msgid="6855869130206549643">"ОТЛАДКА ДАМПА"</string>
     <string name="refreshing" msgid="987335057871404222">"Обновление..."</string>
-    <string name="menu_cell_broadcasts" msgid="5646161375983084660">"Широковещательная передача сообщений"</string>
+    <string name="menu_cell_broadcasts" msgid="5646161375983084660">"Сообщения сети"</string>
     <string name="has_draft" msgid="2487465595514636160">"Черновик"</string>
     <string name="no_subject_view" msgid="7795086723069563537">"(Без темы)"</string>
     <string name="messagelist_sender_self" msgid="3579016854116401602">"Я"</string>
@@ -53,7 +53,7 @@
     <string name="download" msgid="4488877642230207631">"Загрузить"</string>
     <string name="downloading" msgid="1779557575565350637">"Загрузка..."</string>
     <string name="inline_subject" msgid="4057621785274119260">"&lt;Тема: <xliff:g id="SUBJECT">%s</xliff:g>&gt;"</string>
-    <string name="drm_protected_text" msgid="1396394157870730742">"* Текст защищен средствами DRM *"</string>
+    <string name="drm_protected_text" msgid="1396394157870730742">"* Текст защищён средствами DRM *"</string>
     <string name="insufficient_drm_rights" msgid="6989074725969164383">"Обнаруженных прав DRM недостаточно."</string>
     <string name="copy_message_text" msgid="4296252229544252834">"Скопировать текст"</string>
     <string name="message_options" msgid="6838806653341967550">"Параметры сообщения"</string>
@@ -63,7 +63,7 @@
     <string name="move_down" msgid="6356509518429479053">"Переместить вниз"</string>
     <string name="remove_slide" msgid="2225604354024914900">"Удалить слайд"</string>
     <string name="add_slide" msgid="9140721399423564187">"Добавить слайд"</string>
-    <string name="add_slide_hint" msgid="7351356961076244584">"Нажмите, чтобы добавить"</string>
+    <string name="add_slide_hint" msgid="7351356961076244584">"Нажмите для добавления"</string>
     <string name="discard_slideshow" msgid="5054239124146413609">"Отменить слайд-шоу"</string>
     <string name="slide_show_part" msgid="5077675385448696846">"Часть <xliff:g id="PART">%1$s</xliff:g> из <xliff:g id="TOTAL">%2$s</xliff:g>"</string>
     <string name="remove_text" msgid="2164068850029476539">"Удалить текст"</string>
@@ -158,17 +158,17 @@
     <string name="pref_sms_settings_title" msgid="5173078369851066881">"Настройки SMS"</string>
     <string name="pref_sms_storage_title" msgid="9001233319190616445">"Память"</string>
     <string name="pref_summary_manage_sim_messages" msgid="4141349892597640864">"Управление сообщениями, хранящимися на SIM-карте"</string>
-    <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Запрашивать отчет о доставке для всех отправляемых сообщений"</string>
-    <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Запрашивать отчет о прочтении для всех отправляемых сообщений"</string>
-    <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Запрашивать отчет о доставке для всех отправляемых сообщений"</string>
+    <string name="pref_summary_mms_delivery_reports" msgid="4874657984217756112">"Запрашивать отчёт о доставке для всех отправляемых сообщений"</string>
+    <string name="pref_summary_mms_read_reports" msgid="2748323864008907440">"Запрашивать отчёт о прочтении для всех отправляемых сообщений"</string>
+    <string name="pref_summary_sms_delivery_reports" msgid="5852207702358546129">"Запрашивать отчёт о доставке для всех отправляемых сообщений"</string>
     <string name="pref_summary_auto_delete" msgid="7719538116486177613">"Удалять старые сообщения по достижении макс. количества"</string>
     <string name="pref_summary_delete_limit" msgid="597128041393045216">"Сообщений в цепочке: <xliff:g id="COUNT">%1$s</xliff:g>"</string>
     <string name="pref_summary_mms_group_mms" msgid="2266928687440696745">"Для отправки одного сообщения нескольким получателям используйте MMS"</string>
     <string name="pref_title_manage_sim_messages" msgid="7820895261757881177">"Сообщения на SIM-карте"</string>
-    <string name="pref_title_mms_delivery_reports" msgid="6666857926679451910">"Отчеты о доставке"</string>
+    <string name="pref_title_mms_delivery_reports" msgid="6666857926679451910">"Отчёты о доставке"</string>
     <string name="pref_title_mms_group_mms" msgid="1251698526583908432">"Групповые сообщения"</string>
-    <string name="pref_title_mms_read_reports" msgid="4882179829495828541">"Отчеты о прочтении"</string>
-    <string name="pref_title_sms_delivery_reports" msgid="876064208254451038">"Отчеты о доставке"</string>
+    <string name="pref_title_mms_read_reports" msgid="4882179829495828541">"Отчёты о прочтении"</string>
+    <string name="pref_title_sms_delivery_reports" msgid="876064208254451038">"Отчёты о доставке"</string>
     <string name="pref_title_auto_delete" msgid="7227835692631701134">"Удалять старые"</string>
     <string name="pref_title_sms_delete" msgid="6890538316799296878">"Макс. количество SMS"</string>
     <string name="pref_title_mms_delete" msgid="7265878070847351664">"Макс. количество MMS"</string>
@@ -270,9 +270,9 @@
     <string name="type_picture" msgid="4091928975383609443">"картинка"</string>
     <string name="type_video" msgid="8521556159545168441">"видео"</string>
     <string name="confirm" msgid="3155110885840591914">"Подтвердить"</string>
-    <string name="message_send_read_report" msgid="6997117678914261250">"Будет отправлен отчет о прочтении."</string>
+    <string name="message_send_read_report" msgid="6997117678914261250">"Будет отправлен отчёт о прочтении"</string>
     <string name="message_queued" msgid="7975945623873194737">"Сервис недоступен. Мы попробуем отправить сообщение позже."</string>
-    <string name="fdn_check_failure" msgid="7880740763778173551">"Вы можете отправлять сообщения только на номера из своего списка разрешенных номеров."</string>
+    <string name="fdn_check_failure" msgid="7880740763778173551">"Вы можете отправлять сообщения только на номера из своего списка разрешенных номеров"</string>
     <string name="no_subject" msgid="4168963736134552285">"(Без темы)"</string>
     <string name="unknown_sender" msgid="4929330613278853635">"Неизвестный отправитель"</string>
     <string name="dl_failure_notification" msgid="8097699679464396537">"Не удалось загрузить сообщение \"<xliff:g id="SUBJECT">%1$s</xliff:g>\" от пользователя <xliff:g id="FROM">%2$s</xliff:g>."</string>
@@ -288,7 +288,7 @@
     <string name="copy_to_sdcard_fail" msgid="4944606369631916737">"Файл не сохранен."</string>
     <string name="save_ringtone" msgid="2310157075045201051">"Сохранить как мелодию звонка"</string>
     <string name="saved_ringtone" msgid="3847363932276708626">"Рингтон сохранен."</string>
-    <string name="saved_ringtone_fail" msgid="4778500070919251116">"Рингтон не сохранен."</string>
+    <string name="saved_ringtone_fail" msgid="4778500070919251116">"Рингтон не сохранён."</string>
     <string name="menu_insert_smiley" msgid="4964504393061025071">"Вставить смайлик"</string>
     <string name="menu_group_participants" msgid="4288356090262299071">"Группировать"</string>
     <string name="select_link_title" msgid="3371818607625768447">"Выбор действия"</string>
@@ -298,7 +298,7 @@
     <item quantity="few" msgid="7887190171856293871">"<xliff:g id="NUMBER">%s</xliff:g> с."</item>
     <item quantity="other" msgid="3736425355579939863">"<xliff:g id="NUMBER">%s</xliff:g> с."</item>
   </plurals>
-    <string name="delivery_report_activity" msgid="2957463094232916364">"Отчет о доставке"</string>
+    <string name="delivery_report_activity" msgid="2957463094232916364">"Отчёт о доставке"</string>
     <string name="storage_limits_activity" msgid="8810530813311077716">"Пределы хранилища"</string>
     <string name="change_duration_activity" msgid="7048606979485031693">"Изменить продолжительность"</string>
     <string name="edit_slideshow_activity" msgid="8751493388760050529">"Изменить слайд-шоу"</string>
@@ -306,9 +306,9 @@
     <string name="edit_slide_activity" msgid="8752829671778696983">"Изменить слайд"</string>
     <string name="slideshow_activity" msgid="5658249461317434432">"Слайд-шоу"</string>
     <string name="class_0_message_activity" msgid="6631339964159861048">"Сообщение класса 0"</string>
-    <string name="search_label" msgid="6042598929386174964">"SMS/MMS"</string>
+    <string name="search_label" msgid="6042598929386174964">"Сообщения"</string>
     <string name="search_hint" msgid="7273727663577472044">"Поиск сообщений"</string>
-    <string name="search" msgid="7560238620274735199">"SMS/MMS"</string>
+    <string name="search" msgid="7560238620274735199">"Сообщения"</string>
     <string name="search_setting_description" msgid="4104004595086437572">"Текст в сообщениях"</string>
     <string name="search_empty" msgid="2109551478056039278">"Ничего не найдено"</string>
   <plurals name="search_results_title">
@@ -353,7 +353,7 @@
 
     <string name="menu_insert_emoji">Вставить emoji</string>
     <string name="pref_title_sms_split_counter">Счётчик фрагментов</string>
-    <string name="pref_summary_sms_split_counter">Добавляет к сообщению счётчик (напр. 1/2)</string>
+    <string name="pref_summary_sms_split_counter">Добавляет к сообщению счётчик вида \"1/2\"</string>
 
     <!-- Sms templates -->
     <string name="prefs_templates_settings">SMS шаблоны</string>
@@ -393,8 +393,8 @@
     <string name="pref_extra_settings">Дополнительные настройки</string>
 
     <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Раскрывать юникод</string>
-    <string name="pref_summary_strip_unicode">Замена не поддерживаемых символов в сообщении обычными</string>
+    <string name="pref_title_strip_unicode">Заменять юникод</string>
+    <string name="pref_summary_strip_unicode">Замена неподдерживаемых символов в сообщении обычными</string>
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Включить emojis</string>
     <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>
@@ -424,10 +424,10 @@
     <string name="button_view">Посмотреть</string>
 
     <!-- Hint text in message body field when keyboard is exposed -->
-    <string name="type_to_reply_text_enter_to_send">Начните писать чтобы ответить</string>
+    <string name="type_to_reply_text_enter_to_send">Введите текст для ответа</string>
 
     <!-- QM Toast -->
-    <string name="toast_sending_message">Отправка сообщения</string>
+    <string name="toast_sending_message">Отправка сообщения\u2026</string>
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Ответить</string>

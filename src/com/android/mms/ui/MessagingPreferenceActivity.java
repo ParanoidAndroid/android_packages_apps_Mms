@@ -92,6 +92,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String NOTIFICATION_VIBRATE_PATTERN_CUSTOM = "pref_key_mms_notification_vibrate_pattern_custom";
     public static final String NOTIFICATION_VIBRATE_CALL ="pre_key_mms_notification_vibrate_call";
 
+    // Privacy mode
+    public static final String PRIVACY_MODE_ENABLED = "pref_key_enable_privacy_mode";
+
     // Keyboard input type
     public static final String INPUT_TYPE                = "pref_key_mms_input_type";
 
@@ -115,6 +118,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     private Preference mClearHistoryPref;
     private ListPreference mVibrateWhenPref;
     private CheckBoxPreference mEnableNotificationsPref;
+    private CheckBoxPreference mEnablePrivacyModePref;
     private CheckBoxPreference mMmsAutoRetrievialPref;
     private CheckBoxPreference mMmsRetrievalDuringRoamingPref;
     private Recycler mSmsRecycler;
@@ -169,6 +173,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         mMmsLimitPref = findPreference("pref_key_mms_delete_limit");
         mClearHistoryPref = findPreference("pref_key_mms_clear_history");
         mEnableNotificationsPref = (CheckBoxPreference) findPreference(NOTIFICATION_ENABLED);
+        mEnablePrivacyModePref = (CheckBoxPreference) findPreference(PRIVACY_MODE_ENABLED);
         mVibrateWhenPref = (ListPreference) findPreference(NOTIFICATION_VIBRATE_WHEN);
         mManageTemplate = findPreference(MANAGE_TEMPLATES);
         mGestureSensitivity = (ListPreference) findPreference(GESTURE_SENSITIVITY);
@@ -265,6 +270,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
         setEnabledNotificationsPref();
 
+        // Privacy mode
+        setEnabledPrivacyModePref();
+
         // QuickMessage
         setEnabledQuickMessagePref();
         setEnabledQmLockscreenPref();
@@ -325,6 +333,21 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         // The "enable notifications" setting is really stored in our own prefs. Read the
         // current value and set the checkbox to match.
         mEnableNotificationsPref.setChecked(getNotificationEnabled(this));
+    }
+
+    private void setEnabledPrivacyModePref() {
+        // The "enable privacy mode" setting is really stored in our own prefs. Read the
+        // current value and set the checkbox to match.
+        boolean isPrivacyModeEnabled = getPrivacyModeEnabled(this);
+        mEnablePrivacyModePref.setChecked(isPrivacyModeEnabled);
+
+        // Enable/Disable the "enable quickmessage" setting according to
+        // the "enable privacy mode" setting state
+        mEnableQuickMessagePref.setEnabled(!isPrivacyModeEnabled);
+
+        // Enable/Disable the "enable dark theme" setting according to
+        // the "enable privacy mode" setting state
+        mEnableQmDarkThemePref.setEnabled(!isPrivacyModeEnabled);
     }
 
     private void setEnabledQuickMessagePref() {
@@ -415,6 +438,16 @@ public class MessagingPreferenceActivity extends PreferenceActivity
         } else if (preference == mEnableNotificationsPref) {
             // Update the actual "enable notifications" value that is stored in secure settings.
             enableNotifications(mEnableNotificationsPref.isChecked(), this);
+
+        } else if (preference == mEnablePrivacyModePref) {
+            // Update the actual "enable private mode" value that is stored in secure settings.
+            enablePrivacyMode(mEnablePrivacyModePref.isChecked(), this);
+
+            // Update "enable quickmessage" checkbox state
+            mEnableQuickMessagePref.setEnabled(!mEnablePrivacyModePref.isChecked());
+
+            // Update "enable dark theme" checkbox state
+            mEnableQmDarkThemePref.setEnabled(!mEnablePrivacyModePref.isChecked());
 
         } else if (preference == mEnableQuickMessagePref) {
             // Update the actual "enable quickmessage" value that is stored in secure settings.
@@ -512,6 +545,21 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
         editor.putBoolean(MessagingPreferenceActivity.NOTIFICATION_ENABLED, enabled);
 
+        editor.apply();
+    }
+
+    public static boolean getPrivacyModeEnabled(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean privacyModeEnabled =
+            prefs.getBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, false);
+        return privacyModeEnabled;
+    }
+
+    public static void enablePrivacyMode(boolean enabled, Context context) {
+        // Store the value of private mode in SharedPreferences
+        SharedPreferences.Editor editor =
+            PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, enabled);
         editor.apply();
     }
 

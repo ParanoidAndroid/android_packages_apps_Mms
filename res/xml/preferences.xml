@@ -115,6 +115,14 @@
             android:summary="@string/pref_summary_notification_enabled"
             android:defaultValue="true" />
 
+       <CheckBoxPreference
+            android:key="pref_key_enable_privacy_mode"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:dependency="pref_key_enable_notifications"
+            android:defaultValue="false"
+            android:title="@string/pref_title_notification_privacy_mode_enabled"
+            android:summary="@string/pref_summary_notification_privacy_mode_enabled" />
+
         <RingtonePreference
             android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="pref_key_enable_notifications"

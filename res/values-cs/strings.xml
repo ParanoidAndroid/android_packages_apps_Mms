@@ -400,6 +400,9 @@
     <string name="pref_title_enable_emojis">Podpora smajlíků</string>
     <string name="pref_summary_enable_emojis">Povolit podporu unicode smajlíků, sada obsahuje 471 pěkných smajlíků</string>
 
+    <!-- Emoji Menu item -->
+    <string name="menu_insert_emoji">Vložit smajlík</string>
+
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Kompletní časový údaj</string>
     <string name="pref_summary_mms_full_timestamp">Zobrazení času i datumu v informacích o zprávě</string>
@@ -411,6 +414,10 @@
     <string name="pref_keyboard_emoji">Zobrazit klávesu pro smajlíky</string>
     <string name="pref_keyboard_new_line">Zobrazit klávesu Enter</string>
     <string name="pref_keyboard_unknown">Neplatná volba, zkuste to znovu</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">Chování klávesy Enter</string>
+    <string name="pref_summary_input_type">Zvolte výchozí chování klávesy Enter při psaní zprávy</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
@@ -437,7 +444,8 @@
     <string name="toast_sending_message">Zpráva je odesílána\u2026</string>
 
     <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Rychlá odpověď</string>
+    <string name="qm_quick_reply">Odpovědět</string>
+    <string name="qm_mark_read">Přečteno</string>
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Přidat do kalendáře</string>

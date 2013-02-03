@@ -870,7 +870,7 @@ public class MessagingNotification {
                 .setWhen(mostRecentNotification.mTimeMillis);
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean privacyMode = sp.getBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, true);
+        boolean privacyMode = sp.getBoolean(MessagingPreferenceActivity.PRIVACY_MODE_ENABLED, false);
         if (isNew) {
             if (!privacyMode) {
                 noti.setTicker(mostRecentNotification.mTicker);

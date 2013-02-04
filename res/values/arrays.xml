@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
- * Copyright (C) 2008 Esmertec AG.
- * Copyright (C) 2008 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- -->
-<resources>
+<!-- Copyright (C) 2008 Esmertec AG
+     Copyright (C) 2008 The Android Open Source Project
+     Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- NOTE: if you change anything about this array, you must make the corresponding change
          to the array DEFAULT_SMILEY_RES_IDS in MessageListItem.java and to default_smiley_names
          below. -->
@@ -77,6 +79,8 @@
         <item>no subject</item>
     </string-array>
 
+    <!-- **** CYANOGENMOD ADDITIONS START **** -->
+
     <string-array name="pref_templates_gestures_sensitivity_entries">
       <item>1 (broadest)</item>
       <item>2</item>
@@ -134,4 +138,6 @@
         <item>64</item> <!-- InputType.TYPE_TEXT_VARIATION_SHORT_MESSAGE constant  -->
         <item>80</item> <!-- InputType.TYPE_TEXT_VARIATION_LONG_MESSAGE constant  -->
     </string-array>
+
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>

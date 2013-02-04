@@ -446,4 +446,14 @@
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Hozzáadás a naptárhoz</string>
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Privát megjelenítés</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Az üzenet és annak feladójának elrejtése az értesítési sávon, gyors válasz tiltása</string>
+    <string name="notification_single_title_privacy_mode">Új üzenet</string>
+    <string name="notification_single_text_privacy_mode">1 olvasatlan üzenet</string>
+    <string name="notification_multiple_title_privacy_mode">Új üzenetek</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> olvasatlan üzenet</string>
+    <string name="notification_ticker_privacy_mode">Új üzenet érkezett</string>
+
 </resources>

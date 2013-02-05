@@ -34,7 +34,7 @@
     <string name="menu_delete" msgid="1851666911396479006">"Удалить цепочку"</string>
     <string name="menu_view" msgid="7448852683948080108">"Просмотреть цепочку"</string>
     <string name="menu_debug_dump" msgid="6855869130206549643">"ОТЛАДКА ДАМПА"</string>
-    <string name="refreshing" msgid="987335057871404222">"Обновление..."</string>
+    <string name="refreshing" msgid="987335057871404222">"Обновление\u2026"</string>
     <string name="menu_cell_broadcasts" msgid="5646161375983084660">"Сообщения сети"</string>
     <string name="has_draft" msgid="2487465595514636160">"Черновик"</string>
     <string name="no_subject_view" msgid="7795086723069563537">"(Без темы)"</string>
@@ -51,7 +51,7 @@
     <string name="delete_thread" msgid="757258847736632791">"Удалить цепочку"</string>
     <string name="menu_forward" msgid="9026858380050046756">"Переслать"</string>
     <string name="download" msgid="4488877642230207631">"Загрузить"</string>
-    <string name="downloading" msgid="1779557575565350637">"Загрузка..."</string>
+    <string name="downloading" msgid="1779557575565350637">"Загрузка\u2026"</string>
     <string name="inline_subject" msgid="4057621785274119260">"&lt;Тема: <xliff:g id="SUBJECT">%s</xliff:g>&gt;"</string>
     <string name="drm_protected_text" msgid="1396394157870730742">"* Текст защищён средствами DRM *"</string>
     <string name="insufficient_drm_rights" msgid="6989074725969164383">"Обнаруженных прав DRM недостаточно."</string>
@@ -106,7 +106,7 @@
     <string name="cannot_send_message" msgid="3414307479833622644">"Не удалось отправить сообщение"</string>
     <string name="cannot_send_message_reason" msgid="8745080126044054343">"Не указано ни одного реального получателя."</string>
     <string name="cannot_forward_drm_obj" msgid="5047623751430559077">"Нельзя переслать DRM-объект из этого сообщения."</string>
-    <string name="converting_to_picture_message" msgid="2980023239017588627">"Преобразование в сообщение MMS..."</string>
+    <string name="converting_to_picture_message" msgid="2980023239017588627">"Преобразование в сообщение MMS\u2026"</string>
     <string name="cannot_add_slide_anymore" msgid="4631404749618820994">"Добавлено максимальное число слайдов."</string>
     <string name="cannot_add_picture_and_video" msgid="4954353772391381447">"Нельзя добавить на слайд и картинку, и видео."</string>
     <string name="cannot_save_message" msgid="3375907366965264446">"Не удалось сохранить сообщение."</string>
@@ -114,7 +114,7 @@
     <string name="too_many_recipients" msgid="7003415094007176931">"Указано слишком много получателей (<xliff:g id="CURRENTCOUNT">%1$s</xliff:g>). Разрешено не более <xliff:g id="MAXLIMIT">%2$s</xliff:g>."</string>
     <string name="too_many_attachments" msgid="3774037894899750070">"Для вложений установлено ограничение: <xliff:g id="MAXLIMIT">%1$s</xliff:g>. Будет добавлено вложений: <xliff:g id="CURRENTCOUNT">%2$s</xliff:g>."</string>
     <string name="adding_attachments_title" msgid="2034535554212405529">"Добавление вложений"</string>
-    <string name="adding_attachments" msgid="5871373105122355632">"Добавление. Подождите..."</string>
+    <string name="adding_attachments" msgid="5871373105122355632">"Добавление. Подождите\u2026"</string>
     <string name="building_slideshow_title" msgid="1232338692400726385">"Создание слайд-шоу"</string>
     <string name="cannot_play_audio" msgid="253920977253666735">"Не удалось воспроизвести аудио."</string>
     <string name="preview" msgid="5438149136136446756">"Просмотреть"</string>
@@ -204,7 +204,7 @@
     <string name="delete" msgid="1409973060081564612">"Удалить"</string>
     <string name="select_conversations" msgid="7816517565640002844">"Выберите цепочки"</string>
     <string name="no_conversations" msgid="6773767655149258445">"Пока ничего нет"</string>
-    <string name="loading_conversations" msgid="5510430408235967094">"Загрузка сообщений..."</string>
+    <string name="loading_conversations" msgid="5510430408235967094">"Загрузка сообщений\u2026"</string>
     <string name="cannot_get_details" msgid="850292987983026806">"Не удалось загрузить данные."</string>
     <string name="message_details_title" msgid="9223295113731634528">"Сведения о сообщении"</string>
     <string name="message_type_label" msgid="7975373966795945566">"Тип: "</string>
@@ -326,9 +326,9 @@
     <string name="storage_limits_setting" msgid="4952781049308537373">"Установить ограничения"</string>
     <string name="storage_limits_setting_dismiss" msgid="1433841310158458034">"Нет ограничений"</string>
     <string name="too_many_unsent_mms" msgid="4436493698891224126">"Не удалось отправить сообщение. Слишком много неотправленных MMS."</string>
-    <string name="sending_message" msgid="2054406576361149715">"Отправка..."</string>
+    <string name="sending_message" msgid="2054406576361149715">"Отправка\u2026"</string>
     <string name="pick_too_many_recipients" msgid="650087588867628044">"Слишком много получателей"</string>
-    <string name="adding_recipients" msgid="2962810172527532357">"Добавление получателей..."</string>
+    <string name="adding_recipients" msgid="2962810172527532357">"Добавление получателей\u2026"</string>
     <string name="draft_separator" msgid="5402575086540243019">", "</string>
     <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
     <string name="message_count_notification" msgid="3629968600032690007">"Новые сообщения (<xliff:g id="NUMBER">%1$s</xliff:g>)"</string>
@@ -351,7 +351,23 @@
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 
+    <!-- CYANOGENMOD EDITS START -->
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Дополнительные настройки</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Заменять юникод</string>
+    <string name="pref_summary_strip_unicode">Замена неподдерживаемых символов в сообщении обычными</string>
+
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Включить emojis</string>
+    <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>
+
+    <!-- Emoji Menu item -->
     <string name="menu_insert_emoji">Вставить emoji</string>
+
+    <!-- Settings item for boolean option for SMS Split Counter -->
     <string name="pref_title_sms_split_counter">Счётчик фрагментов</string>
     <string name="pref_summary_sms_split_counter">Добавляет к сообщению счётчик вида \"1/2\"</string>
 
@@ -389,22 +405,25 @@
     <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл</string>
 
-    <!-- Extra Settings: -->
-    <string name="pref_extra_settings">Дополнительные настройки</string>
-
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Заменять юникод</string>
-    <string name="pref_summary_strip_unicode">Замена неподдерживаемых символов в сообщении обычными</string>
-    <!-- Enable emojis -->
-    <string name="pref_title_enable_emojis">Включить emojis</string>
-    <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>
-
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
     <string name="pref_summary_mms_full_timestamp">Включение отображения полной даты и времени в сообщениях</string>
+
     <!-- Which timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Исходная метка времени</string>
     <string name="pref_summary_mms_use_sent_timestamp">Отображение и сохранение даты отправки, а не даты приёма</string>
+
+    <!-- Add menu for 'Add SMS to calendar remind' -->
+    <string name="menu_add_to_calendar">Добавить в календарь</string>
+
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">Кнопка \"Смайлики\"</string>
+    <string name="pref_keyboard_new_line">Кнопка \"Отправить\"</string>
+    <string name="pref_keyboard_unknown">Неизвестный тип. Пожалуйста, повторите выбор</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">Тип клавиатуры</string>
+    <string name="pref_summary_input_type">Выберите тип клавиатуры при написании сообщения</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
@@ -422,6 +441,7 @@
     <!-- QM Dialog box buttons -->
     <string name="button_close">Закрыть</string>
     <string name="button_view">Посмотреть</string>
+    <string name="button_templates">Шаблоны</string>
 
     <!-- Hint text in message body field when keyboard is exposed -->
     <string name="type_to_reply_text_enter_to_send">Введите текст для ответа</string>
@@ -433,10 +453,15 @@
     <string name="qm_quick_reply">Ответить</string>
     <string name="qm_mark_read">Прочтено</string>
 
-    <!-- Settings item for the soft keyboard picker -->
-    <string name="pref_title_input_type">Тип клавиатуры</string>
-    <string name="pref_summary_input_type">Выберите тип клавиатуры при написании сообщения</string>
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Безопасный режим</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Скрывать отправителя и сообщение в строке состояния, а также отключить \"Быстрый ответ\"</string>
+    <string name="notification_single_title_privacy_mode">Новое сообщение</string>
+    <string name="notification_single_text_privacy_mode">1 непрочитанное сообщение</string>
+    <string name="notification_multiple_title_privacy_mode">Новые сообщения</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> сообщения (ий)</string>
+    <string name="notification_ticker_privacy_mode">Получено новое сообщение</string>
 
-    <!-- Add menu for 'Add SMS to calendar remind' -->
-    <string name="menu_add_to_calendar">Добавить в календарь</string>
+    <!-- CYANOGENMOD EDITS END -->
+
 </resources>

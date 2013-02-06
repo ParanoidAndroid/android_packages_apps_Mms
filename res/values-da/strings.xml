@@ -451,5 +451,14 @@
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Tilføj til kalender</string>
 
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Privatlivstilstand</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Skjul afsender og besked i statuslinje og slå Svar fra</string>
+    <string name="notification_single_title_privacy_mode">Ny besked</string>
+    <string name="notification_single_text_privacy_mode">1 ulæst besked</string>
+    <string name="notification_multiple_title_privacy_mode">Nye beskeder</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> ulæste beskeder</string>
+    <string name="notification_ticker_privacy_mode">Ny besked modtaget</string>
+
     <!-- CYANOGENMOD ADDITIONS END -->
 </resources>

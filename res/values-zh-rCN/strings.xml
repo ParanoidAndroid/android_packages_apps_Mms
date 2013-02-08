@@ -1,22 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-/*
- * Copyright (C) 2007-2008 Esmertec AG.
- * Copyright (C) 2007-2008 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
- -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007-2008 Esmertec AG
+     Copyright (C) 2007-2008 The Android Open Source Project
+     Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -175,10 +173,13 @@
     <string name="pref_title_notification_vibrateWhen" msgid="4251208067092761057">"振动"</string>
     <string name="pref_title_notification_ringtone" msgid="8667533917574559659">"提示音"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"设置要保存的信息数量"</string>
-    <!-- Settings item for the soft keyboard picker -->
-    <string name="pref_title_input_type">软键盘样式</string>
-
     <string name="silent_ringtone" msgid="7981237991326592780">"静音"</string>
+  <string-array name="prefEntries_vibrateWhen">
+    <item msgid="2520871831815631409">"始终"</item>
+    <item msgid="6069709696037750627">"仅在静音时"</item>
+    <item msgid="7486145357487111435">"永不"</item>
+  </string-array>
+    <string name="prefDialogTitle_vibrateWhen" msgid="6419655771690242118">"振动"</string>
     <string name="pref_title_mms_auto_retrieval" msgid="4021878285474431355">"自动检索"</string>
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"自动检索信息"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"漫游时自动检索"</string>
@@ -346,26 +347,87 @@
     <string name="enumeration_comma" msgid="213598026698964628">"、 "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 
-    <string name="menu_insert_emoji">插入绘文字</string>
-    <!-- Settings item for boolean option for SMS Split Counter -->
-    <string name="pref_title_sms_split_counter">分割编号</string>
-    <!-- Settings item description for boolean SMS Split 160 characters setting -->
-    <string name="pref_summary_sms_split_counter">在分割的消息中加入编号，例如：(1/2)</string>
+    <!-- **** CYANOGENMOD ADDITIONS START **** -->
 
-    <!-- Sms templates -->
+    <!-- Message options - Add SMS to calendar -->
+    <string name="menu_add_to_calendar">添加日历提醒</string>
+
+    <!-- QM - Dialog box buttons -->
+    <string name="button_close">关闭</string>
+    <string name="button_view">查看</string>
+    <string name="button_templates">模板</string>
+
+    <!-- QM - Hint text in message body field when keyboard is exposed -->
+    <string name="type_to_reply_text_enter_to_send">键入信息</string>
+
+    <!-- QM - Toast -->
+    <string name="toast_sending_message">信息发送中</string>
+
+    <!-- QM - Quick reply -->
+    <string name="qm_quick_reply">回复</string>
+    <string name="qm_mark_read">已读</string>
+
+    <!-- QM - Counter separator -->
+    <string name="message_counter_separator">/</string>
+
+
+    <!-- NOTIFICATIONS -->
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">隐私模式</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">在信息通知内隐藏发件人与信息, 并同时禁用 \'快速回复\'</string>
+    <string name="notification_single_title_privacy_mode">新信息</string>
+    <string name="notification_single_text_privacy_mode">1 条未读信息</string>
+    <string name="notification_multiple_title_privacy_mode">新信息</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> 条未读信息</string>
+    <string name="notification_ticker_privacy_mode">收到了新信息</string>
+
+    <!-- Vibrate pattern -->
+    <string name="pref_title_mms_notification_vibrate_pattern">震动形式</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">更改震动形式</string>
+    <string name="pref_title_mms_notification_vibrate_custom">自定义震动形式</string>
+    <string name="pref_text_mms_notification_vibrate_custom">格式为关/开 (毫秒为单位): 关, 开, 关, 开/u2026</string>
+
+    <!-- Vibrate on call -->
+    <string name="pref_title_mms_notification_vibrate_call">通话时震动</string>
+    <string name="pref_summary_mms_notification_vibrate_call">允许通话时震动</string>
+
+
+    <!-- QUICKMESSAGE -->
+
+    <string name="pref_quickmessage">快速回复</string>
+
+    <!-- Use dark theme -->
+    <string name="pref_dark_theme_title">使用暗色主题</string>
+    <string name="pref_dark_theme_summary">如果未被选中，默认的 \'淡色\' 主题将会被使用</string>
+
+    <!-- Show pop-up -->
+    <string name="pref_quickmessage_title">显示弹出窗口</string>
+    <string name="pref_quickmessage_summary">收到短信时弹出快速信息对话框</string>
+
+    <!-- Wake and unlock -->
+    <string name="pref_wake_unlock_title">唤醒和解锁</string>
+    <string name="pref_wake_unlock_summary">收到消息时唤醒和解锁设备 (仅在非安全锁定屏幕时有效)</string>
+
+    <!-- Close all messages -->
+    <string name="pref_close_all_title">全部关闭</string>
+    <string name="pref_close_all_summary">\'关闭\' 按钮将关闭所有的消息</string>
+
+
+    <!-- SMS TEMPLATES -->
+
     <string name="prefs_templates_settings">短信模板</string>
+
+    <!-- Manage SMS templates -->
     <string name="pref_title_templates_manage">模板</string>
     <string name="pref_summary_templates_manage">管理您的短信模板</string>
-    <string name="pref_title_templates_show_gesture">手势</string>
-    <string name="pref_summary_templates_show_gesture">显示手势轨迹</string>
-    <string name="pref_title_template_gestures_sensitivity">手势灵敏度</string>
-    <string name="template_save">保存</string>
+    <string name="template_explanation">插入或修改模板文本并且可以画一个手势与它关联.</string>
     <string name="template_insert_hint">在此输入模板文本</string>
     <string name="template_empty_text">文本栏不能为空</string>
-    <string name="template_explanation">插入或修改模板文本并且可以画一个手势与它关联。</string>
+    <string name="template_save">保存</string>
+    <string name="template_ctx_menu_title">动作</string>
     <string name="template_edit">编辑</string>
     <string name="template_delete">删除</string>
-    <string name="template_ctx_menu_title">动作</string>
     <string name="template_list_title">模板</string>
     <string name="template_new_title">新建模板</string>
     <string name="template_insert">插入模板</string>
@@ -377,15 +439,16 @@
     <string name="template_cancel_confirm_text">这个模板将会被删除。您确定要继续？</string>
     <string name="gestures_already_present">警告：一个相似的手势已关联了另一个模板！</string>
 
-    <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_pattern">震动形式</string>
-    <string name="pref_summary_mms_notification_vibrate_pattern">更改震动形式</string>
-    <string name="pref_title_mms_notification_vibrate_call">通话时震动</string>
-    <string name="pref_summary_mms_notification_vibrate_call">允许通话时震动</string>
-    <string name="pref_title_mms_notification_vibrate_custom">自定义震动形式</string>
-    <string name="pref_text_mms_notification_vibrate_custom">格式 关/开 每毫秒: 关, 开, 关, 开, ...</string>
+    <!-- Show gesture trace -->
+    <string name="pref_title_templates_show_gesture">手势</string>
+    <string name="pref_summary_templates_show_gesture">显示手势轨迹</string>
 
-    <!-- Extra Settings: -->
+    <!-- Gesture sensitivity -->
+    <string name="pref_title_template_gestures_sensitivity">手势灵敏度</string>
+
+
+    <!-- EXTRA SETTINGS -->
+
     <string name="pref_extra_settings">其他设置</string>
 
     <!-- Strip unicode -->
@@ -395,48 +458,27 @@
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">绘文字支持</string>
     <string name="pref_summary_enable_emojis">开启绘文字 (一套471个视觉情感符号) 的支持</string>
+    <string name="menu_insert_emoji">插入绘文字</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">完整时间戳</string>
     <string name="pref_summary_mms_full_timestamp">在时间戳中显示日期和时间</string>
 
-    <!-- Which timestamps -->
+    <!-- Original timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">原始时间戳</string>
     <string name="pref_summary_mms_use_sent_timestamp">在时间戳中显示发送时间而不是接收时间</string>
 
     <!-- Soft Keyboard Type -->
+    <string name="pref_title_input_type">软键盘样式</string>
     <string name="pref_keyboard_emoji">显示表情符号按键</string>
     <string name="pref_keyboard_new_line">显示回车键</string>
     <string name="pref_keyboard_unknown">未知, 请重新选择</string>
 
-    <!-- QUICKMESSAGE SUPPORT -->
-    <!-- Preferences -->
-    <string name="pref_quickmessage">快速回复</string>
-    <string name="pref_quickmessage_title">显示弹出窗口</string>
-    <string name="pref_quickmessage_summary">收到短信时弹出快速信息对话框</string>
-    <string name="pref_wake_unlock_title">唤醒和解锁</string>
-    <string name="pref_wake_unlock_summary">收到消息时唤醒和解锁设备 (仅在非安全锁定屏幕时有效)</string>
-    <string name="pref_close_all_title">全部关闭</string>
-    <string name="pref_close_all_summary">\'关闭\' 按钮将关闭所有的消息</string>
-    <string name="pref_dark_theme_title">使用暗色主题</string>
-    <string name="pref_dark_theme_summary">如果未被选中，默认的 \'淡色\' 主题将会被使用</string>
-    <string name="message_counter_separator">之</string>
 
-    <!-- QM Dialog box buttons -->
-    <string name="button_close">关闭</string>
-    <string name="button_view">查看</string>
-    <string name="button_templates">模板</string>
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">分割编号</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_counter">在分割的消息中加入编号，例如：(1/2)</string>
 
-    <!-- Hint text in message body field when keyboard is exposed -->
-    <string name="type_to_reply_text_enter_to_send">键入信息</string>
-
-    <!-- QM Toast -->
-    <string name="toast_sending_message">信息发送中</string>
-
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">回复</string>
-    <string name="qm_mark_read">已读</string>
-
-    <!-- Add menu for 'Add SMS to calendar remind' -->
-    <string name="menu_add_to_calendar">添加日历提醒</string>
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>

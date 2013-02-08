@@ -414,4 +414,11 @@
     <string name="pref_keyboard_emoji">Exibir a tecla de Emoticons</string>
     <string name="pref_keyboard_unknown">Desconhecido, favor reselecionar</string>
     <string name="qm_mark_read">Lida</string>
+    <string name="pref_title_notification_privacy_mode_enabled">Modo de privacidade</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Ocultar remetente e mensagem na barra de status e desativar resposta Rápida</string>
+    <string name="notification_single_title_privacy_mode">Nova mensagem</string>
+    <string name="notification_single_text_privacy_mode">1 mensagem não lida</string>
+    <string name="notification_multiple_title_privacy_mode">Novas mensagens</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%1$s</xliff:g> mensagens não lidas</string>
+    <string name="notification_ticker_privacy_mode">Nova mensagem recebida</string>
 </resources>

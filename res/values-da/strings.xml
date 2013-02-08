@@ -383,7 +383,6 @@
     <string name="gestures_already_present">Advarsel: En lign. bevægelse er tilknyttet en anden skabelon!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">Vibrationsindstillinger</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrationsmønster</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Skift vibrationsmønster</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibrér ved opkald</string>
@@ -441,7 +440,6 @@
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Type af softwaretastatur</string>
-    <string name="pref_summary_input_type">Vælg det softwaretastatur, som skal bruges til at skrive beskeder</string>
 
     <!-- Soft Keyboard Type -->
     <string name="pref_keyboard_emoji">Smiley</string>

@@ -398,7 +398,6 @@
     <string name="gestures_already_present">Attention\u00A0: Un geste similaire est associé à un autre modèle\u00A0!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">Paramètres de vibration</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Style de vibration</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Changer le style de vibration</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibration lors d\'un appel</string>
@@ -424,7 +423,6 @@
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Option du clavier virtuel</string>
-    <string name="pref_summary_input_type">Sélectionner le type de clavier virtuel à utiliser lors de la composition des messages</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->

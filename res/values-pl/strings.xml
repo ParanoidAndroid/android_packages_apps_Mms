@@ -378,7 +378,6 @@
     <string name="gestures_already_present">Ostrzeżenie: Podobny gest jest już powiązany z innym szablonem!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">Ustawienia wibracji</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Wzór wibracji</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Zmień wzór wibracji</string>
     <string name="pref_title_mms_notification_vibrate_call">Wibruj w trakcie rozmowy</string>

@@ -377,7 +377,6 @@
     <string name="template_cancel_confirm_title">Let op</string>
     <string name="template_cancel_confirm_text">Weet u zeker dat u wilt annuleren?</string>
     <string name="gestures_already_present">Let op: een soortgelijk gebaar wordt al gebruikt.</string>
-    <string name="pref_title_mms_notification_vibrate_settings">Trillen</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Trilpatroon</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Trilpatroon wijzigen</string>
     <string name="pref_title_mms_notification_vibrate_call">Trillen tijdens bellen</string>
@@ -414,6 +413,5 @@
     <string name="toast_sending_message">Bericht wordt verzonden\u2026</string>
     <string name="qm_quick_reply">Snel beantwoorden</string>
     <string name="pref_title_input_type">Invoermethode</string>
-    <string name="pref_summary_input_type">Kies de te gebruiken invoermethode om berichten op te stellen</string>
     <string name="menu_add_to_calendar">Toevoegen aan agenda</string>
 </resources>

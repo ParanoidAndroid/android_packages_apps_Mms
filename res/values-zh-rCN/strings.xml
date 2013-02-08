@@ -180,7 +180,6 @@
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">软键盘样式</string>
-    <string name="pref_summary_input_type">选择创建信息时使用的软键盘</string>
 
   <string-array name="prefEntries_vibrateWhen">
     <item msgid="2520871831815631409">"始终"</item>
@@ -387,7 +386,6 @@
     <string name="gestures_already_present">警告：一个相似的手势已关联了另一个模板！</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">震动设置</string>
     <string name="pref_title_mms_notification_vibrate_pattern">震动形式</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">更改震动形式</string>
     <string name="pref_title_mms_notification_vibrate_call">通话时震动</string>

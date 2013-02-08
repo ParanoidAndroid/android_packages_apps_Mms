@@ -374,7 +374,6 @@
     <string name="template_cancel_confirm_title">Aviso</string>
     <string name="template_cancel_confirm_text">O modelo vai ser apagado. Prosseguir?</string>
     <string name="gestures_already_present">Aviso: Um gesto similar está associado a outro modelo!</string>
-    <string name="pref_title_mms_notification_vibrate_settings">Preferências de vibração</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Padrão de vibração</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Trocar o padrão de vibração</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibrar quando Chamar</string>
@@ -408,7 +407,6 @@
     <string name="pref_dark_theme_title">Usar tema escuro</string>
     <string name="pref_dark_theme_summary">Se não estiver selecionado, será utilizado o tema \'claro\' padrão</string>
     <string name="pref_title_input_type">Tipo de teclado virtual</string>
-    <string name="pref_summary_input_type">Selecione o tipo de teclado virtual para ser usado ao compor mensagens</string>
     <string name="pref_keyboard_new_line">Enter para uma nova linha</string>
     <string name="menu_add_to_calendar">Adicionar ao calendário</string>
     <string name="pref_keyboard_emoji">Exibir a tecla de Emoticons</string>

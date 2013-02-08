@@ -397,7 +397,6 @@
     <string name="gestures_already_present">Внимание: подобный жест связан с другим шаблоном!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">Настройки вибрации</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Режим вибрации</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Изменение режима вибрации</string>
     <string name="pref_title_mms_notification_vibrate_call">Вибрация при разговоре</string>
@@ -423,7 +422,6 @@
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Тип клавиатуры</string>
-    <string name="pref_summary_input_type">Выберите тип клавиатуры при написании сообщения</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->

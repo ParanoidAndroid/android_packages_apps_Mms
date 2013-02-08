@@ -373,7 +373,6 @@
     <string name="template_cancel_confirm_title">Varoitus</string>
     <string name="template_cancel_confirm_text">Viestipohja poistetaan. Haluatko jatkaa?</string>
     <string name="gestures_already_present">Varoitus: Samankaltainen ele on liitetty toiseen pohjaan!</string>
-    <string name="pref_title_mms_notification_vibrate_settings">Värinäasetukset</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Värinän kaava</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Muuta värinän kaavaa</string>
     <string name="pref_title_mms_notification_vibrate_call">Värinä puhelussa</string>
@@ -392,7 +391,6 @@
     <string name="pref_keyboard_emoji">Emoji</string>
     <string name="pref_keyboard_new_line">Uusi rivi</string>
     <string name="pref_title_input_type">Näppäimistön tyyppi</string>
-    <string name="pref_summary_input_type">Valitse näppäimistön tyyppi kirjoitettaessa viestiä</string>
     <string name="pref_quickmessage">QuickMessage</string>
     <string name="pref_quickmessage_title">Ota QuickMessage käyttöön</string>
     <string name="pref_quickmessage_summary">Näytä QuickMessage pop-up-ikkuna</string>

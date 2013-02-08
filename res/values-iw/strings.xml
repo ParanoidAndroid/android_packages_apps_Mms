@@ -397,7 +397,6 @@
     <string name="gestures_already_present">אזהרה: מחווה דומה משוייכת לתבנית אחרת!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">הגדרות רטט</string>
     <string name="pref_title_mms_notification_vibrate_pattern">תבנית רטט</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">שנה את תבנית הרטט</string>
     <string name="pref_title_mms_notification_vibrate_call">רטוט בעת שיחה</string>
@@ -423,7 +422,6 @@
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">סוג מקלדת וירטואלית</string>
-    <string name="pref_summary_input_type">בחר את סוג המקלדת בה יעשה שימוש לכתיבת הודעות</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->

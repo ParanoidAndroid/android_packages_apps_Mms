@@ -381,7 +381,6 @@
     <string name="gestures_already_present">Varování: podobné gesto je již přiřazené k jiné šabloně!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">Nastavení vibrací</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vzor vibrace</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Změnit vzor vibrace</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibrovat během hovoru</string>
@@ -417,7 +416,6 @@
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Chování klávesy Enter</string>
-    <string name="pref_summary_input_type">Zvolte výchozí chování klávesy Enter při psaní zprávy</string>
 
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->

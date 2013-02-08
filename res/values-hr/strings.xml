@@ -383,7 +383,6 @@
     <string name="gestures_already_present">Upozorenje: Drugi predložak ima sličnu gestu!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">Postavke vibracije</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibracijski uzorak</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Promjenite vibracijski uzorak</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibriraj na poziv</string>
@@ -441,5 +440,4 @@
     <string name="qm_quick_reply">Brzi odgovor</string>
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Tip tipkovnice</string>
-    <string name="pref_summary_input_type">Odaberite koji ćete tip tipkovnice koristiti za pisanje poruka</string>
 </resources>

@@ -381,7 +381,6 @@
     <string name="gestures_already_present">Προσοχή: Μια παρόμοια κίνηση είναι συνδεδεμένη με ένα άλλο πρότυπο!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_settings">Ρυθμίσεις δόνησης</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Μοτίβο δόνησης</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Αλλαγή μοτίβου δόνησης</string>
     <string name="pref_title_mms_notification_vibrate_call">Δόνηση κατά την κλήση</string>
@@ -409,7 +408,6 @@
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Τύπος πληκτρολογίου</string>
-    <string name="pref_summary_input_type">Επιλέξτε τον τύπο πληκτρολογίου που θα χρησιμοποιείται κατά τη σύνταξη μηνυμάτων</string>
 
     <!-- Soft Keyboard Type -->
     <string name="pref_keyboard_emoji">Εμφάνιση πλήκτρου Emoticons</string>

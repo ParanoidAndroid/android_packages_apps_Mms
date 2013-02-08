@@ -381,7 +381,6 @@
     <string name="template_cancel_confirm_title">Attenzione</string>
     <string name="template_cancel_confirm_text">Il modello verrà cancellato. Continuare?</string>
     <string name="gestures_already_present">Attenzione! Una gesture simile è associata ad un altro template</string>
-    <string name="pref_title_mms_notification_vibrate_settings">Impostazioni vibrazione</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Schema vibrazione</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Cambia schema di vibrazione</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibrazione in chiamate</string>
@@ -397,7 +396,6 @@
     <string name="pref_keyboard_new_line">Va a capo</string>
     <string name="pref_keyboard_unknown">Sconosciuto, si prega di riselezionare</string>
     <string name="pref_title_input_type">Funzione Invio</string>
-    <string name="pref_summary_input_type">Seleziona la funzione del tasto Invio durante la scrittura dei messaggi</string>
     <string name="pref_quickmessage">Messaggi e risposte rapidi</string>
     <string name="pref_quickmessage_title">Mostra messaggi rapidi</string>
     <string name="pref_quickmessage_summary">Mostra il pop-up di messaggio rapido per gli sms in arrivo</string>

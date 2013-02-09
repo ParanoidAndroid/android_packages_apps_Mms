@@ -444,4 +444,13 @@
 
     <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Προσθήκη στο ημερολόγιο</string>
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Λειτουργία μυστικότητας</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Απόκρυψη αποστολέα και μηνύματος στην μπάρα κατάστασης και απενεργοποίηση Γρήγορης απάντησης</string>
+    <string name="notification_single_title_privacy_mode">Νέο μήνυμα</string>
+    <string name="notification_single_text_privacy_mode">1 μη αναγνωσμένο μήνυμα</string>
+    <string name="notification_multiple_title_privacy_mode">Νέα μηνύματα</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> μη αναγνωσμένα μηνύματα</string>
+    <string name="notification_ticker_privacy_mode">Νέο μήνυμα ελήφθη</string>
 </resources>

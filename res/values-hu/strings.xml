@@ -1,22 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-/*
- * Copyright (C) 2007-2008 Esmertec AG.
- * Copyright (C) 2007-2008 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
- -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007-2008 Esmertec AG
+     Copyright (C) 2007-2008 The Android Open Source Project
+     Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -350,28 +348,87 @@
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 
-    <string name="pref_title_input_type">Enter billentyű</string>
-    <string name="menu_insert_emoji">Ikon beszúrása</string>
+    <!-- **** CYANOGENMOD ADDITIONS START **** -->
 
-    <!-- Settings item for boolean option for SMS Split Counter -->
-    <string name="pref_title_sms_split_counter">Darabszám</string>
-    <!-- Settings item description for boolean SMS Split 160 characters setting -->
-    <string name="pref_summary_sms_split_counter">Számláló megjelenítése pl. (1/2)</string>
+    <!-- Message options - Add SMS to calendar -->
+    <string name="menu_add_to_calendar">Hozzáadás a naptárhoz</string>
 
-    <!-- Sms templates -->
+    <!-- QM - Dialog box buttons -->
+    <string name="button_close">Bezárás</string>
+    <string name="button_view">Megtekintés</string>
+    <string name="button_templates">Sablonok</string>
+
+    <!-- QM - Hint text in message body field when keyboard is exposed -->
+    <string name="type_to_reply_text_enter_to_send">Írja be az üzenetet</string>
+
+    <!-- QM - Toast -->
+    <string name="toast_sending_message">Üzenet küldése</string>
+
+    <!-- QM - Quick reply -->
+    <string name="qm_quick_reply">Válasz</string>
+    <string name="qm_mark_read">Elolvasva</string>
+
+    <!-- QM - Counter separator -->
+    <string name="message_counter_separator">/</string>
+
+
+    <!-- NOTIFICATIONS -->
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Privát megjelenítés</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Az üzenet és annak feladójának elrejtése az értesítési sávon, és a \"Gyors válasz\" tiltása</string>
+    <string name="notification_single_title_privacy_mode">Új üzenet</string>
+    <string name="notification_single_text_privacy_mode">1 olvasatlan üzenet</string>
+    <string name="notification_multiple_title_privacy_mode">Új üzenetek</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> olvasatlan üzenet</string>
+    <string name="notification_ticker_privacy_mode">Új üzenet érkezett</string>
+
+    <!-- Vibrate pattern -->
+    <string name="pref_title_mms_notification_vibrate_pattern">Rezgés típusa</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Rezgésminta beállítása</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Egyedi rezgésminta</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Formátum: ki/be milliszekundumban: ki, be, ki, be\u2026</string>
+
+    <!-- Vibrate on call -->
+    <string name="pref_title_mms_notification_vibrate_call">Rezgés hívás közben</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Rezgés engedélyezése hívás közben</string>
+
+
+    <!-- QUICKMESSAGE -->
+
+    <string name="pref_quickmessage">Gyors válasz</string>
+
+    <!-- Use dark theme -->
+    <string name="pref_dark_theme_title">Sötét téma használata</string>
+    <string name="pref_dark_theme_summary">Ha nincs kiválasztva, az alapértelmezett \"világos\" téma lesz használva</string>
+
+    <!-- Show pop-up -->
+    <string name="pref_quickmessage_title">Gyors válasz engedélyezése</string>
+    <string name="pref_quickmessage_summary">Gyors válasz felugró ablak megjelenítése</string>
+
+    <!-- Wake and unlock -->
+    <string name="pref_wake_unlock_title">Felébresztés és feloldás</string>
+    <string name="pref_wake_unlock_summary">Készülék felébresztése és feloldása üzenet érkezésekor (csak nem biztonságos képernyőzár esetén)</string>
+
+    <!-- Close all messages -->
+    <string name="pref_close_all_title">Összes bezárása</string>
+    <string name="pref_close_all_summary">A bezárás gomb az összes üzenetet zárja be</string>
+
+
+    <!-- SMS TEMPLATES -->
+
     <string name="prefs_templates_settings">SMS Sablonok</string>
-    <string name="pref_title_templates_manage">Kézmozdulat</string>
+
+    <!-- Manage SMS templates -->
+    <string name="pref_title_templates_manage">Sablonok</string>
     <string name="pref_summary_templates_manage">SMS sablonok kezelése</string>
-    <string name="pref_title_templates_show_gesture">Kézmozdulat</string>
-    <string name="pref_summary_templates_show_gesture">Kézmozdulat útvonalának megjelenítése</string>
-    <string name="pref_title_template_gestures_sensitivity">Kézmozdulat érzékenysége</string>
-    <string name="template_save">Mentés</string>
+    <string name="template_explanation">Írja be, vagy módosítsa a sablon szövegét. Opcionálisan társíthat hozzá kézmozdulatot is.</string>
     <string name="template_insert_hint">Írja be a sablon szövegét</string>
     <string name="template_empty_text">A mező nem lehet üres.</string>
-    <string name="template_explanation">Írja be, vagy módosítsa a sablon szövegét és opcionálisan társíthat hozzá kézmozdulatot is.</string>
+    <string name="template_save">Mentés</string>
+    <string name="template_ctx_menu_title">Műveletek</string>
     <string name="template_edit">Szerkesztés</string>
     <string name="template_delete">Törlés</string>
-    <string name="template_ctx_menu_title">Műveletek</string>
     <string name="template_list_title">Sablonok</string>
     <string name="template_new_title">Új sablon</string>
     <string name="template_insert">Sablon beszúrása</string>
@@ -383,15 +440,16 @@
     <string name="template_cancel_confirm_text">Biztosan törölni szeretné?</string>
     <string name="gestures_already_present">Figyelem: Egy hasonló kézmozdulat már társítva van egy másik sablonhoz!</string>
 
-    <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_pattern">Rezgés típusa</string>
-    <string name="pref_summary_mms_notification_vibrate_pattern">Rezgés mintájának beállítása</string>
-    <string name="pref_title_mms_notification_vibrate_call">Rezgés hívás közben</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Rezgés engedélyezése hívás közben</string>
-    <string name="pref_title_mms_notification_vibrate_custom">Egyedi rezgés minta</string>
-    <string name="pref_text_mms_notification_vibrate_custom">Formátum: ki/be milliszekundumban: ki, be, ki, be, ...</string>
+    <!-- Show gesture trace -->
+    <string name="pref_title_templates_show_gesture">Kézmozdulat</string>
+    <string name="pref_summary_templates_show_gesture">Kézmozdulat útvonalának megjelenítése</string>
 
-    <!-- Extra Settings: -->
+    <!-- Gesture sensitivity -->
+    <string name="pref_title_template_gestures_sensitivity">Kézmozdulat érzékenysége</string>
+
+
+    <!-- EXTRA SETTINGS -->
+
     <string name="pref_extra_settings">Extra beállítások</string>
 
     <!-- Strip unicode -->
@@ -401,57 +459,27 @@
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Ikonok engedélyezése</string>
     <string name="pref_summary_enable_emojis">Ikonok megjelenítéséhez szükséges unicode támogatás engedélyezése</string>
+    <string name="menu_insert_emoji">Ikon beszúrása</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Teljes időbélyeg</string>
     <string name="pref_summary_mms_full_timestamp">Mindkét dátum/idő megjelenítése</string>
-    <!-- Which timestamps -->
+
+    <!-- Original timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Eredeti dátum</string>
     <string name="pref_summary_mms_use_sent_timestamp">Küldés dátumának megjelenítése a fogadás dátuma helyett</string>
 
-    <!-- Soft Keyboard Type -->
+    <!-- Soft keyboard type -->
+    <string name="pref_title_input_type">Enter billentyű</string>
     <string name="pref_keyboard_emoji">Hangulatjel beszúrása</string>
     <string name="pref_keyboard_new_line">Új sor beszúrása</string>
     <string name="pref_keyboard_unknown">Ismeretlen, kérjük, válassza ki újra</string>
 
-    <!-- QUICKMESSAGE SUPPORT -->
-    <!-- Preferences -->
-    <string name="pref_quickmessage">Gyors üzenetek és válaszok</string>
-    <string name="pref_quickmessage_title">Gyors üzenetek engedélyezése</string>
-    <string name="pref_quickmessage_summary">Gyors üzenetek felugró ablak megjelenítése</string>
-    <string name="pref_wake_unlock_title">Felébresztés és feloldás</string>
-    <string name="pref_wake_unlock_summary">Készülék felébresztése és feloldása üzenet érkezésekor (csak nem biztosított képernyőzár esetén)</string>
-    <string name="pref_close_all_title">Összes bezárása</string>
-    <string name="pref_close_all_summary">A bezárás gomb az összes üzenetet zárja be</string>
-    <string name="pref_dark_theme_title">Sötét téma használata</string>
-    <string name="pref_dark_theme_summary">Ha nincs kiválasztva, az alapértelmezett \'világos\' téma lesz használva</string>
-    <string name="message_counter_separator">/</string>
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">Darabszám</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_counter">Számláló megjelenítése pl. (1/2)</string>
 
-    <!-- QM Dialog box buttons -->
-    <string name="button_close">Bezárás</string>
-    <string name="button_view">Megtekintés</string>
-    <string name="button_templates">Sablonok</string>
-
-    <!-- Hint text in message body field when keyboard is exposed -->
-    <string name="type_to_reply_text_enter_to_send">Írja be az üzenetet</string>
-
-    <!-- QM Toast -->
-    <string name="toast_sending_message">Üzenet küldése</string>
-
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Válasz</string>
-    <string name="qm_mark_read">Elolvasva</string>
-
-    <!-- Add menu for 'Add SMS to calendar remind' -->
-    <string name="menu_add_to_calendar">Hozzáadás a naptárhoz</string>
-
-    <!-- Privacy mode -->
-    <string name="pref_title_notification_privacy_mode_enabled">Privát megjelenítés</string>
-    <string name="pref_summary_notification_privacy_mode_enabled">Az üzenet és annak feladójának elrejtése az értesítési sávon, gyors válasz tiltása</string>
-    <string name="notification_single_title_privacy_mode">Új üzenet</string>
-    <string name="notification_single_text_privacy_mode">1 olvasatlan üzenet</string>
-    <string name="notification_multiple_title_privacy_mode">Új üzenetek</string>
-    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> olvasatlan üzenet</string>
-    <string name="notification_ticker_privacy_mode">Új üzenet érkezett</string>
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
 </resources>

@@ -172,7 +172,6 @@
     <string name="pref_title_sms_delete" msgid="6890538316799296878">"Limiet voor sms"</string>
     <string name="pref_title_mms_delete" msgid="7265878070847351664">"Limiet voor mms"</string>
     <string name="pref_title_notification_enabled" msgid="9118792213953729414">"Meldingen"</string>
-    <string name="pref_summary_notification_enabled" msgid="619729096820999905">"Berichtmeldingen in statusbalk tonen"</string>
     <string name="pref_title_notification_vibrateWhen" msgid="4251208067092761057">"Trillen"</string>
     <string name="pref_title_notification_ringtone" msgid="8667533917574559659">"Geluid"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"Aantal berichten instellen voor opslaan"</string>

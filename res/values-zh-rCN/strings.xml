@@ -179,7 +179,6 @@
     <item msgid="6069709696037750627">"仅在静音时"</item>
     <item msgid="7486145357487111435">"永不"</item>
   </string-array>
-    <string name="prefDialogTitle_vibrateWhen" msgid="6419655771690242118">"振动"</string>
     <string name="pref_title_mms_auto_retrieval" msgid="4021878285474431355">"自动检索"</string>
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"自动检索信息"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"漫游时自动检索"</string>

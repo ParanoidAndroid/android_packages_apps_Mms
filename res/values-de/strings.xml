@@ -379,6 +379,7 @@
     <!-- Vibrate pattern -->
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrationsmuster</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Vibrationsmuster ändern</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Benutzerdefiniertes Muster</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format (aus/an) in Millisekunden: aus, an, aus, an\u2026</string>
 
     <!-- Vibrate on call -->
@@ -466,6 +467,10 @@
     <string name="pref_keyboard_emoji">Emoticon-Taste anzeigen</string>
     <string name="pref_keyboard_new_line">Eingabetaste anzeigen</string>
     <string name="pref_keyboard_unknown">Unbekannt. Neue Auswahl treffen</string>
+
+    <!-- SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">Nachrichtenzähler</string>
+    <string name="pref_summary_sms_split_counter">Bei mehrteiligen Nachrichten Zähler (z.B. \'1/2\') anzeigen</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>

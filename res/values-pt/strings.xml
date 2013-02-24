@@ -412,4 +412,7 @@
     <string name="notification_multiple_title_privacy_mode">Novas mensagens</string>
     <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">%1$s</xliff:g> mensagens não lidas</string>
     <string name="notification_ticker_privacy_mode">Nova mensagem recebida</string>
+    <string name="menu_insert_contact_info">Inserir info. de contato</string>
+    <string name="cannot_find_contact">Não foi possível inserir informação do contato escolhido</string>
+    <string name="insert_contact_info_positive_button">Inserir</string>
 </resources>

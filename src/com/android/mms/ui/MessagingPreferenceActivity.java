@@ -77,6 +77,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
 
     // Emoji
     public static final String ENABLE_EMOJIS             = "pref_key_enable_emojis";
+    public static final String ENABLE_QUICK_EMOJIS       = "pref_key_enable_quick_emojis";
     public static final String SOFTBANK_EMOJIS           = "pref_key_enable_softbank_encoding";
 
     // Unicode

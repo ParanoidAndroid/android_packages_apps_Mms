@@ -473,6 +473,11 @@
     <!-- Settings item description for boolean SMS Split 160 characters setting -->
     <string name="pref_summary_sms_split_counter">Számláló megjelenítése pl. (1/2)</string>
 
+    <!-- Insert contact information -->
+    <string name="menu_insert_contact_info">Névjegy információ beszúrása</string>
+    <string name="cannot_find_contact">Nem lehet beszúrni a kiválasztott névjegy információt</string>
+    <string name="insert_contact_info_positive_button">Beszúrás</string>
+
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 
 </resources>

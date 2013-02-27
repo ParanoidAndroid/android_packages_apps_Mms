@@ -342,4 +342,109 @@
     <string name="notification_separator" msgid="2334673105226536422">"  "</string>
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
+
+    <!-- CYANOGENMOD EDITS START -->
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Ekstra instellings</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Strip unicode</string>
+    <string name="pref_summary_strip_unicode">Vervang algemene karakters wat nie ondersteun word in 160 karakter SMS boodskappe nie</string>
+
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Emoji ondersteuning</string>
+    <string name="pref_summary_enable_emojis">Aktiveer ondersteuning vir unicode emojis, \'n stel van 471 mooi prentjie ikone</string>
+
+    <!-- Emoji Menu item -->
+    <string name="menu_insert_emoji">Plaas emoji ikone</string>
+
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">Verdeel teller</string>
+    <!-- Settings item description for boolean SMS Split 160 characters setting -->
+    <string name="pref_summary_sms_split_counter">Voeg teller by boodskap bv. (1/2)</string>
+
+    <!-- Sms templates -->
+    <string name="prefs_templates_settings">SMS sjablone</string>
+    <string name="pref_title_templates_manage">Sjablone</string>
+    <string name="pref_summary_templates_manage">Administreer SMS sjablone</string>
+    <string name="pref_title_templates_show_gesture">Gebaar</string>
+    <string name="pref_summary_templates_show_gesture">Wys gebaar spoor</string>
+    <string name="pref_title_template_gestures_sensitivity">Gebaar sensitiwiteit</string>
+    <string name="template_save">Stoor</string>
+    <string name="template_insert_hint">Voeg hier die sjablone teks</string>
+    <string name="template_empty_text">Teks veld kan nie leeg wees nie</string>
+    <string name="template_explanation">Voeg of verander die sjablone teks en trek opsioneel \'n gebaar om dit te assosieer</string>
+    <string name="template_edit">Verander</string>
+    <string name="template_delete">Verwyder</string>
+    <string name="template_ctx_menu_title">Aksies</string>
+    <string name="template_list_title">Sjablone</string>
+    <string name="template_new_title">Nuwe sjabloon</string>
+    <string name="template_insert">Plaas sjabloon</string>
+    <string name="template_gesture_draw">Teken die gebaar in die spasie hieronder</string>
+    <string name="template_not_present_error">Daar is geen sjablone beskikbaar nie</string>
+    <string name="template_not_present_error_title">Fout</string>
+    <string name="template_select">Kies \'n sjabloon</string>
+    <string name="template_cancel_confirm_title">Waarskuwing</string>
+    <string name="template_cancel_confirm_text">Die sjabloon gaan verwyder word. Gaan voort?</string>
+    <string name="gestures_already_present">Waarskuwing: \'n soortgelyke gebaar is alreeds geassosieer met \'n ander sjabloon!</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">Vibrasie instellings</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Vibrasie patroon</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Verander vibrasie patroon</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibreer op oproep</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Laat vibrasies toe tydens \'n oproep</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Pasgemaakte vibrasie patroon</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Af/aan formaat in millisekondes ...</string>
+
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">Volledige tydstempel</string>
+    <string name="pref_summary_mms_full_timestamp">Vertoon beide die datum en die tyd in die tydstempel</string>
+
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">Tydstempel</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Vertoon die gestuurde tyd in plaas van die ontvangs tyd in die tydstempel</string>
+
+    <!-- Add menu for 'Add SMS to calendar remind' -->
+    <string name="menu_add_to_calendar">Voeg by kalender</string>
+
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">Vertoon die glimlaggies-sleutel</string>
+    <string name="pref_keyboard_new_line">Vertoon die invoer-sleutel</string>
+    <string name="pref_keyboard_unknown">Onbekend, her selekteer asb.</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">Sagte sleutelbord tipe</string>
+    <string name="pref_summary_input_type">Kies die sagte sleutelbord tipe om te gebruik tydens die skep van boodskappe</string>
+
+    <!-- QUICKMESSAGE SUPPORT -->
+    <!-- Preferences -->
+    <string name="pref_quickmessage">Kitsantwoord</string>
+    <string name="pref_quickmessage_title">Opspring venster</string>
+    <string name="pref_quickmessage_summary">Vertoon die Kitsboodskap opspring venster vir inkomende boodskappe</string>
+    <string name="pref_wake_unlock_title">Aktiveer en ontsluit</string>
+    <string name="pref_wake_unlock_summary">Aktiveer en ontsluit die toestel met inkomende bookskappe (slegs onveilige slotskerms)</string>
+    <string name="pref_close_all_title">Maak almal toe</string>
+    <string name="pref_close_all_summary">Die Toemaak-knoppie maak alle boodskappe toe.</string>
+    <string name="pref_dark_theme_title">Gebruik donker tema</string>
+    <string name="pref_dark_theme_summary">Tensy die instelling gekies is, sal die ligte tema gebruik word vir die Kitsboodskap opspring venster</string>
+    <string name="message_counter_separator">van</string>
+
+    <!-- QM Dialog box buttons -->
+    <string name="button_close">Maak toe</string>
+    <string name="button_view">Maak oop</string>
+    <string name="button_templates">Sjablone</string>
+
+    <!-- Hint text in message body field when keyboard is exposed -->
+    <string name="type_to_reply_text_enter_to_send">Tik om te antwoord</string>
+
+    <!-- QM Toast -->
+    <string name="toast_sending_message">Boodskap word gestuur</string>
+
+    <!-- QM - Quick reply -->
+    <string name="qm_quick_reply">Antwoord</string>
+    <string name="qm_mark_read">Gelees</string>
+
+    <!-- CYANOGENMOD EDITS END -->
 </resources>

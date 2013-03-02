@@ -451,5 +451,10 @@
     <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> ulæste beskeder</string>
     <string name="notification_ticker_privacy_mode">Ny besked modtaget</string>
 
+    <!-- Insert contact information -->
+    <string name="menu_insert_contact_info">Indsæt kontaktinfo</string>
+    <string name="cannot_find_contact">Kan ikke indsætte kontaktinfo for den valgte kontakt</string>
+    <string name="insert_contact_info_positive_button">Indsæt</string>
+
     <!-- CYANOGENMOD ADDITIONS END -->
 </resources>

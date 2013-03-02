@@ -367,31 +367,31 @@
     <!-- Sms templates -->
     <string name="prefs_templates_settings">SMS sjablone</string>
     <string name="pref_title_templates_manage">Sjablone</string>
-    <string name="pref_summary_templates_manage">Administreer SMS sjablone</string>
+    <string name="pref_summary_templates_manage">Bestuur die beskikbare SMS sjablone</string>
     <string name="pref_title_templates_show_gesture">Gebaar</string>
-    <string name="pref_summary_templates_show_gesture">Wys gebaar spoor</string>
+    <string name="pref_summary_templates_show_gesture">Wys die gebaar spoor</string>
     <string name="pref_title_template_gestures_sensitivity">Gebaar sensitiwiteit</string>
     <string name="template_save">Stoor</string>
-    <string name="template_insert_hint">Voeg hier die sjablone teks</string>
-    <string name="template_empty_text">Teks veld kan nie leeg wees nie</string>
-    <string name="template_explanation">Voeg of verander die sjablone teks en trek opsioneel \'n gebaar om dit te assosieer</string>
+    <string name="template_insert_hint">Tik die sjabloon teks hier</string>
+    <string name="template_empty_text">Die teks veld kan nie leeg wees nie</string>
+    <string name="template_explanation">Tik die sjabloon teks en trek opsioneel \'n gebaar om daarmee te assosieer</string>
     <string name="template_edit">Verander</string>
     <string name="template_delete">Verwyder</string>
     <string name="template_ctx_menu_title">Aksies</string>
     <string name="template_list_title">Sjablone</string>
     <string name="template_new_title">Nuwe sjabloon</string>
     <string name="template_insert">Plaas sjabloon</string>
-    <string name="template_gesture_draw">Teken die gebaar in die spasie hieronder</string>
+    <string name="template_gesture_draw">Trek die gebaar in die spasie hieronder</string>
     <string name="template_not_present_error">Daar is geen sjablone beskikbaar nie</string>
     <string name="template_not_present_error_title">Fout</string>
     <string name="template_select">Kies \'n sjabloon</string>
     <string name="template_cancel_confirm_title">Waarskuwing</string>
-    <string name="template_cancel_confirm_text">Die sjabloon gaan verwyder word. Gaan voort?</string>
+    <string name="template_cancel_confirm_text">Die sjabloon gaan uitgevee word. Wil jy voort gaan?</string>
     <string name="gestures_already_present">Waarskuwing: \'n soortgelyke gebaar is alreeds geassosieer met \'n ander sjabloon!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrasie patroon</string>
-    <string name="pref_summary_mms_notification_vibrate_pattern">Verander vibrasie patroon</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Verander die vibrasie patroon</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibreer op oproep</string>
     <string name="pref_summary_mms_notification_vibrate_call">Laat vibrasies toe tydens \'n oproep</string>
     <string name="pref_title_mms_notification_vibrate_custom">Pasgemaakte vibrasie patroon</string>
@@ -411,7 +411,7 @@
     <!-- Soft Keyboard Type -->
     <string name="pref_keyboard_emoji">Vertoon die glimlaggies-sleutel</string>
     <string name="pref_keyboard_new_line">Vertoon die invoer-sleutel</string>
-    <string name="pref_keyboard_unknown">Onbekend, her selekteer asb.</string>
+    <string name="pref_keyboard_unknown">Onbekend, herselekteer asseblief</string>
 
     <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Sagte sleutelbord tipe</string>
@@ -419,14 +419,14 @@
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
     <string name="pref_quickmessage">Kitsantwoord</string>
-    <string name="pref_quickmessage_title">Opspring venster</string>
-    <string name="pref_quickmessage_summary">Vertoon die Kitsboodskap opspring venster vir inkomende boodskappe</string>
+    <string name="pref_quickmessage_title">Kitsboodskap-dialoog</string>
+    <string name="pref_quickmessage_summary">Vertoon die Kitsboodskap-dialoog vir inkomende SMS-boodskappe</string>
     <string name="pref_wake_unlock_title">Aktiveer en ontsluit</string>
-    <string name="pref_wake_unlock_summary">Aktiveer en ontsluit die toestel met inkomende bookskappe (slegs onveilige slotskerms)</string>
+    <string name="pref_wake_unlock_summary">Aktiveer en ontsluit die toestel met inkomende SMS-bookskappe (slegs onveilige slotskerms)</string>
     <string name="pref_close_all_title">Maak almal toe</string>
-    <string name="pref_close_all_summary">Die Toemaak-knoppie maak alle boodskappe toe.</string>
+    <string name="pref_close_all_summary">Die \'Maak toe\'-knoppie maak alle boodskappe in die Kitsboodskap-dialoog toe</string>
     <string name="pref_dark_theme_title">Gebruik donker tema</string>
-    <string name="pref_dark_theme_summary">Tensy die instelling gekies is, sal die ligte tema gebruik word vir die Kitsboodskap opspring venster</string>
+    <string name="pref_dark_theme_summary">Tensy die instelling gekies is, sal die ligte tema gebruik word vir die Kitsboodskap-dialoog</string>
     <string name="message_counter_separator">van</string>
 
     <!-- QM Dialog box buttons -->
@@ -435,10 +435,10 @@
     <string name="button_templates">Sjablone</string>
 
     <!-- Hint text in message body field when keyboard is exposed -->
-    <string name="type_to_reply_text_enter_to_send">Tik om te antwoord</string>
+    <string name="type_to_reply_text_enter_to_send">Raak om te antwoord</string>
 
     <!-- QM Toast -->
-    <string name="toast_sending_message">Boodskap word gestuur</string>
+    <string name="toast_sending_message">Die boodskap word gestuur</string>
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Antwoord</string>

@@ -453,6 +453,11 @@
     <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> сообщения (ий)</string>
     <string name="notification_ticker_privacy_mode">Получено новое сообщение</string>
 
+    <!-- Insert contact information -->
+    <string name="menu_insert_contact_info">Информацию о контакте</string>
+    <string name="cannot_find_contact">Не удаётся вставить информацию из выбранного контакта</string>
+    <string name="insert_contact_info_positive_button">Вставить</string>
+
     <!-- CYANOGENMOD EDITS END -->
 
 </resources>

@@ -342,4 +342,118 @@
     <string name="notification_separator" msgid="2334673105226536422">"  "</string>
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
+
+    <!-- CYANOGENMOD ADDITIONS -->
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Додаткові налаштування</string>
+
+    <!-- Strip unicode -->
+    <string name="pref_title_strip_unicode">Заміняти юнікод</string>
+    <string name="pref_summary_strip_unicode">Заміна непідтримуваних символів в повідомленні звичайними</string>
+
+    <!-- Enable emojis -->
+    <string name="pref_title_enable_emojis">Увімкнути emojis</string>
+    <string name="pref_summary_enable_emojis">Увімкнути підтримку emojis, набору з 471 відмінних юнікод смайликів</string>
+
+    <!-- Emoji Menu item -->
+    <string name="menu_insert_emoji">Вставити emoji</string>
+
+    <!-- Settings item for boolean option for SMS Split Counter -->
+    <string name="pref_title_sms_split_counter">Лічильник фрагментів</string>
+    <string name="pref_summary_sms_split_counter">Додає до повідомлення лічильник виду \"1/2\"</string>
+
+    <!-- Sms templates -->
+    <string name="prefs_templates_settings">SMS шаблони</string>
+    <string name="pref_title_templates_manage">Шаблони</string>
+    <string name="pref_summary_templates_manage">Керування шаблонами SMS</string>
+    <string name="pref_title_templates_show_gesture">Жести</string>
+    <string name="pref_summary_templates_show_gesture">Показувати слід жесту</string>
+    <string name="pref_title_template_gestures_sensitivity">Чутливість жесту</string>
+    <string name="template_save">Зберегти</string>
+    <string name="template_insert_hint">Введіть сюди текст шаблону</string>
+    <string name="template_empty_text">Текстове поле не може бути пустим</string>
+    <string name="template_explanation">Введіть чи змініть текст шаблону та намалюйте жест, щоб пов’язати їх</string>
+    <string name="template_edit">Змінити</string>
+    <string name="template_delete">Видалити</string>
+    <string name="template_ctx_menu_title">Дії</string>
+    <string name="template_list_title">Шаблони</string>
+    <string name="template_new_title">Новий шаблон</string>
+    <string name="template_insert">Ввести шаблон</string>
+    <string name="template_gesture_draw">Намалюйте жест в області нижче</string>
+    <string name="template_not_present_error">Ви не визначити шаблон</string>
+    <string name="template_not_present_error_title">Помилка</string>
+    <string name="template_select">Виберіть шаблон</string>
+    <string name="template_cancel_confirm_title">Увага</string>
+    <string name="template_cancel_confirm_text">Хочете скасувати?</string>
+    <string name="gestures_already_present">Увага: схожий жест пов’язаний із іншим шаблоном!</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_pattern">Режим вібрації</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Зміна режиму вібрації</string>
+    <string name="pref_title_mms_notification_vibrate_call">Вібрація при розмові</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Дозволити вібрацію при розмові</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Користувацький режим вібрації</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Формат викл/вкл в мілісекундах: викл, вкл, викл, вкл</string>
+
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">Повна мітка часу</string>
+    <string name="pref_summary_mms_full_timestamp">Увімкнення відображення повної дати та часу у повідомленнях</string>
+
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">Вихідна мітка часу</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Відображення та збереженння дати відправлення, а не отримання</string>
+
+    <!-- Add menu for 'Add SMS to calendar remind' -->
+    <string name="menu_add_to_calendar">Додати у календар</string>
+
+    <!-- Soft Keyboard Type -->
+    <string name="pref_keyboard_emoji">Кнопка \"Смайлики\"</string>
+    <string name="pref_keyboard_new_line">Кнопка \"Надіслати\"</string>
+    <string name="pref_keyboard_unknown">Невідомий тип. Будь ласка, повторіть вибір</string>
+
+    <!-- Settings item for the soft keyboard picker -->
+    <string name="pref_title_input_type">Тип клавіатури</string>
+
+    <!-- QUICKMESSAGE SUPPORT -->
+    <!-- Preferences -->
+    <string name="pref_quickmessage">Швидка відповідь</string>
+    <string name="pref_quickmessage_title">Увімкнути швидку відповідь</string>
+    <string name="pref_quickmessage_summary">Показувати спливаюче вікно для швидкох відповіді</string>
+    <string name="pref_wake_unlock_title">Пробудження та розблокування</string>
+    <string name="pref_wake_unlock_summary">Будити та розблоковувати пристрій рпи вхідному повідомлення (тільки для екранів блокування без захисту)</string>
+    <string name="pref_close_all_title">Закрити все</string>
+    <string name="pref_close_all_summary">Кнопка \"Закрити\" закриває усі повідомлення</string>
+    <string name="pref_dark_theme_title">Темна тема</string>
+    <string name="pref_dark_theme_summary">Якщо не вибрано, буде використовувтись світла тема</string>
+    <string name="message_counter_separator">з</string>
+
+    <!-- QM Dialog box buttons -->
+    <string name="button_close">Закрити</string>
+    <string name="button_view">Переглянути</string>
+    <string name="button_templates">Шаблони</string>
+
+    <!-- Hint text in message body field when keyboard is exposed -->
+    <string name="type_to_reply_text_enter_to_send">Введіть текст для відповіді</string>
+
+    <!-- QM Toast -->
+    <string name="toast_sending_message">Надсилання повідомлення\u2026</string>
+
+    <!-- QM - Quick reply -->
+    <string name="qm_quick_reply">Відповісти</string>
+    <string name="qm_mark_read">Читати</string>
+
+    <!-- Privacy mode -->
+    <string name="pref_title_notification_privacy_mode_enabled">Безпечний режим</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Приховувати повідомлення в рядку стану, а також вимкнути швидку відповідь</string>
+    <string name="notification_single_title_privacy_mode">Нове повідомлення</string>
+    <string name="notification_single_text_privacy_mode">1 непрочитане повідомлення</string>
+    <string name="notification_multiple_title_privacy_mode">Нові повідомлення</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> повідомлення (нь)</string>
+    <string name="notification_ticker_privacy_mode">Отримано нове повідомлення</string>
+
+    <!-- Insert contact information -->
+    <string name="menu_insert_contact_info">Вставити контакт</string>
+    <string name="cannot_find_contact">Не вдається вставити інформацію з вибраного контакту</string>
+    <string name="insert_contact_info_positive_button">Вставити</string>
 </resources>

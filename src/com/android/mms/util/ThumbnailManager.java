@@ -402,10 +402,10 @@ public class ThumbnailManager extends BackgroundLoaderManager {
             int srcHeight = bitmap.getHeight();
             float scale = Math.min(
                     (float) maxLength / srcWidth, (float) maxLength / srcHeight);
-            if (scale >= 1.0f) return bitmap;
+            if (scale >= 1.0f && orientation == 0) return bitmap;
 
             Log.w(TAG, "resizeDownBySideLength, orientation = " + orientation);
-            return resizeBitmapByScale(bitmap, scale, orientation, recycle);
+            return resizeBitmapByScale(bitmap, Math.min(scale, 1.0f), orientation, recycle);
         }
 
         // @param orientation: After resizing also rotate

@@ -128,19 +128,19 @@
     <string name="duration_not_a_number" msgid="2856636898040421237">"Czas trwania musi być liczbą."</string>
     <string name="duration_zero" msgid="3549377790195185977">"Czas trwania musi być dłuższy niż 0 sekund."</string>
     <string name="secs" msgid="6886003523109967972">"s"</string>
-  <string-array name="select_dialog_items">
-    <item msgid="4840183714016984112">"1 sekunda"</item>
-    <item msgid="3734955613666864447">"2 sekundy"</item>
-    <item msgid="6032232473048379828">"3 sekundy"</item>
-    <item msgid="5978471781525927827">"4 sekundy"</item>
-    <item msgid="4888440297621208402">"5 sek."</item>
-    <item msgid="6047246213264166841">"6 sek."</item>
-    <item msgid="2327501250056533797">"7 sek."</item>
-    <item msgid="3400770414689795703">"8 sek."</item>
-    <item msgid="4358760614161107970">"9 sek."</item>
-    <item msgid="2618179407176906471">"10 sek."</item>
-    <item msgid="7786079681602275449">"Inny"</item>
-  </string-array>
+    <string-array name="select_dialog_items">
+        <item msgid="4840183714016984112">"1 sekunda"</item>
+        <item msgid="3734955613666864447">"2 sekundy"</item>
+        <item msgid="6032232473048379828">"3 sekundy"</item>
+        <item msgid="5978471781525927827">"4 sekundy"</item>
+        <item msgid="4888440297621208402">"5 sek."</item>
+        <item msgid="6047246213264166841">"6 sek."</item>
+        <item msgid="2327501250056533797">"7 sek."</item>
+        <item msgid="3400770414689795703">"8 sek."</item>
+        <item msgid="4358760614161107970">"9 sek."</item>
+        <item msgid="2618179407176906471">"10 sek."</item>
+        <item msgid="7786079681602275449">"Inny"</item>
+    </string-array>
     <string name="menu_view_contact" msgid="1414670584423909451">"Pokaż kontakt"</string>
     <string name="menu_add_to_contacts" msgid="1258127580972228970">"Dodaj do kontaktów"</string>
     <string name="hidden_sender_address" msgid="2776075636669924968">"Ukryty adres nadawcy"</string>

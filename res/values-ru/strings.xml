@@ -222,7 +222,7 @@
     <string name="menu_delete_messages" msgid="2610286783513247420">"Удалить сообщения"</string>
     <string name="menu_lock" msgid="7603793126077557472">"Заблокировать"</string>
     <string name="menu_unlock" msgid="6662865558677424039">"Разблокировать"</string>
-    <string name="sim_copy_to_phone_memory" product="tablet" msgid="3721000641648594602">"Копировать в память планшетного ПК"</string>
+    <string name="sim_copy_to_phone_memory" product="tablet" msgid="3721000641648594602">"Копировать в память планшета"</string>
     <string name="sim_copy_to_phone_memory" product="default" msgid="5895767417844881971">"Копировать в память телефона"</string>
     <string name="sim_delete" msgid="610790510655316922">"Удалить"</string>
     <string name="sim_manage_messages_title" msgid="3989147182100584333">"SMS на SIM-карте"</string>

@@ -890,6 +890,10 @@
     <string name="pref_summary_enable_emojis">Enable support for unicode emojis, a set of 471 nice emoticons</string>
     <string name="menu_insert_emoji">Insert emojis</string>
 
+    <!-- Enable SoftBank emoji encoding -->
+    <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">Use SoftBank emoji encoding</string>
+
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Full timestamps</string>
     <string name="pref_summary_mms_full_timestamp">Display both date and time in timestamps</string>

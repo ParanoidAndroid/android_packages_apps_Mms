@@ -444,5 +444,11 @@
     <string name="qm_quick_reply">Antwoord</string>
     <string name="qm_mark_read">Gelees</string>
 
+    <!-- Insert contact information -->
+    <string name="menu_insert_contact_info">Voeg kontak besonderhede by</string>
+    <string name="cannot_find_contact">Kan nie die inligting van die gekose kontak byvoeg nie</string>
+    <string name="insert_contact_info_positive_button">Voeg by</string>
+
+
     <!-- CYANOGENMOD EDITS END -->
 </resources>

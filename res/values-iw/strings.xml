@@ -348,10 +348,6 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">הגדרות נוספות</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">הסר תווי Unicode</string>
-    <string name="pref_summary_strip_unicode">החלף תווים נפוצים שאינם נתמכים בהודעות SMS של 160 תווים בתווים דומים (אזהרה: כולל את כל האלפבית העברי!)</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">תמיכה ב-Emoji</string>
     <string name="pref_summary_enable_emojis">אפשר תמיכה ב-Emoji, סט של 471 רגשונים נחמדים</string>

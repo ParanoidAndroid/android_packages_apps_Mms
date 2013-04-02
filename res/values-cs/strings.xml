@@ -384,10 +384,6 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Rozšířená nastavení</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Odstranit znaky Unicode</string>
-    <string name="pref_summary_strip_unicode">Odstranit diakritiku, která snižuje výchozí počet znaků zprávy (160).</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Podpora smajlíků</string>
     <string name="pref_summary_enable_emojis">Povolit podporu unicode smajlíků, sada obsahuje 471 pěkných smajlíků</string>

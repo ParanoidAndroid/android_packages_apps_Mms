@@ -371,8 +371,6 @@
     <string name="template_cancel_confirm_text">テンプレートは削除されます. 続けますか?</string>
     <string name="gestures_already_present">警告: 他のテンプレートに似たようなジェスチャーが設定されています!</string>
     <string name="pref_extra_settings">拡張設定</string>
-    <string name="pref_title_strip_unicode">ユニコードを取り除く</string>
-    <string name="pref_summary_strip_unicode">160文字のSMSメッセージでサポートされない一般的な文字を置き換える</string>
     <string name="pref_title_enable_emojis">絵文字サポート</string>
     <string name="pref_summary_enable_emojis">ユニコード絵文字サポートを有効にする, 471個のステキな絵文字</string>
     <string name="pref_title_mms_full_timestamp">完全なタイムスタンプ</string>

@@ -386,10 +386,6 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Ekstra indstillinger</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Fjern Unicode</string>
-    <string name="pref_summary_strip_unicode">Erstat gængse tegn, som ikke understøttes i 160-tegns SMS-beskeder</string>
-
     <!-- Enable emojis -->
     <string name="menu_insert_emoji">Indsæt smileys</string>
     <string name="pref_title_enable_emojis">Smiley-understøttelse</string>

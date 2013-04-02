@@ -445,10 +445,6 @@
 
     <string name="pref_extra_settings">Weitere Einstellungen</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Unicode entfernen</string>
-    <string name="pref_summary_strip_unicode">Zeichen ersetzen, die in SMS-Nachrichten nicht unterstützt werden</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Emoji-Unterstützung</string>
     <string name="pref_summary_enable_emojis">Unterstützung für Emojis aktivieren</string>

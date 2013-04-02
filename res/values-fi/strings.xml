@@ -377,8 +377,6 @@
     <string name="pref_summary_mms_full_timestamp">Näytä aika ja päivä aikaleimassa</string>
     <string name="pref_title_mms_use_sent_timestamp">Alkuperäinen aikaleima</string>
     <string name="pref_summary_mms_use_sent_timestamp">Näytä lähetyspäivä vastaanottopäivän sijaan</string>
-    <string name="pref_title_strip_unicode">Rajaa merkistöä</string>
-    <string name="pref_summary_strip_unicode">Muuta yleisiksi merkeiksi jotka eivät ole tuettuna 160 merkin tekstiviesteissä</string>
     <string name="pref_title_enable_emojis">Emoji-tuki</string>
     <string name="pref_summary_enable_emojis">Ota 471 unicode-hymiötä käyttöön</string>
     <string name="pref_keyboard_emoji">Emoji</string>

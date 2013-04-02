@@ -448,10 +448,6 @@
 
     <string name="pref_extra_settings">Paramètres supplémentaires</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Conversion unicode</string>
-    <string name="pref_summary_strip_unicode">Remplace les caractères qui ne sont pas pris en charge dans les 160 caractères des messages SMS</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Activer les Emoji</string>
     <string name="pref_summary_enable_emojis">Activer la reconnaissance des Emoji, 471 belles émoticônes</string>

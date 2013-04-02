@@ -450,10 +450,6 @@
 
     <string name="pref_extra_settings">其他设置</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">除去 Unicode</string>
-    <string name="pref_summary_strip_unicode">在160字符短信内把不支持的字符替换掉</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">绘文字支持</string>
     <string name="pref_summary_enable_emojis">开启绘文字 (一套471个视觉情感符号) 的支持</string>

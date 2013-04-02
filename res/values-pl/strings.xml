@@ -392,10 +392,6 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Dodatkowe ustawienia</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Opuszczaj Unikod</string>
-    <string name="pref_summary_strip_unicode">Zastępuj znaki (ogonki itp.), które nie są wspierane w 160-znakowych wiadomościach SMS</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Włącz emoji</string>
     <string name="pref_summary_enable_emojis">Włącz wsparcie dla zestawu 471 unikodowych emotikon emoji</string>

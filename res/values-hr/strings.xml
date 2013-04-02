@@ -386,10 +386,6 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Dodatne postavke</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Skini unicode</string>
-    <string name="pref_summary_strip_unicode">Zamjeni učestale znakove koji nisu podržani u SMS porukama dugim 160 znakova. npr (č->c)</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Emoji podrška</string>
     <string name="pref_summary_enable_emojis">Uključi podršku za unicode emojije</string>

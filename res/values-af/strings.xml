@@ -348,10 +348,6 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Ekstra instellings</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Strip unicode</string>
-    <string name="pref_summary_strip_unicode">Vervang algemene karakters wat nie ondersteun word in 160 karakter SMS boodskappe nie</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Emoji ondersteuning</string>
     <string name="pref_summary_enable_emojis">Aktiveer ondersteuning vir unicode emojis, \'n stel van 471 mooi prentjie ikone</string>

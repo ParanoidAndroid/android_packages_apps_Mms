@@ -373,8 +373,6 @@
     <string name="pref_summary_mms_notification_vibrate_call">"Permiteţi vibrarea în timpul unui apel"</string>
     <string name="pref_title_mms_notification_vibrate_custom">"Model vibrare personalizat"</string>
     <string name="pref_extra_settings">"Setări suplimentare"</string>
-    <string name="pref_title_strip_unicode">"Înlocuire unicod"</string>
-    <string name="pref_summary_strip_unicode">"Înlocuiţi caracterele comune, care nu sunt acceptate în 160 de caractere SMS"</string>
     <string name="pref_title_enable_emojis">"Suport Emoji"</string>
     <string name="pref_summary_enable_emojis">"Activaţi suportul pentru Unicode emojis, un set de 471 emoticoane simpatice"</string>
     <string name="pref_title_mms_full_timestamp">"Marcaje de timp integrale"</string>

@@ -379,8 +379,6 @@
     <string name="pref_title_mms_use_sent_timestamp">Data/hora original</string>
     <string name="pref_summary_mms_use_sent_timestamp">Exibe data de envio em vez de data de recebimento</string>
     <string name="menu_insert_emoji">Inserir emojis</string>
-    <string name="pref_title_strip_unicode">Retirar unicode</string>
-    <string name="pref_summary_strip_unicode">Substituir caracteres comuns que não são suportados em mensagens SMS de 160 caracteres</string>
     <string name="pref_title_enable_emojis">Suporte emoji</string>
     <string name="pref_summary_enable_emojis">Ativa o suporte a emojis unicode, um conjunto de 471 emoticons</string>
     <string name="pref_quickmessage">Mensagem Rápida e Resposta</string>

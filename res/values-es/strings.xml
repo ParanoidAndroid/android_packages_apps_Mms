@@ -378,8 +378,6 @@
     <string name="pref_title_mms_notification_vibrate_custom">Patrón personalizado</string>
     <string name="pref_text_mms_notification_vibrate_custom">Secuencia inactivo/activo en milisegundos: inactivo, activo, inactivo, activo,\u2026</string>
     <string name="pref_extra_settings">Ajustes adicionales</string>
-    <string name="pref_title_strip_unicode">Limpiar Unicode</string>
-    <string name="pref_summary_strip_unicode">Sustituir los caracteres que no son compatibles en los mensajes SMS</string>
     <string name="pref_title_enable_emojis">Habilitar Emoji</string>
     <string name="pref_summary_enable_emojis">Habilitar soporte para Emoji Unicode, una colección de 471 simpáticos emoticonos</string>
     <string name="pref_title_mms_full_timestamp">Marca de tiempo completa</string>

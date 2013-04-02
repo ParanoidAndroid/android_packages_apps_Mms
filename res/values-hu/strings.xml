@@ -445,10 +445,6 @@
 
     <string name="pref_extra_settings">Extra beállítások</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Unicode levágása</string>
-    <string name="pref_summary_strip_unicode">Nem támogatott karakterek levágása az SMS üzenetből</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Ikonok engedélyezése</string>
     <string name="pref_summary_enable_emojis">Ikonok megjelenítéséhez szükséges unicode támogatás engedélyezése</string>

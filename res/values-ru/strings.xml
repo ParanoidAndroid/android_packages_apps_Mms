@@ -349,10 +349,6 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Дополнительные настройки</string>
 
-    <!-- Strip unicode -->
-    <string name="pref_title_strip_unicode">Заменять юникод</string>
-    <string name="pref_summary_strip_unicode">Замена неподдерживаемых символов в сообщении обычными</string>
-
     <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Включить emojis</string>
     <string name="pref_summary_enable_emojis">Включить поддержку emojis, набора из 471 отличных юникод смайликов</string>

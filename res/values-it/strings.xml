@@ -395,8 +395,6 @@
     <string name="pref_summary_templates_show_gesture">Mostra traccia della gesture</string>
     <string name="pref_title_template_gestures_sensitivity">Sensibilità gesture</string>
     <string name="pref_extra_settings">Impostazioni aggiuntive</string>
-    <string name="pref_title_strip_unicode">Rimuovi unicode</string>
-    <string name="pref_summary_strip_unicode">Sostituisci caratteri comuni che non sono supportati nei messaggi SMS da 160 caratteri</string>
     <string name="pref_title_enable_emojis">Supporto emoji</string>
     <string name="pref_summary_enable_emojis">Abilita il supporto agli emoji unicode, un set di 471 graziosi "emoticons"</string>
     <string name="menu_insert_emoji">Inserisci emoji</string>

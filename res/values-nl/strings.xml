@@ -377,8 +377,6 @@
     <string name="pref_title_mms_notification_vibrate_custom">Aangepast trilpatroon</string>
     <string name="pref_text_mms_notification_vibrate_custom">Indeling uit/aan in miliseconden: uit, aan, uit, aan, enz.</string>
     <string name="pref_extra_settings">Meer\u2026</string>
-    <string name="pref_title_strip_unicode">Unicode-compatibiliteit</string>
-    <string name="pref_summary_strip_unicode">Niet-ondersteunde karakters in sms-berichten automatisch vervangen</string>
     <string name="pref_title_enable_emojis">Emoji</string>
     <string name="pref_summary_enable_emojis">Unicode-emoji\'s, 471 leuke smiley\'s, inschakelen</string>
     <string name="menu_insert_emoji">Emoji invoegen</string>

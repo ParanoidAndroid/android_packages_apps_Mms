@@ -344,33 +344,17 @@
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 
-    <!-- **** CYANOGENMOD ADDITIONS START **** -->
+    <!-- CYANOGENMOD ADDITIONS -->
 
-    <!-- Message options - Add SMS to calendar -->
     <string name="menu_add_to_calendar">Ajouter au calendrier</string>
-
-    <!-- QM Dialog box buttons -->
     <string name="button_close">Fermer</string>
     <string name="button_view">Afficher</string>
     <string name="button_templates">Modèles</string>
-
-    <!-- QM - Hint text in message body field when keyboard is exposed -->
     <string name="type_to_reply_text_enter_to_send">Saisissez une réponse</string>
-
-    <!-- QM Toast -->
     <string name="toast_sending_message">Envoi du message</string>
-
-    <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Répondre</string>
     <string name="qm_mark_read">Lu</string>
-
-    <!-- QM - Counter separator -->
     <string name="message_counter_separator">de</string>
-
-
-    <!-- NOTIFICATIONS -->
-
-    <!-- Privacy mode -->
     <string name="pref_title_notification_privacy_mode_enabled">Confidentialité</string>
     <string name="pref_summary_notification_privacy_mode_enabled">Masquer l\'expéditeur et le contenu du message dans la barre d\'état et désactiver la \'Réponse rapide\'</string>
     <string name="notification_single_title_privacy_mode">Nouveau message</string>
@@ -378,44 +362,22 @@
     <string name="notification_multiple_title_privacy_mode">Nouveaux messages</string>
     <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> messages non lus</string>
     <string name="notification_ticker_privacy_mode">Nouveau message reçu</string>
-
-    <!-- Vibrate pattern -->
     <string name="pref_title_mms_notification_vibrate_pattern">Style de vibration</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Changer le style de vibration</string>
     <string name="pref_title_mms_notification_vibrate_custom">Style de vibration personnalisé</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on en millisecondes: off, on, off, on, \u2026</string>
-
-    <!-- Vibrate on call -->
     <string name="pref_title_mms_notification_vibrate_call">Vibration lors d\'un appel</string>
     <string name="pref_summary_mms_notification_vibrate_call">Autoriser la vibration pendant un appel</string>
-
-
-    <!-- QUICKMESSAGE -->
-
     <string name="pref_quickmessage">Réponse rapide</string>
-
-    <!-- Use dark theme -->
     <string name="pref_dark_theme_title">Utiliser le thème noir</string>
     <string name="pref_dark_theme_summary">Si non sélectionné, le thème \'clair\' sera utilisé par défaut</string>
-
-    <!-- Show pop-up -->
     <string name="pref_quickmessage_title">Afficher le pop-up</string>
     <string name="pref_quickmessage_summary">Afficher le pop-up pour les SMS entrants</string>
-
-    <!-- Wake and unlock -->
     <string name="pref_wake_unlock_title">Réveiller et déverrouiller</string>
     <string name="pref_wake_unlock_summary">Réveiller et déverrouiller l\'appareil à l\'arrivée de messages (écran de verrouillage non sécurisé seulement)</string>
-
-    <!-- Close all messages -->
     <string name="pref_close_all_title">Tout fermer</string>
     <string name="pref_close_all_summary">Le bouton \'Fermer\' ferme tous les messages</string>
-
-
-    <!-- SMS TEMPLATES -->
-
     <string name="prefs_templates_settings">Modèles SMS</string>
-
-    <!-- Manage SMS templates -->
     <string name="pref_title_templates_manage">Modèles</string>
     <string name="pref_summary_templates_manage">Gérer vos modèles SMS</string>
     <string name="template_explanation">Insérer ou modifier un modèle de texte et associer optionnellement un geste</string>
@@ -435,47 +397,30 @@
     <string name="template_cancel_confirm_title">Attention</string>
     <string name="template_cancel_confirm_text">Le modèle va être supprimé. Continuer\u00A0?</string>
     <string name="gestures_already_present">Attention\u00A0: Un geste similaire est associé à un autre modèle\u00A0!</string>
-
-    <!-- Show gesture trace -->
     <string name="pref_title_templates_show_gesture">Gestes</string>
     <string name="pref_summary_templates_show_gesture">Afficher la trace du geste</string>
-
-    <!-- Gesture sensitivity -->
     <string name="pref_title_template_gestures_sensitivity">Sensibilité du geste</string>
-
-
-    <!-- EXTRA SETTINGS -->
-
     <string name="pref_extra_settings">Paramètres supplémentaires</string>
-
-    <!-- Enable emojis -->
+    <string name="pref_title_unicode_stripping">Gestion Unicode</string>
+    <string name="pref_unicode_stripping_leave_intact">Conserver les caractères</string>
+    <string name="pref_unicode_stripping_non_encodable">Enlever les caractères non encodables</string>
+    <string name="pref_unicode_stripping_all">Enlever tout les caractères Unicode</string>
     <string name="pref_title_enable_emojis">Activer les Emoji</string>
     <string name="pref_summary_enable_emojis">Activer la reconnaissance des Emoji, 471 belles émoticônes</string>
     <string name="menu_insert_emoji">Insérer un Emoji</string>
-
-    <!-- Full timestamps -->
+    <string name="pref_title_enable_softbank_encoding">SoftBank Emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">Utiliser l\'encodage SoftBank Emoji</string>
     <string name="pref_title_mms_full_timestamp">Date complète</string>
     <string name="pref_summary_mms_full_timestamp">Afficher la date et l\'heure des messages</string>
-
-    <!-- Original timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Date originale</string>
     <string name="pref_summary_mms_use_sent_timestamp">Afficher la date d\'envoi au lieu de la date de réception</string>
-
-    <!-- Soft Keyboard Type -->
     <string name="pref_title_input_type">Option du clavier virtuel</string>
     <string name="pref_keyboard_emoji">Afficher la touche des émoticônes</string>
     <string name="pref_keyboard_new_line">Afficher la touche Entrée</string>
     <string name="pref_keyboard_unknown">Inconnu, veuillez resélectionner</string>
-
-    <!-- Settings item for boolean option for SMS Split Counter -->
     <string name="pref_title_sms_split_counter">Compteur de séparation</string>
-    <!-- Settings item description for boolean SMS Split 160 characters setting -->
     <string name="pref_summary_sms_split_counter">Ajouter un compteur au message ex\u00A0: (1/2)</string>
-
-    <!-- Insert contact information -->
     <string name="menu_insert_contact_info">Insérer les détails d\'un contact</string>
     <string name="cannot_find_contact">Impossible d\'insérer les détails du contact sélectionné</string>
     <string name="insert_contact_info_positive_button">Insérer</string>
-
-    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>

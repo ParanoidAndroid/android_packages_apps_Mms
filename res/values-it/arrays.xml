@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
  * Copyright (C) 2008 Esmertec AG.
  * Copyright (C) 2008 The Android Open Source Project
  *
@@ -43,27 +43,5 @@
   </string-array>
   <string-array name="empty_subject_strings">
     <item msgid="7691141505407124426">"nessun oggetto"</item>
-  </string-array>
-  <string-array name="pref_templates_gestures_sensitivity_entries">
-    <item>1 (Tollerante)</item>
-    <item>2</item>
-    <item>3</item>
-    <item>4</item>
-    <item>5</item>
-    <item>6</item>
-    <item>7</item>
-    <item>8</item>
-    <item>9</item>
-    <item>10</item>
-    <item>11</item>
-    <item>12 (Preciso)</item>
-  </string-array>
-  <string-array name="pref_mms_notification_vibrate_pattern_entries">
-    <item>Normale</item>
-    <item>Vibrazione media</item>
-    <item>Vibrazione lunga</item>
-    <item>Ripetute e brevi</item>
-    <item>Ripetute e lunghe</item>
-    <item>@string/pref_title_mms_notification_vibrate_custom</item>
   </string-array>
 </resources>

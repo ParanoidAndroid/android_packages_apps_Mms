@@ -1055,7 +1055,7 @@ public class MessagingNotification {
                 mrIntent.putExtra(QmMarkRead.SMS_THREAD_ID, mostRecentNotification.mThreadId);
                 PendingIntent mrPendingIntent = PendingIntent.getBroadcast(context, 0, mrIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
-                noti.addAction(R.drawable.ic_menu_done_holo_dark, markReadText, mrPendingIntent);
+                noti.addAction(R.drawable.ic_mark_read_holo_dark, markReadText, mrPendingIntent);
 
                 // Add the Call action
                 CharSequence callText = context.getText(R.string.menu_call);

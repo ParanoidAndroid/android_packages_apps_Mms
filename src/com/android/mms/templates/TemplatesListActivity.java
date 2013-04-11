@@ -16,9 +16,9 @@
 
 package com.android.mms.templates;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ListActivity;
 import android.app.LoaderManager;
 import android.content.ContentUris;
 import android.content.CursorLoader;
@@ -28,32 +28,31 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
+import android.view.ActionMode;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 
 import com.android.mms.R;
 import com.android.mms.templates.TemplatesProvider.Template;
 import com.android.mms.ui.ConversationList;
 
-public class TemplatesListActivity extends Activity implements
+public class TemplatesListActivity extends ListActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     // codes for dialogs
-    private static final int DIALOG_CANCEL_CONFIRM = 2;
-
     private static final int LOAD_TEMPLATES = 1;
 
     private ListView mListView;
-
-    private long mTemplateToDeleteId;
 
     private SimpleCursorAdapter mAdapter;
 
@@ -63,11 +62,15 @@ public class TemplatesListActivity extends Activity implements
         startActivity(intent);
     }
 
-    protected void doDeleteTemplate() {
-        Uri uriToDelete = ContentUris
-                .withAppendedId(Template.CONTENT_URI, mTemplateToDeleteId);
-        getContentResolver().delete(uriToDelete, null, null);
-        TemplateGesturesLibrary.getStore(this).removeEntry(String.valueOf(mTemplateToDeleteId));
+    protected void doDeleteTemplates(long[] templatesToDeleteIds) {
+        int count = templatesToDeleteIds.length;
+        for (int i = 0; i < count; i++) {
+            Uri uriToDelete = ContentUris
+                    .withAppendedId(Template.CONTENT_URI, templatesToDeleteIds[i]);
+            getContentResolver().delete(uriToDelete, null, null);
+            TemplateGesturesLibrary.getStore(this)
+                    .removeEntry(String.valueOf(templatesToDeleteIds[i]));
+        }
     }
 
     protected void modifyTemplate(long id) {
@@ -77,25 +80,22 @@ public class TemplatesListActivity extends Activity implements
         startActivity(intent);
     }
 
-    @Override
-    public boolean onContextItemSelected(MenuItem item) {
+    private void confirmDeleteTemplates() {
+        final long[] templatesToDeleteIds = mListView.getCheckedItemIds();
+        int count = templatesToDeleteIds.length;
 
-        final int itemId = item.getItemId();
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.template_confirm_dialog_title);
+        builder.setMessage(getResources().getQuantityString(R.plurals.template_confirm_delete_conversation, count, count));
 
-        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item
-                .getMenuInfo();
+        builder.setPositiveButton(R.string.delete, new Dialog.OnClickListener() {
+            public void onClick(DialogInterface arg0, int arg1) {
+                doDeleteTemplates(templatesToDeleteIds);
+            }
+        });
 
-        switch (itemId) {
-            case R.id.template_delete:
-                mTemplateToDeleteId = info.id;
-                showDialog(DIALOG_CANCEL_CONFIRM);
-                break;
-
-            case R.id.template_edit:
-                modifyTemplate(info.id);
-                break;
-        }
-        return super.onContextItemSelected(item);
+        builder.setNegativeButton(R.string.no, null);
+        builder.show();
     }
 
     @Override
@@ -103,20 +103,21 @@ public class TemplatesListActivity extends Activity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.templates_list);
 
-        mListView = (ListView) findViewById(R.id.template_lv);
+        mListView = (ListView) findViewById(android.R.id.list);
+        mListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
+        mListView.setMultiChoiceModeListener(new ModeCallback());
 
         getLoaderManager().initLoader(LOAD_TEMPLATES, null, this);
 
         mAdapter = new SimpleCursorAdapter(this,
-                android.R.layout.simple_list_item_1, null, new String[] {
+                android.R.layout.simple_list_item_activated_1, null, new String[] {
                         Template.TEXT
                 }, new int[] {
                         android.R.id.text1
                 }, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 
         mListView.setAdapter(mAdapter);
-        View emptyView = findViewById(R.id.empty);
-        mListView.setEmptyView(emptyView);
+        mListView.setEmptyView(findViewById(R.id.empty));
         mListView.setOnItemClickListener(new OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long id) {
@@ -125,49 +126,6 @@ public class TemplatesListActivity extends Activity implements
         });
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
-
-        registerForContextMenu(mListView);
-    }
-
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
-
-        if (v == mListView) {
-            getMenuInflater().inflate(R.menu.templates_list_context_menu, menu);
-            menu.setHeaderTitle(R.string.template_ctx_menu_title);
-        }
-
-        super.onCreateContextMenu(menu, v, menuInfo);
-    }
-
-    @Override
-    protected Dialog onCreateDialog(int id, Bundle args) {
-
-        switch (id) {
-            case DIALOG_CANCEL_CONFIRM:
-                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle(R.string.template_cancel_confirm_title);
-                builder.setMessage(R.string.template_cancel_confirm_text);
-                builder.setPositiveButton(R.string.yes, new Dialog.OnClickListener() {
-
-                    public void onClick(DialogInterface arg0, int arg1) {
-                        doDeleteTemplate();
-                    }
-                });
-                builder.setNegativeButton(R.string.no, new Dialog.OnClickListener() {
-
-                    public void onClick(DialogInterface dialog, int arg1) {
-                        dialog.dismiss();
-                    }
-                });
-                builder.setCancelable(true);
-                return builder.create();
-
-            default:
-                break;
-        }
-
-        return super.onCreateDialog(id, args);
     }
 
     @Override
@@ -207,4 +165,67 @@ public class TemplatesListActivity extends Activity implements
         mAdapter.swapCursor(null);
     }
 
+    private class ModeCallback implements ListView.MultiChoiceModeListener {
+        private View mMultiSelectActionBarView;
+        private TextView mSelectedTemplatesCount;
+
+        @Override
+        public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+            MenuInflater inflater = getMenuInflater();
+
+            inflater.inflate(R.menu.template_list_multi_select_menu, menu);
+
+            if (mMultiSelectActionBarView == null) {
+                mMultiSelectActionBarView = LayoutInflater.from(TemplatesListActivity.this)
+                        .inflate(R.layout.template_list_multi_select_actionbar, null);
+
+                mSelectedTemplatesCount = (TextView) mMultiSelectActionBarView
+                        .findViewById(R.id.selected_template_count);
+            }
+
+            mode.setCustomView(mMultiSelectActionBarView);
+
+            ((TextView) mMultiSelectActionBarView.findViewById(R.id.title))
+                    .setText(R.string.select_template);
+
+            return true;
+        }
+
+        @Override
+        public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+            if (mMultiSelectActionBarView == null) {
+                ViewGroup v = (ViewGroup) LayoutInflater.from(TemplatesListActivity.this)
+                        .inflate(R.layout.template_list_multi_select_actionbar, null);
+
+                mode.setCustomView(v);
+                mSelectedTemplatesCount = (TextView) v.findViewById(R.id.selected_template_count);
+            }
+            return true;
+        }
+
+        @Override
+        public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.delete:
+                    if (mListView.getCheckedItemCount() > 0) {
+                        confirmDeleteTemplates();
+                    }
+                    mode.finish();
+                    break;
+                default:
+                    break;
+            }
+            return true;
+        }
+
+        @Override
+        public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
+            mSelectedTemplatesCount.setText(Integer.toString(mListView.getCheckedItemCount()));
+        }
+
+        @Override
+        public void onDestroyActionMode(ActionMode mode) {
+            // Do nothing here
+        }
+    }
 }

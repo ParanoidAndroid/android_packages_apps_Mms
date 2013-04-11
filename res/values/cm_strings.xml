@@ -97,9 +97,13 @@
     <string name="template_not_present_error">There are no defined templates</string>
     <string name="template_not_present_error_title">Error</string>
     <string name="template_select">Select a template</string>
-    <string name="template_cancel_confirm_title">Warning</string>
-    <string name="template_cancel_confirm_text">The template will be deleted. Continue?</string>
-    <string name="gestures_already_present">Warning: A similar gesture is associated to another template!</string>
+    <string name="template_confirm_dialog_title">Delete?</string>
+    <plurals name="template_confirm_delete_conversation">
+        <item quantity="one">One template will be deleted.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> templates will be deleted.</item>
+    </plurals>
+    <string name="gestures_already_present">A similar gesture is already associated with another template</string>
+    <string name="select_template">Select templates</string>
 
     <!-- Show gesture trace -->
     <string name="pref_title_templates_show_gesture">Gesture</string>

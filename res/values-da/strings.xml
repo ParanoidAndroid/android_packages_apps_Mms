@@ -386,6 +386,12 @@
     <!-- Extra Settings: -->
     <string name="pref_extra_settings">Ekstra indstillinger</string>
 
+    <!-- Strip unicode -->
+    <string name="pref_title_unicode_stripping">Fjern Unicode</string>
+    <string name="pref_unicode_stripping_leave_intact">Lad tegn være uberørte</string>
+    <string name="pref_unicode_stripping_non_encodable">Fjern ikke-kodbare tegn</string>
+    <string name="pref_unicode_stripping_all">Fjern alle Unicode-tegn</string>
+
     <!-- Enable emojis -->
     <string name="menu_insert_emoji">Indsæt smileys</string>
     <string name="pref_title_enable_emojis">Smiley-understøttelse</string>

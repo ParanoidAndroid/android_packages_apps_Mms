@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2012-13 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="pref_extra_settings">Ekstra instellings</string>
+    <string name="pref_title_enable_emojis">Emoji ondersteuning</string>
+    <string name="pref_summary_enable_emojis">Aktiveer ondersteuning vir unicode emojis, \'n stel van 471 mooi prentjie ikone</string>
+    <string name="menu_insert_emoji">Plaas emoji ikone</string>
+    <string name="pref_title_sms_split_counter">Verdeel teller</string>
+    <string name="pref_summary_sms_split_counter">Voeg teller by boodskap bv. (1/2)</string>
+    <string name="prefs_templates_settings">SMS sjablone</string>
+    <string name="pref_title_templates_manage">Sjablone</string>
+    <string name="pref_summary_templates_manage">Bestuur die beskikbare SMS sjablone</string>
+    <string name="pref_title_templates_show_gesture">Gebaar</string>
+    <string name="pref_summary_templates_show_gesture">Wys die gebaar spoor</string>
+    <string name="pref_title_template_gestures_sensitivity">Gebaar sensitiwiteit</string>
+    <string name="template_save">Stoor</string>
+    <string name="template_insert_hint">Tik die sjabloon teks hier</string>
+    <string name="template_empty_text">Die teks veld kan nie leeg wees nie</string>
+    <string name="template_explanation">Tik die sjabloon teks en trek opsioneel \'n gebaar om daarmee te assosieer</string>
+    <string name="template_edit">Verander</string>
+    <string name="template_delete">Verwyder</string>
+    <string name="template_ctx_menu_title">Aksies</string>
+    <string name="template_list_title">Sjablone</string>
+    <string name="template_new_title">Nuwe sjabloon</string>
+    <string name="template_insert">Plaas sjabloon</string>
+    <string name="template_gesture_draw">Trek die gebaar in die spasie hieronder</string>
+    <string name="template_not_present_error">Daar is geen sjablone beskikbaar nie</string>
+    <string name="template_not_present_error_title">Fout</string>
+    <string name="template_select">Kies \'n sjabloon</string>
+    <string name="template_cancel_confirm_title">Waarskuwing</string>
+    <string name="template_cancel_confirm_text">Die sjabloon gaan uitgevee word. Wil jy voort gaan?</string>
+    <string name="gestures_already_present">Waarskuwing: \'n soortgelyke gebaar is alreeds geassosieer met \'n ander sjabloon!</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Vibrasie patroon</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Verander die vibrasie patroon</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibreer op oproep</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Laat vibrasies toe tydens \'n oproep</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Pasgemaakte vibrasie patroon</string>
+    <string name="pref_text_mms_notification_vibrate_custom">Af/aan formaat in millisekondes ...</string>
+    <string name="pref_title_mms_full_timestamp">Volledige tydstempel</string>
+    <string name="pref_summary_mms_full_timestamp">Vertoon beide die datum en die tyd in die tydstempel</string>
+    <string name="pref_title_mms_use_sent_timestamp">Tydstempel</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Vertoon die gestuurde tyd in plaas van die ontvangs tyd in die tydstempel</string>
+    <string name="menu_add_to_calendar">Voeg by kalender</string>
+    <string name="pref_keyboard_emoji">Vertoon die glimlaggies-sleutel</string>
+    <string name="pref_keyboard_new_line">Vertoon die invoer-sleutel</string>
+    <string name="pref_keyboard_unknown">Onbekend, herselekteer asseblief</string>
+    <string name="pref_title_input_type">Sagte sleutelbord tipe</string>
+    <string name="pref_quickmessage">Kitsantwoord</string>
+    <string name="pref_quickmessage_title">Kitsboodskap-dialoog</string>
+    <string name="pref_quickmessage_summary">Vertoon die Kitsboodskap-dialoog vir inkomende SMS-boodskappe</string>
+    <string name="pref_wake_unlock_title">Aktiveer en ontsluit</string>
+    <string name="pref_wake_unlock_summary">Aktiveer en ontsluit die toestel met inkomende SMS-bookskappe (slegs onveilige slotskerms)</string>
+    <string name="pref_close_all_title">Maak almal toe</string>
+    <string name="pref_close_all_summary">Die \'Maak toe\'-knoppie maak alle boodskappe in die Kitsboodskap-dialoog toe</string>
+    <string name="pref_dark_theme_title">Gebruik donker tema</string>
+    <string name="pref_dark_theme_summary">Tensy die instelling gekies is, sal die ligte tema gebruik word vir die Kitsboodskap-dialoog</string>
+    <string name="message_counter_separator">van</string>
+    <string name="button_close">Maak toe</string>
+    <string name="button_view">Maak oop</string>
+    <string name="button_templates">Sjablone</string>
+    <string name="type_to_reply_text_enter_to_send">Raak om te antwoord</string>
+    <string name="toast_sending_message">Die boodskap word gestuur</string>
+    <string name="qm_quick_reply">Antwoord</string>
+    <string name="qm_mark_read">Gelees</string>
+    <string name="menu_insert_contact_info">Voeg kontak besonderhede by</string>
+    <string name="cannot_find_contact">Kan nie die inligting van die gekose kontak byvoeg nie</string>
+    <string name="insert_contact_info_positive_button">Voeg by</string>
+</resources>

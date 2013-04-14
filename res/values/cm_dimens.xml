@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2011 The Android Open Source Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,20 +16,9 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <dimen name="message_item_avatar_on_right_text_indent">50dip</dimen>
-    <dimen name="message_item_text_padding_left_right">12dip</dimen>
-    <dimen name="message_item_text_padding_top">5dip</dimen>
 
-    <dimen name="avatar_width_height">64dip</dimen>
-
-    <dimen name="input_text_height">48dip</dimen>
-    <dimen name="input_text_height_adjusted">8dip</dimen>
-
-    <dimen name="mms_inline_attachment_size">178dip</dimen>
-
-    <dimen name="widget_margin_top">0dip</dimen>
-    <dimen name="widget_margin_left">0dip</dimen>
-    <dimen name="widget_margin_right">0dip</dimen>
-    <dimen name="widget_margin_bottom">0dip</dimen>
+    <!-- QuickMessage -->
+    <dimen name="qm_message_height">205dp</dimen>
+    <dimen name="qm_dialog_button_bar_height">48dip</dimen>
 
 </resources>

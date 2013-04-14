@@ -373,8 +373,8 @@
     <string name="pref_extra_settings">拡張設定</string>
     <string name="pref_title_enable_emojis">絵文字サポート</string>
     <string name="pref_summary_enable_emojis">ユニコード絵文字サポートを有効にする, 471個のステキな絵文字</string>
-    <string name="pref_title_enable_softbank_encodidng">Softbank絵文字</string>
-    <string name="pref_summary_enable_softbank_encodidng">SoftBankの絵文字変換ルールを使用する</string>
+    <string name="pref_title_enable_softbank_encoding">Softbank絵文字</string>
+    <string name="pref_summary_enable_softbank_encoding">SoftBankの絵文字変換ルールを使用する</string>
     <string name="pref_title_mms_full_timestamp">完全なタイムスタンプ</string>
     <string name="pref_summary_mms_full_timestamp">タイムスタンプに日付と時刻の両方を表示する</string>
     <string name="pref_title_mms_use_sent_timestamp">送信時刻表示</string>

@@ -462,8 +462,8 @@
     <string name="menu_insert_emoji">Emoji einfügen</string>
 
     <!-- Enable SoftBank emoji encoding -->
-    <string name="pref_title_enable_softbank_encodidng">SoftBank-Kodierung</string>
-    <string name="pref_summary_enable_softbank_encodidng">Die SoftBank-Kodierung für Emojis verwenden</string>
+    <string name="pref_title_enable_softbank_encoding">SoftBank-Kodierung</string>
+    <string name="pref_summary_enable_softbank_encoding">Die SoftBank-Kodierung für Emojis verwenden</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Volle Datumsangabe</string>

@@ -391,8 +391,8 @@
     <string name="pref_summary_enable_emojis">Uključi podršku za unicode emojije</string>
 
     <!-- Enable SoftBank emoji encoding -->
-    <string name="pref_title_enable_softbank_encodidng">Softbank emoji</string>
-    <string name="pref_summary_enable_softbank_encodidng">Uključi podršku za SoftBank emoji enkodiranje</string>
+    <string name="pref_title_enable_softbank_encoding">Softbank emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">Uključi podršku za SoftBank emoji enkodiranje</string>
 
     <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Puna vremenska oznaka</string>

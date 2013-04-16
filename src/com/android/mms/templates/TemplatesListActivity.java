@@ -44,7 +44,7 @@ import android.widget.TextView;
 
 import com.android.mms.R;
 import com.android.mms.templates.TemplatesProvider.Template;
-import com.android.mms.ui.ConversationList;
+import com.android.mms.ui.MessagingPreferenceActivity;
 
 public class TemplatesListActivity extends ListActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
@@ -138,7 +138,7 @@ public class TemplatesListActivity extends ListActivity implements
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Intent intent = new Intent(this, ConversationList.class);
+                Intent intent = new Intent(this, MessagingPreferenceActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 return true;

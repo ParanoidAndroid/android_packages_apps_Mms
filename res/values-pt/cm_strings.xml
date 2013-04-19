@@ -97,4 +97,6 @@
     <string name="pref_unicode_stripping_all">Retirar todos os caracteres unicode</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
     <string name="pref_summary_enable_softbank_encoding">Usar codificação Softbank emoji</string>
+    <string name="pref_title_enable_quick_emojis">Botão rápido p/ emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Exibir um botão ao lado da caixa de texto para acesso rápido a emoji</string>
 </resources>

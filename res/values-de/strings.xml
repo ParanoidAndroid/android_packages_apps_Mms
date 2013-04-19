@@ -434,8 +434,6 @@
     <string name="template_not_present_error">Keine Vorlagen vorhanden</string>
     <string name="template_not_present_error_title">Fehler</string>
     <string name="template_select">Vorlage auswählen</string>
-    <string name="template_cancel_confirm_title">Warnung</string>
-    <string name="template_cancel_confirm_text">Soll die Vorlage wirklich gelöscht werden?</string>
     <string name="gestures_already_present">Warnung: Eine ähnliche Geste wurde bereits mit einer anderen Vorlage verknüpft!</string>
 
     <!-- Show gesture trace -->

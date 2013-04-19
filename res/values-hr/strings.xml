@@ -371,8 +371,6 @@
     <string name="template_not_present_error">Nema gotovih predložaka</string>
     <string name="template_not_present_error_title">Greška</string>
     <string name="template_select">Odaberite predložak</string>
-    <string name="template_cancel_confirm_title">Upozorenje</string>
-    <string name="template_cancel_confirm_text">Predložak će biti obrisan. Nastavi?</string>
     <string name="gestures_already_present">Upozorenje: Drugi predložak ima sličnu gestu!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->

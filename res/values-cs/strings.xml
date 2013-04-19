@@ -369,8 +369,6 @@
     <string name="template_not_present_error">Nejsou definovány žádné šablony</string>
     <string name="template_not_present_error_title">Chyba</string>
     <string name="template_select">Vyberte šablonu</string>
-    <string name="template_cancel_confirm_title">Varování</string>
-    <string name="template_cancel_confirm_text">Šablona bude smazána. Opravdu chcete pokračovat?</string>
     <string name="gestures_already_present">Varování: podobné gesto je již přiřazené k jiné šabloně!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->

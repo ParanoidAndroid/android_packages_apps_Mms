@@ -391,8 +391,6 @@
     <string name="template_not_present_error">Вы не определили шаблон</string>
     <string name="template_not_present_error_title">Ошибка</string>
     <string name="template_select">Выберите шаблон</string>
-    <string name="template_cancel_confirm_title">Внимание</string>
-    <string name="template_cancel_confirm_text">Желаете отменить?</string>
     <string name="gestures_already_present">Внимание: подобный жест связан с другим шаблоном!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->

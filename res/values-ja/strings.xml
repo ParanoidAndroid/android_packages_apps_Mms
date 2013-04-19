@@ -367,8 +367,6 @@
     <string name="template_not_present_error">テンプレートは定義されてません</string>
     <string name="template_not_present_error_title">エラー</string>
     <string name="template_select">テンプレートを選択</string>
-    <string name="template_cancel_confirm_title">警告</string>
-    <string name="template_cancel_confirm_text">テンプレートは削除されます. 続けますか?</string>
     <string name="gestures_already_present">警告: 他のテンプレートに似たようなジェスチャーが設定されています!</string>
     <string name="pref_extra_settings">拡張設定</string>
     <string name="pref_title_enable_emojis">絵文字サポート</string>

@@ -380,8 +380,6 @@
     <string name="template_not_present_error">Ви не визначити шаблон</string>
     <string name="template_not_present_error_title">Помилка</string>
     <string name="template_select">Виберіть шаблон</string>
-    <string name="template_cancel_confirm_title">Увага</string>
-    <string name="template_cancel_confirm_text">Хочете скасувати?</string>
     <string name="gestures_already_present">Увага: схожий жест пов’язаний із іншим шаблоном!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->

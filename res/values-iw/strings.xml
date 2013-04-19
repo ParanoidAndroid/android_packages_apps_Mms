@@ -381,8 +381,6 @@
     <string name="template_not_present_error">אין תבניות מוגדרות</string>
     <string name="template_not_present_error_title">שגיאה</string>
     <string name="template_select">בחר תבנית</string>
-    <string name="template_cancel_confirm_title">אזהרה</string>
-    <string name="template_cancel_confirm_text">התבנית תמחק. להמשיך?</string>
     <string name="gestures_already_present">אזהרה: מחווה דומה משוייכת לתבנית אחרת!</string>
 
     <!-- Change Vibrate pattern/method for message notification -->

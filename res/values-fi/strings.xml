@@ -363,8 +363,6 @@
     <string name="template_not_present_error">Määritettyä pohjaa ei löydy</string>
     <string name="template_not_present_error_title">Virhe</string>
     <string name="template_select">Valitse viestipohja</string>
-    <string name="template_cancel_confirm_title">Varoitus</string>
-    <string name="template_cancel_confirm_text">Viestipohja poistetaan. Haluatko jatkaa?</string>
     <string name="gestures_already_present">Varoitus: Samankaltainen ele on liitetty toiseen pohjaan!</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Värinän kaava</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Muuta värinän kaavaa</string>

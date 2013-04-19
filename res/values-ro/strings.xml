@@ -364,8 +364,6 @@
     <string name="template_not_present_error">"Nu aveţi nici un şablon definit"</string>
     <string name="template_not_present_error_title">"Eroare"</string>
     <string name="template_select">"Selectaţi un şablon"</string>
-    <string name="template_cancel_confirm_title">"Avertisment"</string>
-    <string name="template_cancel_confirm_text">"Doriţi să anulaţi?"</string>
     <string name="gestures_already_present">"Avertisment: Un gest smilar este asociat cu un alt şablon!"</string>
     <string name="pref_title_mms_notification_vibrate_pattern">"Model vibrare"</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">"Schimbaţi modelul de vibrare"</string>

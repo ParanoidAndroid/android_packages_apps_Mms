@@ -62,8 +62,6 @@
     <string name="template_not_present_error">Il n\'y a pas de modèles</string>
     <string name="template_not_present_error_title">Erreur</string>
     <string name="template_select">Sélectionner un modèle</string>
-    <string name="template_cancel_confirm_title">Attention</string>
-    <string name="template_cancel_confirm_text">Le modèle va être supprimé. Continuer\u00A0?</string>
     <string name="gestures_already_present">Attention\u00A0: Un geste similaire est associé à un autre modèle\u00A0!</string>
     <string name="pref_title_templates_show_gesture">Gestes</string>
     <string name="pref_summary_templates_show_gesture">Afficher la trace du geste</string>

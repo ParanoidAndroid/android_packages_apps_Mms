@@ -3,7 +3,6 @@
 /*
  * Copyright (C) 2007-2008 Esmertec AG.
  * Copyright (C) 2007-2008 The Android Open Source Project
- * QuickMessage: Copyright (C) 2012 The CyanogenMod Project (DvTonder)
 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,8 +18,7 @@
  */
  -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_label" msgid="1503967887341230795">"Сообщения"</string>
     <string name="new_message" msgid="1530369762346003973">"Новое сообщение"</string>
     <string name="menu_call_back" msgid="7538482331117914146">"Вызов: <xliff:g id="NAME">%s</xliff:g>"</string>
@@ -343,125 +341,5 @@
     <string name="notification_separator" msgid="2334673105226536422">"  "</string>
     <string name="enumeration_comma" msgid="213598026698964628">", "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> – <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
-
-    <!-- CYANOGENMOD EDITS START -->
-
-    <!-- Extra Settings: -->
-    <string name="pref_extra_settings">Дополнительные настройки</string>
-
-    <!-- Strip unicode -->
-    <string name="pref_title_unicode_stripping">Заменять юникод</string>
-    <string name="pref_unicode_stripping_leave_intact">Не заменять символы юникода</string>
-    <string name="pref_unicode_stripping_non_encodable">Заменять некодируемые символы</string>
-    <string name="pref_unicode_stripping_all">Заменять все символы юникода</string>
-
-    <!-- Enable emojis -->
-    <string name="pref_title_enable_emojis">Включить emoji</string>
-    <string name="pref_summary_enable_emojis">Включить поддержку emoji, набора из 471 отличных юникод смайликов</string>
-
-    <!-- Emoji Menu item -->
-    <string name="menu_insert_emoji">Вставить emoji</string>
-
-    <!-- Enable SoftBank emoji encoding -->
-    <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
-    <string name="pref_summary_enable_softbank_encoding">Использовать кодировку SoftBank для emoji</string>
-
-    <!-- Settings item for boolean option for SMS Split Counter -->
-    <string name="pref_title_sms_split_counter">Счётчик фрагментов</string>
-    <string name="pref_summary_sms_split_counter">Добавляет к сообщению счётчик вида \"1/2\"</string>
-
-    <!-- Sms templates -->
-    <string name="prefs_templates_settings">SMS шаблоны</string>
-    <string name="pref_title_templates_manage">Шаблоны</string>
-    <string name="pref_summary_templates_manage">Управление шаблонами SMS</string>
-    <string name="pref_title_templates_show_gesture">Жесты</string>
-    <string name="pref_summary_templates_show_gesture">Показывать след жеста</string>
-    <string name="pref_title_template_gestures_sensitivity">Чувствительность жеста</string>
-    <string name="template_save">Сохранить</string>
-    <string name="template_insert_hint">Введите сюда текст шаблона</string>
-    <string name="template_empty_text">Текстовое поле не может быть пустым</string>
-    <string name="template_explanation">Введите или измените текст шаблона и нарисуйте жест, чтобы связать их</string>
-    <string name="template_edit">Изменить</string>
-    <string name="template_delete">Удалить</string>
-    <string name="template_ctx_menu_title">Действия</string>
-    <string name="template_list_title">Шаблоны</string>
-    <string name="template_new_title">Новый шаблон</string>
-    <string name="template_insert">Ввести шаблон</string>
-    <string name="template_gesture_draw">Нарисуйте жест в области ниже</string>
-    <string name="template_not_present_error">Вы не определили шаблон</string>
-    <string name="template_not_present_error_title">Ошибка</string>
-    <string name="template_select">Выберите шаблон</string>
-    <string name="gestures_already_present">Внимание: подобный жест связан с другим шаблоном!</string>
-
-    <!-- Change Vibrate pattern/method for message notification -->
-    <string name="pref_title_mms_notification_vibrate_pattern">Режим вибрации</string>
-    <string name="pref_summary_mms_notification_vibrate_pattern">Изменение режима вибрации</string>
-    <string name="pref_title_mms_notification_vibrate_call">Вибрация при разговоре</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрацию при разговоре</string>
-    <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
-    <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл</string>
-
-    <!-- Full timestamps -->
-    <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
-    <string name="pref_summary_mms_full_timestamp">Включение отображения полной даты и времени в сообщениях</string>
-
-    <!-- Which timestamps -->
-    <string name="pref_title_mms_use_sent_timestamp">Исходная метка времени</string>
-    <string name="pref_summary_mms_use_sent_timestamp">Отображение и сохранение даты отправки, а не даты приёма</string>
-
-    <!-- Add menu for 'Add SMS to calendar remind' -->
-    <string name="menu_add_to_calendar">Добавить в календарь</string>
-
-    <!-- Soft Keyboard Type -->
-    <string name="pref_keyboard_emoji">Кнопка \"Смайлики\"</string>
-    <string name="pref_keyboard_new_line">Кнопка \"Отправить\"</string>
-    <string name="pref_keyboard_unknown">Неизвестный тип. Пожалуйста, повторите выбор</string>
-
-    <!-- Settings item for the soft keyboard picker -->
-    <string name="pref_title_input_type">Тип клавиатуры</string>
-
-    <!-- QUICKMESSAGE SUPPORT -->
-    <!-- Preferences -->
-    <string name="pref_quickmessage">Быстрый ответ</string>
-    <string name="pref_quickmessage_title">Включить быстрый ответ</string>
-    <string name="pref_quickmessage_summary">Показывать всплывающее окно для быстрого ответа</string>
-    <string name="pref_wake_unlock_title">Пробуждение и разблокировка</string>
-    <string name="pref_wake_unlock_summary">Пробуждать и разблокировать устройство при входящем сообщении (только для небезопасной блокировки экрана)</string>
-    <string name="pref_close_all_title">Закрыть всё</string>
-    <string name="pref_close_all_summary">Кнопка \"Закрыть\" закрывает все сообщения</string>
-    <string name="pref_dark_theme_title">Тёмная тема</string>
-    <string name="pref_dark_theme_summary">Если не выбрано, будет использована светлая тема</string>
-    <string name="message_counter_separator">из</string>
-
-    <!-- QM Dialog box buttons -->
-    <string name="button_close">Закрыть</string>
-    <string name="button_view">Посмотреть</string>
-    <string name="button_templates">Шаблоны</string>
-
-    <!-- Hint text in message body field when keyboard is exposed -->
-    <string name="type_to_reply_text_enter_to_send">Введите текст для ответа</string>
-
-    <!-- QM Toast -->
-    <string name="toast_sending_message">Отправка сообщения\u2026</string>
-
-    <!-- QM - Quick reply -->
-    <string name="qm_quick_reply">Ответить</string>
-    <string name="qm_mark_read">Прочтено</string>
-
-    <!-- Privacy mode -->
-    <string name="pref_title_notification_privacy_mode_enabled">Безопасный режим</string>
-    <string name="pref_summary_notification_privacy_mode_enabled">Скрывать отправителя и сообщение в строке состояния, а также отключить \"Быстрый ответ\"</string>
-    <string name="notification_single_title_privacy_mode">Новое сообщение</string>
-    <string name="notification_single_text_privacy_mode">1 непрочитанное сообщение</string>
-    <string name="notification_multiple_title_privacy_mode">Новые сообщения</string>
-    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> сообщения (ий)</string>
-    <string name="notification_ticker_privacy_mode">Получено новое сообщение</string>
-
-    <!-- Insert contact information -->
-    <string name="menu_insert_contact_info">Вставить контакт</string>
-    <string name="cannot_find_contact">Не удаётся вставить информацию из выбранного контакта</string>
-    <string name="insert_contact_info_positive_button">Вставить</string>
-
-    <!-- CYANOGENMOD EDITS END -->
 
 </resources>

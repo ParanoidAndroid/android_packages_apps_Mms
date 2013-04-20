@@ -62,8 +62,14 @@
     <string name="template_gesture_draw">Disegna la gesture nello spazio sottostante</string>
     <string name="template_not_present_error">Non sono stati definiti dei modelli</string>
     <string name="template_not_present_error_title">Errore</string>
-    <string name="template_select">Seleziona un modello</string>
-    <string name="gestures_already_present">Attenzione! Una gesture simile è associata ad un altro template</string>
+    <string name="template_select">Seleziona modello</string>
+    <string name="template_confirm_dialog_title">Cencellare?</string>
+    <plurals name="template_confirm_delete_conversation">
+        <item quantity="one">Un modello sarà eliminato.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> modelli saranno eliminati.</item>
+    </plurals>
+    <string name="gestures_already_present">Una gesture simile è già associata con un altro modello</string>
+    <string name="select_template">Seleziona modelli</string>
     <string name="pref_title_templates_show_gesture">Gesture</string>
     <string name="pref_summary_templates_show_gesture">Mostra traccia della gesture</string>
     <string name="pref_title_template_gestures_sensitivity">Sensibilità gesture</string>
@@ -75,6 +81,8 @@
     <string name="pref_title_enable_emojis">Supporto emoji</string>
     <string name="pref_summary_enable_emojis">Abilita il supporto agli emoji unicode, un set di 471 graziosi "emoticons"</string>
     <string name="menu_insert_emoji">Inserisci emoji</string>
+    <string name="pref_title_enable_quick_emojis">Tasto rapido emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Visualizza un pulsante di accesso rapido alle emoji accanto all\'area di immissione testo</string>
     <string name="pref_title_enable_softbank_encoding">Emoji SoftBank</string>
     <string name="pref_summary_enable_softbank_encoding">Usa codifica SoftBank per le emoji</string>
     <string name="pref_title_mms_full_timestamp">Timestamp completi</string>

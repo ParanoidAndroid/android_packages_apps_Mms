@@ -82,6 +82,8 @@
     <string name="pref_title_enable_emojis">Habilitar emoticonos</string>
     <string name="pref_summary_enable_emojis">Habilitar soporte para emoticonos Unicode, una colección de 471 simpáticos emoticonos</string>
     <string name="menu_insert_emoji">Insertar emoticonos</string>
+    <string name="pref_title_enable_quick_emojis">Botón de emoticonos</string>
+    <string name="pref_summary_enable_quick_emojis">Mostrar un botón para insertar emoticonos</string>
     <string name="pref_title_enable_softbank_encoding">Emoticonos SoftBank</string>
     <string name="pref_summary_enable_softbank_encoding">Usar emoticonos con codificación SoftBank</string>
     <string name="pref_title_mms_full_timestamp">Marca de tiempo completa</string>

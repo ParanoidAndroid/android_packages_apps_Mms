@@ -81,6 +81,8 @@
     <string name="pref_title_enable_emojis">Ikonok engedélyezése</string>
     <string name="pref_summary_enable_emojis">Ikonok megjelenítéséhez szükséges unicode támogatás engedélyezése</string>
     <string name="menu_insert_emoji">Ikon beszúrása</string>
+    <string name="pref_title_enable_quick_emojis">Ikonok gyorsgomb</string>
+    <string name="pref_summary_enable_quick_emojis">Ikonok gyorsgomb megjelenítése a beviteli mező előtt</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank ikonok</string>
     <string name="pref_summary_enable_softbank_encoding">SoftBank ikonok megjelenítéséhez szükséges unicode használata</string>
     <string name="pref_title_mms_full_timestamp">Teljes időbélyeg</string>

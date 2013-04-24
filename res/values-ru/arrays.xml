@@ -16,8 +16,7 @@
  * limitations under the License.
   -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="default_smiley_names">
     <item msgid="1831934949361041701">"Радость"</item>
     <item msgid="1601611480575517120">"Грустный"</item>
@@ -43,13 +42,5 @@
   </string-array>
   <string-array name="empty_subject_strings">
     <item msgid="7691141505407124426">"без темы"</item>
-  </string-array>
-  <string-array name="pref_mms_notification_vibrate_pattern_entries">
-    <item>Нормальный</item>
-    <item>Средняя вибрация</item>
-    <item>Длинная вибрация</item>
-    <item>Несколько коротких</item>
-    <item>Несколько длинных</item>
-    <item>@string/pref_title_mms_notification_vibrate_custom</item>
   </string-array>
 </resources>

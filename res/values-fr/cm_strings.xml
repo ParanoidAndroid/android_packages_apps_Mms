@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+<!-- Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -62,7 +62,9 @@
     <string name="template_not_present_error">Il n\'y a pas de modèles</string>
     <string name="template_not_present_error_title">Erreur</string>
     <string name="template_select">Sélectionner un modèle</string>
+    <string name="template_confirm_dialog_title">Supprimer\u00A0?</string>
     <string name="gestures_already_present">Attention\u00A0: Un geste similaire est associé à un autre modèle\u00A0!</string>
+    <string name="select_template">Sélectionner des modèles</string>
     <string name="pref_title_templates_show_gesture">Gestes</string>
     <string name="pref_summary_templates_show_gesture">Afficher la trace du geste</string>
     <string name="pref_title_template_gestures_sensitivity">Sensibilité du geste</string>
@@ -74,6 +76,8 @@
     <string name="pref_title_enable_emojis">Activer les Emoji</string>
     <string name="pref_summary_enable_emojis">Activer la reconnaissance des Emoji, 471 belles émoticônes</string>
     <string name="menu_insert_emoji">Insérer un Emoji</string>
+    <string name="pref_title_enable_quick_emojis">Accès rapide aux Emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Afficher un bouton à côté de la zone de texte pour un accès rapide aux Emoji</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank Emoji</string>
     <string name="pref_summary_enable_softbank_encoding">Utiliser l\'encodage SoftBank Emoji</string>
     <string name="pref_title_mms_full_timestamp">Date complète</string>

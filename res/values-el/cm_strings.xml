@@ -81,6 +81,8 @@
     <string name="pref_title_enable_emojis">Υποστήριξη emoji</string>
     <string name="pref_summary_enable_emojis">Ενεργοποιήστε την υποστήριξη για τα unicode emoji, ένα σύνολο από 471 ωραία emoticon</string>
     <string name="menu_insert_emoji">Εισαγωγή emoji</string>
+    <string name="pref_title_enable_quick_emojis">Πλήκτρο γρήγορων emoji</string>
+    <string name="pref_summary_enable_quick_emojis">Εμφάνιση πλήκτρου στην εισαγωγή κειμένου για γρήγορη πρόσβαση στα emoji</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
     <string name="pref_summary_enable_softbank_encoding">Χρήση SoftBank κωδικοποίησης για τα emoji</string>
     <string name="pref_title_mms_full_timestamp">Πλήρες timestamp</string>

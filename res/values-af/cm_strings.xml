@@ -13,9 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_extra_settings">Ekstra instellings</string>
     <string name="pref_title_enable_emojis">Emoji ondersteuning</string>
     <string name="pref_summary_enable_emojis">Aktiveer ondersteuning vir unicode emojis, \'n stel van 471 mooi prentjie ikone</string>
@@ -42,8 +40,6 @@
     <string name="template_not_present_error">Daar is geen sjablone beskikbaar nie</string>
     <string name="template_not_present_error_title">Fout</string>
     <string name="template_select">Kies \'n sjabloon</string>
-    <string name="template_cancel_confirm_title">Waarskuwing</string>
-    <string name="template_cancel_confirm_text">Die sjabloon gaan uitgevee word. Wil jy voort gaan?</string>
     <string name="gestures_already_present">Waarskuwing: \'n soortgelyke gebaar is alreeds geassosieer met \'n ander sjabloon!</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrasie patroon</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Verander die vibrasie patroon</string>

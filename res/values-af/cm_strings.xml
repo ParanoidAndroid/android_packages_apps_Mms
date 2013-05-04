@@ -18,6 +18,10 @@
     <string name="pref_title_enable_emojis">Emoji ondersteuning</string>
     <string name="pref_summary_enable_emojis">Aktiveer ondersteuning vir unicode emojis, \'n stel van 471 mooi prentjie ikone</string>
     <string name="menu_insert_emoji">Plaas emoji ikone</string>
+    <string name="pref_title_enable_quick_emojis">Vinnige emoji knoppie</string>
+    <string name="pref_summary_enable_quick_emojis">Vertoon \'n knoppie langs die teks veld vir vinnige toegang tot emoji</string>
+    <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
+    <string name="pref_summary_enable_softbank_encoding">Gebruik SoftBank emoji enkodering</string>
     <string name="pref_title_sms_split_counter">Verdeel teller</string>
     <string name="pref_summary_sms_split_counter">Voeg teller by boodskap bv. (1/2)</string>
     <string name="prefs_templates_settings">SMS sjablone</string>
@@ -40,7 +44,9 @@
     <string name="template_not_present_error">Daar is geen sjablone beskikbaar nie</string>
     <string name="template_not_present_error_title">Fout</string>
     <string name="template_select">Kies \'n sjabloon</string>
+    <string name="template_confirm_dialog_title">Verwyder?</string>
     <string name="gestures_already_present">Waarskuwing: \'n soortgelyke gebaar is alreeds geassosieer met \'n ander sjabloon!</string>
+    <string name="select_template">Kies \'n sjabloon</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrasie patroon</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Verander die vibrasie patroon</string>
     <string name="pref_title_mms_notification_vibrate_call">Vibreer op oproep</string>
@@ -65,7 +71,18 @@
     <string name="pref_close_all_summary">Die \'Maak toe\'-knoppie maak alle boodskappe in die Kitsboodskap-dialoog toe</string>
     <string name="pref_dark_theme_title">Gebruik donker tema</string>
     <string name="pref_dark_theme_summary">Tensy die instelling gekies is, sal die ligte tema gebruik word vir die Kitsboodskap-dialoog</string>
+    <string name="pref_title_unicode_stripping">Verwyder \'unicode\'</string>
+    <string name="pref_unicode_stripping_leave_intact">Laat karakters ongeskonde</string>
+    <string name="pref_unicode_stripping_non_encodable">Verwyder nie-enkodeerbare karakters</string>
+    <string name="pref_unicode_stripping_all">Verwyder al \'unicode\' karakters</string>
     <string name="message_counter_separator">van</string>
+    <string name="pref_title_notification_privacy_mode_enabled">Privaatheid-modus</string>
+    <string name="pref_summary_notification_privacy_mode_enabled">Verberg sender naam en boodskap in statusbalk en deaktiveer Kitsantwoord</string>
+    <string name="notification_single_title_privacy_mode">Nuwe boodskap</string>
+    <string name="notification_single_text_privacy_mode">1 ongeleesde boodskap</string>
+    <string name="notification_multiple_title_privacy_mode">Nuwe boodskappe</string>
+    <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> ongeleesde boodskappe</string>
+    <string name="notification_ticker_privacy_mode">Nuwe boodskap ontvang</string>
     <string name="button_close">Maak toe</string>
     <string name="button_view">Maak oop</string>
     <string name="button_templates">Sjablone</string>

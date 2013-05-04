@@ -44,15 +44,4 @@
   <string-array name="empty_subject_strings">
     <item msgid="7691141505407124426">"без теми"</item>
   </string-array>
-
-    <!-- CYANOGENMOD ADDITIONS -->
-
-  <string-array name="pref_mms_notification_vibrate_pattern_entries">
-    <item>Нормальний</item>
-    <item>Середня вібрація</item>
-    <item>Довга вібрація</item>
-    <item>Кілька коротких</item>
-    <item>Кілька довгих</item>
-    <item>@string/pref_title_mms_notification_vibrate_custom</item>
-  </string-array>
 </resources>

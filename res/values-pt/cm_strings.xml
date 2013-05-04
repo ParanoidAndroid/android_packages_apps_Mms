@@ -13,9 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_title_sms_split_counter">Contador de separação</string>
     <string name="pref_summary_sms_split_counter">Adiciona contador à mensagem. ex: (1/2)</string>
     <string name="prefs_templates_settings">Modelos de sms</string>
@@ -39,10 +37,6 @@
     <string name="template_not_present_error_title">Erro</string>
     <string name="template_select">Selecione um modelo</string>
     <string name="template_confirm_dialog_title">Apagar?</string>
-    <plurals name="template_confirm_delete_conversation">
-        <item quantity="one">Um modelo será apagado.</item>
-        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> modelos serão apagados.</item>
-    </plurals>
     <string name="gestures_already_present">Um gesto similar já está associado com outro modelo!</string>
     <string name="select_template">Selecionar modelos</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Padrão de vibração</string>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2008 Esmertec AG
      Copyright (C) 2008 The Android Open Source Project
-     Copyright (C) 2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -44,32 +43,4 @@
     <string-array name="empty_subject_strings">
         <item msgid="7691141505407124426">"Kein Betreff"</item>
     </string-array>
-
-    <!-- **** CYANOGENMOD ADDITIONS START **** -->
-
-    <string-array name="pref_mms_notification_vibrate_pattern_entries">
-        <item>Normal</item>
-        <item>Mittel</item>
-        <item>Lang</item>
-        <item>Mehrmals kurz</item>
-        <item>Mehrmals lang</item>
-        <item>Benutzerdefiniert</item>
-    </string-array>
-
-    <string-array name="pref_templates_gestures_sensitivity_entries">
-        <item>1 (Sehr unempfindlich)</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12 (Sehr empfindlich)</item>
-    </string-array>
-
-    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>

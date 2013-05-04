@@ -13,22 +13,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="pref_templates_gestures_sensitivity_entries">
-      <item>1 (amplia)</item>
-      <item>2</item>
-      <item>3</item>
-      <item>4</item>
-      <item>5</item>
-      <item>6</item>
-      <item>7</item>
-      <item>8</item>
-      <item>9</item>
-      <item>10</item>
-      <item>11</item>
-      <item>12 (estricta)</item>
+        <item>1 (amplia)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12 (estricta)</item>
     </string-array>
     <string-array name="pref_mms_notification_vibrate_pattern_entries">
         <item>Normal</item>

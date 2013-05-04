@@ -13,9 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="menu_add_to_calendar">Tilføj til kalender</string>
     <string name="button_close">Luk</string>
     <string name="button_view">Vis</string>
@@ -65,10 +63,6 @@
     <string name="template_not_present_error_title">Fejl</string>
     <string name="template_select">Vælg en skabelon</string>
     <string name="template_confirm_dialog_title">Slet?</string>
-    <plurals name="template_confirm_delete_conversation">
-        <item quantity="one">Én skabelon vil blive slettet.</item>
-        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> skabeloner vil blive slettet.</item>
-    </plurals>
     <string name="gestures_already_present">En lign. bevægelse er allerede tilknyttet en anden skabelon</string>
     <string name="select_template">Vælg skabeloner</string>
     <string name="pref_title_templates_show_gesture">Bevægelse</string>

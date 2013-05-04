@@ -342,45 +342,4 @@
     <string name="notification_separator" msgid="2334673105226536422">"  "</string>
     <string name="enumeration_comma" msgid="213598026698964628">"、 "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
-
-   <!-- Cyanogenmod Extra entries -->
-    <string name="pref_title_sms_split_counter">分割カウンタ</string>
-    <string name="pref_summary_sms_split_counter">メッセージに分割数のカウンタを追加する。例: (1/2)</string>
-    <string name="menu_insert_emoji">絵文字を挿入</string>
-    <string name="prefs_templates_settings">SMSテンプレート</string>
-    <string name="pref_title_templates_manage">テンプレート</string>
-    <string name="pref_summary_templates_manage">SMSテンプレートの管理</string>
-    <string name="pref_title_templates_show_gesture">ジェスチャー</string>
-    <string name="pref_summary_templates_show_gesture">ジェスチャーの軌跡を表示</string>
-    <string name="pref_title_template_gestures_sensitivity">ジェスチャーの感度</string>
-    <string name="template_save">保存</string>
-    <string name="template_insert_hint">テンプレートテキストを挿入</string>
-    <string name="template_empty_text">テキストフィールドは空にできません</string>
-    <string name="template_explanation">テンプレートテキストを挿入あるいは編集し、必要であればジェスチャーを描いて定義します</string>
-    <string name="template_edit">編集</string>
-    <string name="template_delete">削除</string>
-    <string name="template_ctx_menu_title">アクション</string>
-    <string name="template_list_title">テンプレート</string>
-    <string name="template_new_title">新規テンプレート</string>
-    <string name="template_insert">テンプレートを挿入</string>
-    <string name="template_gesture_draw">下のスペースにジェスチャーを描いてください</string>
-    <string name="template_not_present_error">テンプレートは定義されてません</string>
-    <string name="template_not_present_error_title">エラー</string>
-    <string name="template_select">テンプレートを選択</string>
-    <string name="gestures_already_present">警告: 他のテンプレートに似たようなジェスチャーが設定されています!</string>
-    <string name="pref_extra_settings">拡張設定</string>
-    <string name="pref_title_enable_emojis">絵文字サポート</string>
-    <string name="pref_summary_enable_emojis">ユニコード絵文字サポートを有効にする, 471個のステキな絵文字</string>
-    <string name="pref_title_enable_softbank_encoding">Softbank絵文字</string>
-    <string name="pref_summary_enable_softbank_encoding">SoftBankの絵文字変換ルールを使用する</string>
-    <string name="pref_title_mms_full_timestamp">完全なタイムスタンプ</string>
-    <string name="pref_summary_mms_full_timestamp">タイムスタンプに日付と時刻の両方を表示する</string>
-    <string name="pref_title_mms_use_sent_timestamp">送信時刻表示</string>
-    <string name="pref_summary_mms_use_sent_timestamp">着信時刻の代わりに送信時刻を表示する</string>
-    <string name="pref_title_mms_notification_vibrate_pattern">振動パターン</string>
-    <string name="pref_summary_mms_notification_vibrate_pattern">振動パターンを変更する</string>
-    <string name="pref_title_mms_notification_vibrate_call">着信時に振動</string>
-    <string name="pref_summary_mms_notification_vibrate_call">着信中に振動を許可する</string>
-    <string name="pref_title_mms_notification_vibrate_custom">カスタム振動パターン</string>
-    <string name="pref_text_mms_notification_vibrate_custom">オフ/オンをミリ秒で記述: オフ, オン, オフ, オン, ...</string>
 </resources>

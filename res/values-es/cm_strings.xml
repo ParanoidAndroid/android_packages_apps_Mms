@@ -13,9 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="menu_add_to_calendar">Añadir al calendario</string>
     <string name="button_close">Cerrar</string>
     <string name="button_view">Ver</string>
@@ -65,10 +63,6 @@
     <string name="template_not_present_error_title">Error</string>
     <string name="template_select">Seleccionar una plantilla</string>
     <string name="template_confirm_dialog_title">¿Borrar?</string>
-    <plurals name="template_confirm_delete_conversation">
-        <item quantity="one">Una plantilla va a ser borrada.</item>
-        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> plantillas van a ser borradas.</item>
-    </plurals>
     <string name="gestures_already_present">Un gesto similar está actualmente asociado a otra plantilla</string>
     <string name="select_template">Seleccionar plantillas</string>
     <string name="pref_title_templates_show_gesture">Gestos</string>

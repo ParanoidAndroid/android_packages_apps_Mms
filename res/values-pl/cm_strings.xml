@@ -13,10 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="prefs_templates_settings">Szablony SMS</string>
     <string name="pref_title_templates_manage">Szablony</string>
     <string name="pref_summary_templates_manage">Zarządzaj swoimi szablonami SMS</string>
@@ -38,13 +35,8 @@
     <string name="template_not_present_error_title">Błąd</string>
     <string name="template_select">Wybierz szablon</string>
     <string name="template_confirm_dialog_title">Usunąć?</string>
-    <plurals name="template_confirm_delete_conversation">
-        <item quantity="one">Szablon zostanie usunięty.</item>
-        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> szablony zostaną usunięte.</item>
-    </plurals>
     <string name="gestures_already_present">Podobny gest jest już powiązany z innym szablonem</string>
     <string name="select_template">Wybierz szablony</string>
-
     <string name="pref_title_notification_privacy_mode_enabled">Tryb prywatny</string>
     <string name="pref_summary_notification_privacy_mode_enabled">"Ukrywa treść i nadawcę na pasku statusu oraz wyłącza 'Szybką Odpowiedź'"</string>
     <string name="notification_single_title_privacy_mode">Nowa wiadomość</string>
@@ -52,29 +44,23 @@
     <string name="notification_multiple_title_privacy_mode">Nowe wiadomości</string>
     <string name="notification_multiple_text_privacy_mode">%1$s nieprzeczytanych wiadomości</string>
     <string name="notification_ticker_privacy_mode">Otrzymano nową wiadomość</string>
-
     <string name="pref_title_mms_notification_vibrate_pattern">Wzór wibracji</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Zmień wzór wibracji</string>
     <string name="pref_title_mms_notification_vibrate_call">Wibruj w trakcie rozmowy</string>
     <string name="pref_summary_mms_notification_vibrate_call">Wibruje w trakcie aktywnego połączenia głosowego</string>
     <string name="pref_title_mms_notification_vibrate_custom">Własny wzór wibracji</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format wyłącz/włącz w milisekundach: wyłącz, włącz, wyłącz, włącz, ...</string>
-
     <string name="pref_extra_settings">Dodatkowe ustawienia</string>
-
     <string name="pref_title_enable_emojis">Włącz emotikony</string>
     <string name="pref_summary_enable_emojis">Włącz wsparcie dla Emoji, zestawu 471 emotikon w standardzie Unicode</string>
     <string name="menu_insert_emoji">Wstaw emotikony</string>
-
     <string name="pref_title_mms_full_timestamp">Pełna data</string>
     <string name="pref_summary_mms_full_timestamp">Wyświetla pełną datę oraz czas w wiadomościach</string>
     <string name="pref_title_mms_use_sent_timestamp">Oryginalna data</string>
     <string name="pref_summary_mms_use_sent_timestamp">Wyświetla datę wysłania zamiast daty odebrania wiadomości</string>
-
     <string name="pref_title_input_type">Typ klawiatury</string>
     <string name="pref_keyboard_emoji">Pokaż przycisk emotikon</string>
     <string name="pref_keyboard_new_line">Pokaż przycisk enter</string>
-
     <string name="pref_quickmessage">Szybka wiadomość</string>
     <string name="pref_quickmessage_title">Włącz Szybkie wiadomości</string>
     <string name="pref_quickmessage_summary">Pokaż wyskakujące okno wiadomości</string>
@@ -85,33 +71,23 @@
     <string name="pref_dark_theme_title">Użyj ciemnego motywu</string>
     <string name="pref_dark_theme_summary">"Jeśli opcja jest odznaczona, używany będzie jasny motyw."</string>
     <string name="message_counter_separator">z</string>
-
     <string name="button_close">Zamknij</string>
     <string name="button_view">Zobacz</string>
     <string name="button_templates">Szablony</string>
-
     <string name="type_to_reply_text_enter_to_send">Wpisz wiadomość</string>
-
     <string name="toast_sending_message">Wysyłanie</string>
-
     <string name="qm_quick_reply">Odpisz</string>
     <string name="qm_mark_read">Odznacz</string>
-
     <string name="menu_add_to_calendar">Dodaj do kalendarza</string>
-
     <string name="menu_insert_contact_info">Wstaw informacje o kontakcie</string>
     <string name="cannot_find_contact">"Wstawienie informacji o wybranym kontakcie jest niemożliwe"</string>
     <string name="insert_contact_info_positive_button">Wstaw</string>
-
     <string name="pref_title_unicode_stripping">Opuszczanie Unicode</string>
     <string name="pref_unicode_stripping_leave_intact">Pozostaw znaki niezmienione</string>
     <string name="pref_unicode_stripping_non_encodable">Opuszczaj znaki niekodowalne</string>
     <string name="pref_unicode_stripping_all">Opuszczaj wszystkie znaki</string>
-
     <string name="pref_title_enable_softbank_encoding">Emotikony SoftBank</string>
     <string name="pref_summary_enable_softbank_encoding">Używaj kodowania SoftBank dla emotikon</string>
-
     <string name="pref_title_enable_quick_emojis">Przycisk szybkich emotikon Emoji</string>
-    <string name="pref_summary_enable_quick_emojis">Wyświetlaj przycisk szybkiego dostępu do emotiko
-n Emoji obok pola tekstowego</string>
+    <string name="pref_summary_enable_quick_emojis">Wyświetlaj przycisk szybkiego dostępu do emotikon Emoji obok pola tekstowego</string>
 </resources>

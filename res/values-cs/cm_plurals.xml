@@ -14,12 +14,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="pref_mms_notification_vibrate_pattern_entries">
-        <item>Normalna</item>
-        <item>Średnia wibracja</item>
-        <item>Długa wibracja</item>
-        <item>Kilkukrotna krótka</item>
-        <item>Kilkukrotna długa</item>
-        <item>@string/pref_title_mms_notification_vibrate_custom</item>
-    </string-array>
+    <plurals name="template_confirm_delete_conversation">
+        <item quantity="one">Šablona bude smazána.</item>
+        <item quantity="few"><xliff:g id="number" example="3">%1$s</xliff:g> šablony budou smazány.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> šablon bude smazáno.</item>
+    </plurals>
 </resources>

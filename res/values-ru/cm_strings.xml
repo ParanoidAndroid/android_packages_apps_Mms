@@ -13,39 +13,21 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Extra Settings: -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="pref_extra_settings">Дополнительные настройки</string>
-
-    <!-- Strip unicode -->
     <string name="pref_title_unicode_stripping">Заменять юникод</string>
     <string name="pref_unicode_stripping_leave_intact">Не заменять символы юникода</string>
     <string name="pref_unicode_stripping_non_encodable">Заменять некодируемые символы</string>
     <string name="pref_unicode_stripping_all">Заменять все символы юникода</string>
-
-    <!-- Enable emojis -->
     <string name="pref_title_enable_emojis">Включить emoji</string>
     <string name="pref_summary_enable_emojis">Включить поддержку emoji, набора из 471 отличных юникод смайликов</string>
-
-    <!-- Emoji Menu item -->
     <string name="menu_insert_emoji">Вставить emoji</string>
-
-    <!-- Enable quick emojis -->
     <string name="pref_title_enable_quick_emojis">Кнопка emoji</string>
     <string name="pref_summary_enable_quick_emojis">Показывать кнопку вставки emoji рядом с полем ввода текста</string>
-
-    <!-- Enable SoftBank emoji encoding -->
     <string name="pref_title_enable_softbank_encoding">SoftBank emoji</string>
     <string name="pref_summary_enable_softbank_encoding">Использовать кодировку SoftBank для emoji</string>
-
-    <!-- Settings item for boolean option for SMS Split Counter -->
     <string name="pref_title_sms_split_counter">Счётчик фрагментов</string>
     <string name="pref_summary_sms_split_counter">Добавляет к сообщению счётчик вида \"1/2\"</string>
-
-    <!-- Sms templates -->
     <string name="prefs_templates_settings">SMS шаблоны</string>
     <string name="pref_title_templates_manage">Шаблоны</string>
     <string name="pref_summary_templates_manage">Управление шаблонами SMS</string>
@@ -66,42 +48,23 @@
     <string name="template_not_present_error">Вы не определили шаблон</string>
     <string name="template_not_present_error_title">Ошибка</string>
     <string name="template_confirm_dialog_title">Удалить?</string>
-    <plurals name="template_confirm_delete_conversation">
-        <item quantity="one">Один шаблон будет удалён</item>
-        <item quantity="other">Будет удалено <xliff:g id="number" example="15">%1$s</xliff:g> шаблона (ов)</item>
-    </plurals>
     <string name="gestures_already_present">Подобный жест связан с другим шаблоном</string>
     <string name="template_select">Выберите шаблон</string>
-
-    <!-- Change Vibrate pattern/method for message notification -->
     <string name="pref_title_mms_notification_vibrate_pattern">Режим вибрации</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Изменение режима вибрации</string>
     <string name="pref_title_mms_notification_vibrate_call">Вибрация при разговоре</string>
     <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрацию при разговоре</string>
     <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл</string>
-
-    <!-- Full timestamps -->
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>
     <string name="pref_summary_mms_full_timestamp">Включение отображения полной даты и времени в сообщениях</string>
-
-    <!-- Which timestamps -->
     <string name="pref_title_mms_use_sent_timestamp">Исходная метка времени</string>
     <string name="pref_summary_mms_use_sent_timestamp">Отображение и сохранение даты отправки, а не даты приёма</string>
-
-    <!-- Add menu for 'Add SMS to calendar remind' -->
     <string name="menu_add_to_calendar">Добавить в календарь</string>
-
-    <!-- Soft Keyboard Type -->
     <string name="pref_keyboard_emoji">Кнопка \"Смайлики\"</string>
     <string name="pref_keyboard_new_line">Кнопка \"Отправить\"</string>
     <string name="pref_keyboard_unknown">Неизвестный тип. Пожалуйста, повторите выбор</string>
-
-    <!-- Settings item for the soft keyboard picker -->
     <string name="pref_title_input_type">Тип клавиатуры</string>
-
-    <!-- QUICKMESSAGE SUPPORT -->
-    <!-- Preferences -->
     <string name="pref_quickmessage">Быстрый ответ</string>
     <string name="pref_quickmessage_title">Включить быстрый ответ</string>
     <string name="pref_quickmessage_summary">Показывать всплывающее окно для быстрого ответа</string>
@@ -112,23 +75,13 @@
     <string name="pref_dark_theme_title">Тёмная тема</string>
     <string name="pref_dark_theme_summary">Если не выбрано, будет использована светлая тема</string>
     <string name="message_counter_separator">из</string>
-
-    <!-- QM Dialog box buttons -->
     <string name="button_close">Закрыть</string>
     <string name="button_view">Посмотреть</string>
     <string name="button_templates">Шаблоны</string>
-
-    <!-- Hint text in message body field when keyboard is exposed -->
     <string name="type_to_reply_text_enter_to_send">Введите текст для ответа</string>
-
-    <!-- QM Toast -->
     <string name="toast_sending_message">Отправка сообщения\u2026</string>
-
-    <!-- QM - Quick reply -->
     <string name="qm_quick_reply">Ответить</string>
     <string name="qm_mark_read">Прочтено</string>
-
-    <!-- Privacy mode -->
     <string name="pref_title_notification_privacy_mode_enabled">Безопасный режим</string>
     <string name="pref_summary_notification_privacy_mode_enabled">Скрывать отправителя и сообщение в строке состояния, а также отключить \"Быстрый ответ\"</string>
     <string name="notification_single_title_privacy_mode">Новое сообщение</string>
@@ -136,10 +89,7 @@
     <string name="notification_multiple_title_privacy_mode">Новые сообщения</string>
     <string name="notification_multiple_text_privacy_mode"><xliff:g id="number" example="3">%1$s</xliff:g> сообщения (ий)</string>
     <string name="notification_ticker_privacy_mode">Получено новое сообщение</string>
-
-    <!-- Insert contact information -->
     <string name="menu_insert_contact_info">Вставить контакт</string>
     <string name="cannot_find_contact">Не удаётся вставить информацию из выбранного контакта</string>
     <string name="insert_contact_info_positive_button">Вставить</string>
-
 </resources>

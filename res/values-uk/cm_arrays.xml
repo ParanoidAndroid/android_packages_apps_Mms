@@ -15,11 +15,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="pref_mms_notification_vibrate_pattern_entries">
-        <item>Normalna</item>
-        <item>Średnia wibracja</item>
-        <item>Długa wibracja</item>
-        <item>Kilkukrotna krótka</item>
-        <item>Kilkukrotna długa</item>
+        <item>Нормальний</item>
+        <item>Середня вібрація</item>
+        <item>Довга вібрація</item>
+        <item>Кілька коротких</item>
+        <item>Кілька довгих</item>
         <item>@string/pref_title_mms_notification_vibrate_custom</item>
     </string-array>
 </resources>

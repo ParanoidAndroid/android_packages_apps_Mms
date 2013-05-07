@@ -65,7 +65,9 @@
     <string name="template_not_present_error">Keine Vorlagen vorhanden</string>
     <string name="template_not_present_error_title">Fehler</string>
     <string name="template_select">Vorlage auswählen</string>
+    <string name="template_confirm_dialog_title">Löschen?</string>
     <string name="gestures_already_present">Warnung: Eine ähnliche Geste wurde bereits mit einer anderen Vorlage verknüpft!</string>
+    <string name="select_template">Vorlagen auswählen</string>
     <string name="pref_title_templates_show_gesture">Spur anzeigen</string>
     <string name="pref_summary_templates_show_gesture">Die Spur während des Zeichnens der Geste anzeigen</string>
     <string name="pref_title_template_gestures_sensitivity">Empfindlichkeit der Gesten</string>
@@ -77,6 +79,8 @@
     <string name="pref_title_enable_emojis">Emoji-Unterstützung</string>
     <string name="pref_summary_enable_emojis">Unterstützung für Emojis aktivieren</string>
     <string name="menu_insert_emoji">Emoji einfügen</string>
+    <string name="pref_title_enable_quick_emojis">Emoji-Schnellzugriff</string>
+    <string name="pref_summary_enable_quick_emojis">Neben dem Texteingabefeld eine Schaltfläche für schnellen Zugriff auf Emojis anzeigen</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank-Kodierung</string>
     <string name="pref_summary_enable_softbank_encoding">Die SoftBank-Kodierung für Emojis verwenden</string>
     <string name="pref_title_mms_full_timestamp">Volle Datumsangabe</string>

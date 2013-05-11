@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
 /*
  * Copyright (C) 2007-2008 Esmertec AG.
  * Copyright (C) 2007-2008 The Android Open Source Project
@@ -16,9 +16,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
--->
+ -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_label" msgid="1503967887341230795">"短信"</string>
     <string name="new_message" msgid="1530369762346003973">"新信息"</string>
     <string name="menu_call_back" msgid="7538482331117914146">"呼叫<xliff:g id="NAME">%s</xliff:g>"</string>
@@ -175,11 +176,6 @@
     <string name="pref_title_notification_ringtone" msgid="8667533917574559659">"提示音"</string>
     <string name="pref_messages_to_save" msgid="3202539743892934926">"设置要保存的信息数量"</string>
     <string name="silent_ringtone" msgid="7981237991326592780">"静音"</string>
-  <string-array name="prefEntries_vibrateWhen">
-    <item msgid="2520871831815631409">"始终"</item>
-    <item msgid="6069709696037750627">"仅在静音时"</item>
-    <item msgid="7486145357487111435">"永不"</item>
-  </string-array>
     <string name="pref_title_mms_auto_retrieval" msgid="4021878285474431355">"自动检索"</string>
     <string name="pref_summary_mms_auto_retrieval" msgid="925163257363757048">"自动检索信息"</string>
     <string name="pref_title_mms_retrieval_during_roaming" msgid="6016227402731817804">"漫游时自动检索"</string>
@@ -326,7 +322,7 @@
     <string name="pick_too_many_recipients" msgid="650087588867628044">"收件人过多"</string>
     <string name="adding_recipients" msgid="2962810172527532357">"正在添加收件人..."</string>
     <string name="draft_separator" msgid="5402575086540243019">"， "</string>
-    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
+    <string name="message_count_format" msgid="4434763220590778012">" <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
     <string name="message_count_notification" msgid="3629968600032690007">"<xliff:g id="NUMBER">%1$s</xliff:g> 条新短信"</string>
   <plurals name="message_count_notification_overflow">
     <item quantity="one" msgid="3340591167508150806">"+<xliff:g id="NUMBER">%1$s</xliff:g> 条其他短信"</item>
@@ -347,3 +343,4 @@
     <string name="enumeration_comma" msgid="213598026698964628">"、 "</string>
     <string name="message_timestamp_format" msgid="4188999027493614617">"<xliff:g id="STRING_0">%1$s</xliff:g> - <xliff:g id="STRING_1">%2$s</xliff:g>"</string>
 </resources>
+

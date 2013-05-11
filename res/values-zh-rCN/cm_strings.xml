@@ -76,6 +76,8 @@
     <string name="pref_title_enable_emojis">绘文字支持</string>
     <string name="pref_summary_enable_emojis">开启绘文字 (一套471个视觉情感符号) 的支持</string>
     <string name="menu_insert_emoji">插入绘文字</string>
+    <string name="pref_title_enable_quick_emojis">快速绘文字按钮</string>
+    <string name="pref_summary_enable_quick_emojis">在输入框左侧显示一个快速访问绘文字的按钮</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank 绘文字</string>
     <string name="pref_summary_enable_softbank_encoding">使用 SoftBank 绘文字编码</string>
     <string name="pref_title_mms_full_timestamp">完整时间戳</string>

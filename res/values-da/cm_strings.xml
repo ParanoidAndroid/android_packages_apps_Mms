@@ -76,6 +76,8 @@
     <string name="pref_title_enable_emojis">Smiley-understøttelse</string>
     <string name="pref_summary_enable_emojis">Slå understøttelse af Unicode-smileys til, et sæt af 471 flotte smileys</string>
     <string name="menu_insert_emoji">Indsæt smileys</string>
+    <string name="pref_title_enable_quick_emojis">Hurtig smiley-knap</string>
+    <string name="pref_summary_enable_quick_emojis">Vis en knap ved siden af tekstområdet for hurtig adgang til smileys</string>
     <string name="pref_title_enable_softbank_encoding">SoftBank-smiley</string>
     <string name="pref_summary_enable_softbank_encoding">Brug SoftBank-smileykodning</string>
     <string name="pref_title_mms_full_timestamp">Fulde tidsstempler</string>

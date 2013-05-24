@@ -150,4 +150,7 @@
     <!-- MMS push permission -->
     <string name="label_mms_push">MMS Push</string>
     <string name="desc_mms_push">Pushes MMS from outbox to the network</string>
+
+    <!-- Toast when storage is full -->
+    <string name="storage_is_full">The messaging database is full. Please delete some conversations.</string>
 </resources>

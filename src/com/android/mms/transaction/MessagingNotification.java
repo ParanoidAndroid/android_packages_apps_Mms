@@ -67,6 +67,7 @@ import com.android.mms.data.Conversation;
 import com.android.mms.data.WorkingMessage;
 import com.android.mms.model.SlideModel;
 import com.android.mms.model.SlideshowModel;
+import com.android.mms.quickmessage.QmMarkRead;
 import com.android.mms.ui.ComposeMessageActivity;
 import com.android.mms.ui.ConversationList;
 import com.android.mms.ui.MessageUtils;
@@ -91,7 +92,7 @@ public class MessagingNotification {
     private static final String TAG = LogTag.APP;
     private static final boolean DEBUG = false;
 
-    private static final int NOTIFICATION_ID = 123;
+    public static final int NOTIFICATION_ID = 123;
     public static final int MESSAGE_FAILED_NOTIFICATION_ID = 789;
     public static final int DOWNLOAD_FAILED_NOTIFICATION_ID = 531;
     /**
@@ -342,7 +343,7 @@ public class MessagingNotification {
         }
     }
 
-    private static final class NotificationInfo {
+    public static final class NotificationInfo {
         public final Intent mClickIntent;
         public final String mMessage;
         public final CharSequence mTicker;
@@ -930,6 +931,19 @@ public class MessagingNotification {
                 sNotificationOnDeleteIntent, 0));
 
         final Notification notification;
+
+	if (messageCount == 1) {
+		// Add the 'Mark as read' action last
+		CharSequence markReadText = context.getText(R.string.qm_mark_read);
+		Intent mrIntent = new Intent();
+		mrIntent.setClass(context, QmMarkRead.class);
+		mrIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+		mrIntent.putExtra(QmMarkRead.SMS_THREAD_ID, mostRecentNotification.mThreadId);
+		PendingIntent mrPendingIntent = PendingIntent.getActivity(context, 0, mrIntent,
+			PendingIntent.FLAG_UPDATE_CURRENT);
+		noti.addAction(R.drawable.ic_menu_done_holo_dark, markReadText, mrPendingIntent);
+	}
+
 
         if (messageCount == 1) {
             // We've got a single message

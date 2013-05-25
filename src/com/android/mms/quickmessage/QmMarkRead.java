@@ -20,8 +20,8 @@
 
 package com.android.mms.quickmessage;
 
-import android.app.Activity;
 import android.app.NotificationManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,7 +29,7 @@ import android.os.Bundle;
 import com.android.mms.data.Conversation;
 import com.android.mms.transaction.MessagingNotification;
 
-public class QmMarkRead extends Activity {
+public class QmMarkRead extends BroadcastReceiver {
 	private static final String LOG_TAG = "QmMarkRead";
 
 	// Intent bungle fields
@@ -37,43 +37,28 @@ public class QmMarkRead extends Activity {
 			"com.android.mms.SMS_THREAD_ID";
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-        	super.onCreate(savedInstanceState);
-
-        	parseIntent(getIntent().getExtras(), false);
-	}
-
-	private void parseIntent(Bundle extras, boolean newMessage) {
+	public void onReceive(Context context, Intent intent) {
+        	Bundle extras = intent.getExtras();
 		if (extras == null) {
 			// We have nothing, abort 
-			finish();
+			return;
 		}
 
 		// Parse the intent and ensure we have a message Id to work with
         	long threadId = extras.getLong(SMS_THREAD_ID, -1);
         	if (threadId != -1) {
-            		Conversation con = Conversation.get(this, threadId, true);
+            		Conversation con = Conversation.get(context, threadId, true);
             		if (con != null) {
                 	// Mark thread as read 
                 	con.markAsRead(false);
 
                 	// Dismiss the notification that brought us here. 
                		NotificationManager notificationManager =
-                    		(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+                    		(NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
                 	notificationManager.cancel(MessagingNotification.NOTIFICATION_ID);
 
-                	// We are done
-                	finish();
 			}
 		}
-	}
-
-	@Override
-	protected void onNewIntent(Intent intent) {
-		super.onNewIntent(intent);
-		// Set new intent and act on it 
-        	setIntent(intent);
-        	parseIntent(intent.getExtras(), true);
 	}
 
 }

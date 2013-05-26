@@ -780,11 +780,17 @@ public class Contact {
         private Contact getContactInfo(Contact c) {
             if (c.mIsMe) {
                 return getContactInfoForSelf();
-            } else if (Mms.isEmailAddress(c.mNumber) || isAlphaNumber(c.mNumber)) {
+            } else if (Mms.isEmailAddress(c.mNumber)) {
                 return getContactInfoForEmailAddress(c.mNumber);
-            } else {
-                return getContactInfoForPhoneNumber(c.mNumber);
+            } else if (isAlphaNumber(c.mNumber)) {
+                Contact contact = getContactInfoForEmailAddress(c.mNumber);
+                if (contact.existsInDatabase()) {
+                    return contact;
+                }
+                // it wasn't an email address, so fall back to treating it
+                // as a (vanity) phone number
             }
+            return getContactInfoForPhoneNumber(c.mNumber);
         }
 
         // Some received sms's have addresses such as "OakfieldCPS" or "T-Mobile". This

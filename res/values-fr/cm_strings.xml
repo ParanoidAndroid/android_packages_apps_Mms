@@ -72,7 +72,7 @@
     <string name="pref_title_unicode_stripping">Gestion Unicode</string>
     <string name="pref_unicode_stripping_leave_intact">Conserver les caractères</string>
     <string name="pref_unicode_stripping_non_encodable">Enlever les caractères non encodables</string>
-    <string name="pref_unicode_stripping_all">Enlever tout les caractères Unicode</string>
+    <string name="pref_unicode_stripping_all">Enlever tous les caractères Unicode</string>
     <string name="pref_title_enable_emojis">Activer les Emoji</string>
     <string name="pref_summary_enable_emojis">Activer la reconnaissance des Emoji, 471 belles émoticônes</string>
     <string name="menu_insert_emoji">Insérer un Emoji</string>

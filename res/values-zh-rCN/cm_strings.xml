@@ -93,4 +93,6 @@
     <string name="menu_insert_contact_info">插入联系人信息</string>
     <string name="cannot_find_contact">无法插入选中的联系人信息</string>
     <string name="insert_contact_info_positive_button">插入</string>
+    <string name="label_mms_push">彩信推送</string>
+    <string name="desc_mms_push">将彩信从发件箱推送到移动网络</string>
 </resources>

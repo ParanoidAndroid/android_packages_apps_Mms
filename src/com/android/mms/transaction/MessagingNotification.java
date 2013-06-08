@@ -967,19 +967,18 @@ public class MessagingNotification {
                                                              // from a favorite.
 
         int defaults = 0;
+        final TelephonyManager tm =
+                (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        boolean callIsActive = tm.getCallState() != TelephonyManager.CALL_STATE_IDLE;
 
         if (isNew) {
-            TelephonyManager mTM = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-            boolean callStateIdle = mTM.getCallState() == TelephonyManager.CALL_STATE_IDLE;
-            boolean vibrateOnCall = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_CALL, true);
-
             boolean vibrate = false;
+
             if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE)) {
                 // The most recent change to the vibrate preference is to store a boolean
                 // value in NOTIFICATION_VIBRATE. If prefs contain that preference, use that
                 // first.
-                vibrate = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE,
-                        false);
+                vibrate = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE, false);
             } else if (sp.contains(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN)) {
                 // This is to support the pre-JellyBean MR1.1 version of vibrate preferences
                 // when vibrate was a tri-state setting. As soon as the user opens the Messaging
@@ -989,16 +988,25 @@ public class MessagingNotification {
                         sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_WHEN, null);
                 vibrate = "always".equals(vibrateWhen);
             }
-            if (vibrate && (vibrateOnCall || (!vibrateOnCall && callStateIdle))) {
-                /* WAS: notificationdefaults |= Notification.DEFAULT_VIBRATE;*/
-                String mVibratePattern = "custom".equals(sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, null))
-                        ? sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN_CUSTOM, "0,1200")
-                                : sp.getString(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, "0,1200");
-                        if(!mVibratePattern.equals("")) {
-                            noti.setVibrate(parseVibratePattern(mVibratePattern));
-                        } else {
-                            defaults |= Notification.DEFAULT_VIBRATE;
-                        }
+
+            if (vibrate && callIsActive) {
+                // only vibrate during calls if allowed by the user
+                vibrate = sp.getBoolean(MessagingPreferenceActivity.NOTIFICATION_VIBRATE_CALL, true);
+            }
+
+            if (vibrate) {
+                String pattern = sp.getString(
+                        MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN, "0,1200");
+                if ("custom".equals(pattern)) {
+                    pattern = sp.getString(
+                            MessagingPreferenceActivity.NOTIFICATION_VIBRATE_PATTERN_CUSTOM, "0,1200");
+                }
+
+                if (!TextUtils.isEmpty(pattern)) {
+                    noti.setVibrate(parseVibratePattern(pattern));
+                } else {
+                    defaults |= Notification.DEFAULT_VIBRATE;
+                }
             }
 
             String ringtoneStr = sp.getString(MessagingPreferenceActivity.NOTIFICATION_RINGTONE,
@@ -1173,8 +1181,7 @@ public class MessagingNotification {
             // Trigger the QuickMessage pop-up activity if enabled
             // But don't show the QuickMessage if the user is in a call or the phone is ringing
             if (qmPopupEnabled && qmIntent != null) {
-                TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-                if (tm.getCallState() == TelephonyManager.CALL_STATE_IDLE && !ConversationList.mIsRunning && !ComposeMessageActivity.mIsRunning) {
+                if (!callIsActive && !ConversationList.mIsRunning && !ComposeMessageActivity.mIsRunning) {
                     // Show the popup
                     context.startActivity(qmIntent);
                 }

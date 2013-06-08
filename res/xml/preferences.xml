@@ -146,7 +146,7 @@
         <CheckBoxPreference
             android:key="pref_key_mms_notification_vibrate_call"
             android:layout="?android:attr/preferenceLayoutChild"
-            android:dependency="pref_key_enable_notifications"
+            android:dependency="pref_key_vibrate"
             android:defaultValue="true"
             android:title="@string/pref_title_mms_notification_vibrate_call"
             android:summary="@string/pref_summary_mms_notification_vibrate_call" />

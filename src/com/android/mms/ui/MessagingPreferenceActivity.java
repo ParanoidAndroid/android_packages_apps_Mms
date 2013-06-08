@@ -102,7 +102,7 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     // Vibrate pattern
     public static final String NOTIFICATION_VIBRATE_PATTERN = "pref_key_mms_notification_vibrate_pattern";
     public static final String NOTIFICATION_VIBRATE_PATTERN_CUSTOM = "pref_key_mms_notification_vibrate_pattern_custom";
-    public static final String NOTIFICATION_VIBRATE_CALL ="pre_key_mms_notification_vibrate_call";
+    public static final String NOTIFICATION_VIBRATE_CALL ="pref_key_mms_notification_vibrate_call";
 
     // Privacy mode
     public static final String PRIVACY_MODE_ENABLED = "pref_key_enable_privacy_mode";

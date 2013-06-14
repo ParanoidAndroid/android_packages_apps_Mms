@@ -93,4 +93,6 @@
     <string name="menu_insert_contact_info">Εισαγωγή πληροφοριών επαφής</string>
     <string name="cannot_find_contact">Δεν είναι δυνατή η εισαγωγή των πληροφοριών της επιλεγμένης επαφής</string>
     <string name="insert_contact_info_positive_button">Εισαγωγή</string>
+    <string name="label_mms_push">Αποστολή MMS</string>
+    <string name="desc_mms_push">Αποστέλλει MMS από τα εξερχόμενα προς το δίκτυο</string>
 </resources>

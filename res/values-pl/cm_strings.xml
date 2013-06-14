@@ -88,6 +88,8 @@
     <string name="pref_unicode_stripping_all">Opuszczaj wszystkie znaki</string>
     <string name="pref_title_enable_softbank_encoding">Emotikony SoftBank</string>
     <string name="pref_summary_enable_softbank_encoding">Używaj kodowania SoftBank dla emotikon</string>
-    <string name="pref_title_enable_quick_emojis">Przycisk szybkich emotikon Emoji</string>
+    <string name="pref_title_enable_quick_emojis">Przycisk szybkich emotikon</string>
     <string name="pref_summary_enable_quick_emojis">Wyświetlaj przycisk emotikon Emoji obok pola tekstowego</string>
+    <string name="label_mms_push">Wysyłanie oczekujących MMS-ów</string>
+    <string name="desc_mms_push">Wysyłaj wiadomości MMS ze skrzynki nadawczej do sieci</string>
 </resources>

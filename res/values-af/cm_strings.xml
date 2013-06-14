@@ -93,4 +93,6 @@
     <string name="menu_insert_contact_info">Voeg kontak besonderhede by</string>
     <string name="cannot_find_contact">Kan nie die inligting van die gekose kontak byvoeg nie</string>
     <string name="insert_contact_info_positive_button">Voeg by</string>
+    <string name="label_mms_push">MMS stoot</string>
+    <string name="desc_mms_push">Stoot MMS van uitkassie na die netwerk toe</string>
 </resources>

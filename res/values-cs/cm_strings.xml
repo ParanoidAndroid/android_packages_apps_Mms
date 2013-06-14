@@ -93,4 +93,6 @@
     <string name="menu_insert_contact_info">Vložit informace o kontaktu</string>
     <string name="cannot_find_contact">Nelze vložit informace k vybranému kontaktu</string>
     <string name="insert_contact_info_positive_button">Vložit</string>
+    <string name="label_mms_push">Vynutit odeslání MMS</string>
+    <string name="desc_mms_push">Vynucené odeslání MMS z odchozí složky do sítě</string>
 </resources>

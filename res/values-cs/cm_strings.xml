@@ -34,8 +34,6 @@
     <string name="pref_summary_mms_notification_vibrate_pattern">Změnit vzor vibrace</string>
     <string name="pref_title_mms_notification_vibrate_custom">Vlastní vzor vibrace</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formát vyp/zap v milisekundách: vyp, zap, vyp, zap,\u2026</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrovat během hovoru</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Povolit vibrace během hovoru</string>
     <string name="pref_quickmessage">Vyskakovací okno</string>
     <string name="pref_dark_theme_title">Použít tmavé téma</string>
     <string name="pref_dark_theme_summary">Pokud není vybráno, použije se výchozí \'světlé\' téma</string>

@@ -51,10 +51,6 @@
     <string name="pref_title_mms_notification_vibrate_custom">Custom vibrate pattern</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on in milliseconds: off, on, off, on\u2026</string>
 
-    <!-- Vibrate on call -->
-    <string name="pref_title_mms_notification_vibrate_call">Vibrate on call</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Allow vibrate while on a call</string>
-
     <!-- QUICKMESSAGE -->
     <string name="pref_quickmessage">Quick reply</string>
 

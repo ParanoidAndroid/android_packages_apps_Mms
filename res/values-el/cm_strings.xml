@@ -32,10 +32,8 @@
     <string name="notification_ticker_privacy_mode">Νέο μήνυμα ελήφθη</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Μοτίβο δόνησης</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Αλλαγή μοτίβου δόνησης</string>
-    <string name="pref_title_mms_notification_vibrate_call">Δόνηση κατά την κλήση</string>
     <string name="pref_text_mms_notification_vibrate_custom">Μορφή off/on σε millisecond: off, on, off, on\u2026</string>
     <string name="pref_title_mms_notification_vibrate_custom">Προσαρμοσμένο μοτίβο δόνησης</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Να επιτρέπεται η δόνηση κατά τη διάρκεια μιας κλήσης</string>
     <string name="pref_quickmessage">Γρήγορη απάντηση</string>
     <string name="pref_dark_theme_title">Χρήση σκοτεινού θέματος</string>
     <string name="pref_dark_theme_summary">Αν δεν επιλεχθέι, το προεπιλεγμένο \'ανοιχτόχρωμο\' θέμα θα χρησιμοποιηθεί</string>

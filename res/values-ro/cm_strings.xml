@@ -39,8 +39,6 @@
     <string name="gestures_already_present">"Avertisment: Un gest smilar este asociat cu un alt şablon!"</string>
     <string name="pref_title_mms_notification_vibrate_pattern">"Model vibrare"</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">"Schimbaţi modelul de vibrare"</string>
-    <string name="pref_title_mms_notification_vibrate_call">"Vibrare în Apel"</string>
-    <string name="pref_summary_mms_notification_vibrate_call">"Permiteţi vibrarea în timpul unui apel"</string>
     <string name="pref_title_mms_notification_vibrate_custom">"Model vibrare personalizat"</string>
     <string name="pref_extra_settings">"Setări suplimentare"</string>
     <string name="pref_title_enable_emojis">"Suport Emoji"</string>

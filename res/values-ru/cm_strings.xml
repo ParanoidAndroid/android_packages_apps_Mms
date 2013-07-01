@@ -52,8 +52,6 @@
     <string name="template_select">Выберите шаблон</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Режим вибрации</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Изменение режима вибрации</string>
-    <string name="pref_title_mms_notification_vibrate_call">Вибрация при разговоре</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Разрешить вибрацию при разговоре</string>
     <string name="pref_title_mms_notification_vibrate_custom">Пользоват. режим вибрации</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат выкл/вкл в миллисекундах: выкл, вкл, выкл, вкл</string>
     <string name="pref_title_mms_full_timestamp">Полная метка времени</string>

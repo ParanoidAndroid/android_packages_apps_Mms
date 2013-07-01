@@ -41,8 +41,6 @@
     <string name="select_template">Selecionar modelos</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Padrão de vibração</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Trocar o padrão de vibração</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrar quando Chamar</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Permitir vibração enquanto chamada está ativa</string>
     <string name="pref_title_mms_notification_vibrate_custom">Personalizar padrão de vibração</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formato desligado/ligado em milissegundos: desligado, ligado, desligado, ...</string>
     <string name="pref_extra_settings">Preferências extras</string>

@@ -34,8 +34,6 @@
     <string name="pref_summary_mms_notification_vibrate_pattern">Skift vibrationsmønster</string>
     <string name="pref_title_mms_notification_vibrate_custom">Brugerdefineret vibrationsmønster</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatér fra/til i millisekunder: fra, til, fra, til, ...</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrér ved opkald</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Tillad vibration under opkald</string>
     <string name="pref_quickmessage">HurtigBesked</string>
     <string name="pref_dark_theme_title">Brug mørkt tema</string>
     <string name="pref_dark_theme_summary">Hvis ikke valgt, vil det \'lyse\' standardtema blive anvendt</string>

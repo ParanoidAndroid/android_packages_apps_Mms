@@ -46,8 +46,6 @@
     <string name="notification_ticker_privacy_mode">Otrzymano nową wiadomość</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Wzór wibracji</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Zmień wzór wibracji</string>
-    <string name="pref_title_mms_notification_vibrate_call">Wibruj w trakcie rozmowy</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Wibruje w trakcie aktywnego połączenia głosowego</string>
     <string name="pref_title_mms_notification_vibrate_custom">Własny wzór wibracji</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format wyłącz/włącz w milisekundach: wyłącz, włącz, wyłącz, włącz, ...</string>
     <string name="pref_extra_settings">Dodatkowe ustawienia</string>

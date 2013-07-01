@@ -49,8 +49,6 @@
     <string name="select_template">Kies \'n sjabloon</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibrasie patroon</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Verander die vibrasie patroon</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibreer op oproep</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Laat vibrasies toe tydens \'n oproep</string>
     <string name="pref_title_mms_notification_vibrate_custom">Pasgemaakte vibrasie patroon</string>
     <string name="pref_text_mms_notification_vibrate_custom">Af/aan formaat in millisekondes ...</string>
     <string name="pref_title_mms_full_timestamp">Volledige tydstempel</string>

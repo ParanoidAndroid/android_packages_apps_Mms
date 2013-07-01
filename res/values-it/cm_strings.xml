@@ -34,8 +34,6 @@
     <string name="pref_summary_mms_notification_vibrate_pattern">Cambia schema di vibrazione</string>
     <string name="pref_title_mms_notification_vibrate_custom">Schema personalizzato</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formatta off/on in millisecondi: off, on, off, on, \u2026</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibrazione in chiamate</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Permetti la vibrazione durante una chiamata</string>
     <string name="pref_quickmessage">Messaggi e risposte rapidi</string>
     <string name="pref_dark_theme_title">Usa tema scuro</string>
     <string name="pref_dark_theme_summary">Se non selezionato, verrà utilizzato il classico tema chiaro</string>

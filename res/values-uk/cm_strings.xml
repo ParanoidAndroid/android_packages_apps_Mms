@@ -43,8 +43,6 @@
     <string name="gestures_already_present">Увага: схожий жест пов’язаний із іншим шаблоном!</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Режим вібрації</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Зміна режиму вібрації</string>
-    <string name="pref_title_mms_notification_vibrate_call">Вібрація при розмові</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Дозволити вібрацію при розмові</string>
     <string name="pref_title_mms_notification_vibrate_custom">Користувацький режим вібрації</string>
     <string name="pref_text_mms_notification_vibrate_custom">Формат викл/вкл в мілісекундах: викл, вкл, викл, вкл</string>
     <string name="pref_title_mms_full_timestamp">Повна мітка часу</string>

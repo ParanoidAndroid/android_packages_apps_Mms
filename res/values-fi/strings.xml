@@ -366,8 +366,6 @@
     <string name="gestures_already_present">Varoitus: Samankaltainen ele on liitetty toiseen pohjaan!</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Värinän kaava</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Muuta värinän kaavaa</string>
-    <string name="pref_title_mms_notification_vibrate_call">Värinä puhelussa</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Ota värinä käyttöön puhelun aikana</string>
     <string name="pref_title_mms_notification_vibrate_custom">Kustomoitu</string>
     <string name="pref_text_mms_notification_vibrate_custom">Muotoile päälle/pois millisekunneissa: päälle, pois, päälle, pois...</string>
     <string name="pref_extra_settings">Lisäasetukset</string>

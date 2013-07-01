@@ -34,8 +34,6 @@
     <string name="pref_summary_mms_notification_vibrate_pattern">Rezgésminta beállítása</string>
     <string name="pref_title_mms_notification_vibrate_custom">Egyedi rezgésminta</string>
     <string name="pref_text_mms_notification_vibrate_custom">Formátum: ki/be milliszekundumban: ki, be, ki, be\u2026</string>
-    <string name="pref_title_mms_notification_vibrate_call">Rezgés hívás közben</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Rezgés engedélyezése hívás közben</string>
     <string name="pref_quickmessage">Gyors válasz</string>
     <string name="pref_dark_theme_title">Sötét téma használata</string>
     <string name="pref_dark_theme_summary">Ha nincs kiválasztva, az alapértelmezett \"világos\" téma lesz használva</string>

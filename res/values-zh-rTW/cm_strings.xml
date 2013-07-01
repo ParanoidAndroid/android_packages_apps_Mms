@@ -34,8 +34,6 @@
     <string name="pref_summary_mms_notification_vibrate_pattern">改變震動模式</string>
     <string name="pref_title_mms_notification_vibrate_custom">自訂震動模式</string>
     <string name="pref_text_mms_notification_vibrate_custom">安排在幾毫秒內關閉/開啟：關閉、開啟、關閉、開啟\u2026</string>
-    <string name="pref_title_mms_notification_vibrate_call">通話中震動</string>
-    <string name="pref_summary_mms_notification_vibrate_call">允許在通話中震動</string>
     <string name="pref_quickmessage">快速回覆</string>
     <string name="pref_dark_theme_title">使用暗色主題</string>
     <string name="pref_dark_theme_summary">如果未勾選，則預設的\'亮色\'主題會被使用</string>

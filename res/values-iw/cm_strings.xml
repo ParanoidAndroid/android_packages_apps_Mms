@@ -43,8 +43,6 @@
     <string name="gestures_already_present">אזהרה: מחווה דומה משוייכת לתבנית אחרת!</string>
     <string name="pref_title_mms_notification_vibrate_pattern">תבנית רטט</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">שנה את תבנית הרטט</string>
-    <string name="pref_title_mms_notification_vibrate_call">רטוט בעת שיחה</string>
-    <string name="pref_summary_mms_notification_vibrate_call">אפשר למכשיר לרטוט בזמן שיחה</string>
     <string name="pref_title_mms_notification_vibrate_custom">תבנית רטט מותאמת אישית</string>
     <string name="pref_text_mms_notification_vibrate_custom">מבנה: כבוי/פועל במילישניות (כבוי,פועל,כבוי,פועל...)</string>
     <string name="pref_title_mms_full_timestamp">חותם זמן מלא</string>

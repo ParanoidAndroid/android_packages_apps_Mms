@@ -40,8 +40,6 @@
     <string name="gestures_already_present">Upozorenje: Drugi predložak ima sličnu gestu!</string>
     <string name="pref_title_mms_notification_vibrate_pattern">Vibracijski uzorak</string>
     <string name="pref_summary_mms_notification_vibrate_pattern">Promjenite vibracijski uzorak</string>
-    <string name="pref_title_mms_notification_vibrate_call">Vibriraj na poziv</string>
-    <string name="pref_summary_mms_notification_vibrate_call">Dozvoli vibracije dok pričate na telefonu.</string>
     <string name="pref_title_mms_notification_vibrate_custom">Vlastiti vibracijski uzorak</string>
     <string name="pref_text_mms_notification_vibrate_custom">Format off/on u milisekundama: off, on, off, on, ...</string>
     <string name="pref_extra_settings">Dodatne postavke</string>

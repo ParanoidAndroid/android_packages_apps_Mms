@@ -142,14 +142,6 @@
             android:entries="@array/pref_mms_notification_vibrate_pattern_entries"
             android:entryValues="@array/pref_mms_notification_vibrate_pattern_values"
             android:dialogTitle="@string/pref_title_mms_notification_vibrate_pattern" />
-
-        <CheckBoxPreference
-            android:key="pref_key_mms_notification_vibrate_call"
-            android:layout="?android:attr/preferenceLayoutChild"
-            android:dependency="pref_key_vibrate"
-            android:defaultValue="true"
-            android:title="@string/pref_title_mms_notification_vibrate_call"
-            android:summary="@string/pref_summary_mms_notification_vibrate_call" />
     </PreferenceCategory>
 
     <!-- QuickMessage settings -->

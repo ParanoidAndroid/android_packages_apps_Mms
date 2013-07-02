@@ -59,6 +59,7 @@
     <string name="pref_title_input_type">Typ klawiatury</string>
     <string name="pref_keyboard_emoji">Pokaż przycisk emotikon</string>
     <string name="pref_keyboard_new_line">Pokaż przycisk enter</string>
+    <string name="pref_keyboard_unknown">Nieznane, proszę wybrać ponownie</string>
     <string name="pref_quickmessage">Szybka wiadomość</string>
     <string name="pref_quickmessage_title">Włącz Szybkie wiadomości</string>
     <string name="pref_quickmessage_summary">Pokaż wyskakujące okno wiadomości</string>

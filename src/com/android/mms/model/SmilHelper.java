@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import org.w3c.dom.NodeList;
 import org.w3c.dom.events.EventTarget;
 import org.w3c.dom.smil.SMILDocument;
 import org.w3c.dom.smil.SMILElement;
@@ -77,7 +78,7 @@ public class SmilHelper {
 
         // Try to load SMIL document from existing part.
         if (smilPart != null) {
-            document = getSmilDocument(smilPart);
+            document = getSmilDocument(smilPart, pb);
         }
 
         if (document == null) {
@@ -115,12 +116,98 @@ public class SmilHelper {
         return in;
     }
 
+    private static SMILDocument fixup(SMILDocument in, PduBody pb) {
+        //Some Mms implementations end up creating two <par> elements which actually point to the same rendered element.
+        SMILElement body = in.getBody();
+        NodeList slideNodes = body.getChildNodes();
+        int slideNodesLen = slideNodes.getLength();
+
+        for (int i = 0; i < slideNodesLen; i++) {
+            SMILParElement parA = (SMILParElement) slideNodes.item(i);
+            NodeList mediaNodesA = parA.getChildNodes();
+            int mediaNodesALen = mediaNodesA.getLength();
+
+            SMILParElement matchedPart = null;
+
+            for (int iB = i + 1; iB < slideNodesLen; iB++) {
+                SMILParElement parB = (SMILParElement) slideNodes.item(iB);
+                matchedPart = parB;
+
+                NodeList mediaNodesB = parB.getChildNodes();
+
+                int mediaNodesBLen = mediaNodesB.getLength();
+
+                if (mediaNodesALen != mediaNodesBLen) {
+                    matchedPart = null;
+                    break;
+                }
+
+                for (int j = 0; j < mediaNodesALen; j++) {
+                    SMILMediaElement smeA = (SMILMediaElement)mediaNodesA.item(j);
+
+                    PduPart pA = findPart(pb, smeA.getSrc());
+
+                    SMILMediaElement smeB = (SMILMediaElement)mediaNodesB.item(j);
+
+                    PduPart pB = findPart(pb, smeB.getSrc());
+
+                    if (pA != pB) {
+                        matchedPart = null;
+                        break;
+                    }
+
+                    if (matchedPart == null) break;
+                }
+            }
+
+            if (matchedPart != null) {
+                body.removeChild(matchedPart);
+                slideNodesLen--;
+            }
+        }
+
+        return in;
+    }
+
+    public static PduPart findPart(PduBody pb, String src) {
+        PduPart part = null;
+
+        if (src != null) {
+            src = unescapeXML(src);
+            if (src.startsWith("cid:")) {
+                part = pb.getPartByContentId("<" + src.substring("cid:".length()) + ">");
+            } else {
+                part = pb.getPartByName(src);
+                if (part == null) {
+                    part = pb.getPartByFileName(src);
+                    if (part == null) {
+                        part = pb.getPartByContentLocation(src);
+                        //Some carriers send this in as a ContentId, but fail to append the "cid:" prefix.
+                        if (part == null) {
+                            part = pb.getPartByContentId("<" + src + ">");
+                        }
+                    }
+                }
+            }
+        }
+
+        return part;
+    }
+
+    private static String unescapeXML(String str) {
+        return str.replaceAll("&lt;","<")
+            .replaceAll("&gt;", ">")
+            .replaceAll("&quot;","\"")
+            .replaceAll("&apos;","'")
+            .replaceAll("&amp;", "&");
+    }
+
     /**
      * Parse SMIL message and retrieve SMILDocument.
      *
      * @return A SMILDocument or null if parsing failed.
      */
-    private static SMILDocument getSmilDocument(PduPart smilPart) {
+    private static SMILDocument getSmilDocument(PduPart smilPart, PduBody pb) {
         try {
             byte[] data = smilPart.getData();
             if (data != null) {
@@ -131,6 +218,7 @@ public class SmilHelper {
 
                 ByteArrayInputStream bais = new ByteArrayInputStream(data);
                 SMILDocument document = new SmilXmlParser().parse(bais);
+                document = fixup(document, pb);
                 return validate(document);
             }
         } catch (IOException e) {

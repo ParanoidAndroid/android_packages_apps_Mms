@@ -43,7 +43,7 @@ public class MediaModelFactory {
             throws IOException, IllegalArgumentException, MmsException {
         String tag = sme.getTagName();
         String src = sme.getSrc();
-        PduPart part = findPart(pb, src);
+        PduPart part = SmilHelper.findPart(pb, src);
 
         if (sme instanceof SMILRegionMediaElement) {
             return getRegionMediaModel(
@@ -52,39 +52,6 @@ public class MediaModelFactory {
             return getGenericMediaModel(
                     context, tag, src, sme, part, null);
         }
-    }
-
-    private static PduPart findPart(PduBody pb, String src) {
-        PduPart part = null;
-
-        if (src != null) {
-            src = unescapeXML(src);
-            if (src.startsWith("cid:")) {
-                part = pb.getPartByContentId("<" + src.substring("cid:".length()) + ">");
-            } else {
-                part = pb.getPartByName(src);
-                if (part == null) {
-                    part = pb.getPartByFileName(src);
-                    if (part == null) {
-                        part = pb.getPartByContentLocation(src);
-                    }
-                }
-            }
-        }
-
-        if (part != null) {
-            return part;
-        }
-
-        throw new IllegalArgumentException("No part found for the model.");
-    }
-
-    private static String unescapeXML(String str) {
-        return str.replaceAll("&lt;","<")
-            .replaceAll("&gt;", ">")
-            .replaceAll("&quot;","\"")
-            .replaceAll("&apos;","'")
-            .replaceAll("&amp;", "&");
     }
 
     private static MediaModel getRegionMediaModel(Context context,

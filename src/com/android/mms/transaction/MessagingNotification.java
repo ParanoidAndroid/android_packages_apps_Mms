@@ -799,7 +799,7 @@ public class MessagingNotification {
             Bitmap attachmentBitmap,
             Contact contact,
             int attachmentType) {
-        if (MmsConfig.isSuppressedSprintVVM(address)) {
+        if (AddressUtils.isSuppressedSprintVVM(context, address)) {
             return null;
         }
         Intent clickIntent = ComposeMessageActivity.createIntent(context, threadId);

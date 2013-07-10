@@ -58,6 +58,7 @@ import com.android.mms.R;
 import com.android.mms.data.Contact;
 import com.android.mms.data.Conversation;
 import com.android.mms.ui.ClassZeroActivity;
+import com.android.mms.util.AddressUtils;
 import com.android.mms.util.Recycler;
 import com.android.mms.util.SendingProgressTokenManager;
 import com.android.mms.widget.MmsWidgetProvider;
@@ -436,7 +437,7 @@ public class SmsReceiverService extends Service {
             return null;
         } else if (sms.isReplace()) {
             return replaceMessage(context, msgs, error);
-        } else if (MmsConfig.isSuppressedSprintVVM(sms.getOriginatingAddress())) {
+        } else if (AddressUtils.isSuppressedSprintVVM(context, sms.getOriginatingAddress())) {
             return null;
         } else {
             return storeMessage(context, msgs, error);

@@ -20,6 +20,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SqliteWrapper;
 import android.net.Uri;
+import android.provider.Settings;
 import android.provider.Telephony.Mms;
 import android.provider.Telephony.Mms.Addr;
 import android.text.TextUtils;
@@ -81,5 +82,12 @@ public class AddressUtils {
             mPhoneNumberUtil = PhoneNumberUtil.getInstance();
         }
         return mPhoneNumberUtil.isPossibleNumber(query, currentCountry);
+    }
+
+    // mwi
+    public static boolean isSuppressedSprintVVM(Context context, String address) {
+        boolean enableSprintVVM = Settings.System.getInt(context.getContentResolver(),
+                Settings.System.ENABLE_MWI_NOTIFICATION, 0) == 0;
+        return enableSprintVVM && address.contentEquals("9016");
     }
 }

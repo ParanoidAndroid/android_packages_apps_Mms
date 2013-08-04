@@ -131,7 +131,6 @@ import android.widget.LinearLayout;
 
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.TelephonyProperties;
-import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.mms.LogTag;
 import com.android.mms.MmsApp;
 import com.android.mms.MmsConfig;
@@ -256,7 +255,6 @@ public class ComposeMessageActivity extends Activity
     private static final int MENU_GROUP_PARTICIPANTS    = 32;
     private static final int MENU_INSERT_EMOJI          = 33;
     private static final int MENU_ADD_TEMPLATE          = 34;
-    private static final int MENU_ADD_TO_BLACKLIST      = 35;
 
     private static final int DIALOG_TEMPLATE_SELECT     = 1;
     private static final int DIALOG_TEMPLATE_NOT_AVAILABLE = 2;
@@ -2829,13 +2827,6 @@ public class ComposeMessageActivity extends Activity
 
         buildAddAddressToContactMenuItem(menu);
 
-        // Add to Blacklist item (if enabled)
-        if (BlacklistUtils.isBlacklistEnabled(this)) {
-            menu.add(0, MENU_ADD_TO_BLACKLIST, 0, R.string.add_to_blacklist)
-                    .setIcon(R.drawable.ic_block_message_holo_dark)
-                    .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-        }
-
         menu.add(0, MENU_PREFERENCES, 0, R.string.menu_preferences).setIcon(
                 android.R.drawable.ic_menu_preferences);
 
@@ -2950,47 +2941,9 @@ public class ComposeMessageActivity extends Activity
             case MENU_ADD_TEMPLATE:
                 startLoadingTemplates();
                 break;
-            case MENU_ADD_TO_BLACKLIST:
-                confirmAddBlacklist();
-                break;
         }
 
         return true;
-    }
-
-    /**
-     *  Pop up a dialog confirming adding the current number to the blacklist
-     */
-    private void confirmAddBlacklist() {
-        //TODO: get the sender number
-        final String number = getSenderNumber();
-        if (TextUtils.isEmpty(number)) {
-            return;
-        }
-
-        // Show dialog
-        final String message = getString(R.string.add_to_blacklist_message, number);
-        new AlertDialog.Builder(this)
-                .setTitle(R.string.add_to_blacklist)
-                .setMessage(message)
-                .setPositiveButton(R.string.alert_dialog_yes, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                        BlacklistUtils.addOrUpdate(getApplicationContext(), number,
-                                BlacklistUtils.BLOCK_MESSAGES, BlacklistUtils.BLOCK_MESSAGES);
-                    }
-                })
-                .setNegativeButton(R.string.alert_dialog_no, null)
-                .show();
-    }
-
-    private String getSenderNumber() {
-        if (isRecipientCallable()) {
-            return getRecipients().get(0).getNumber().toString();
-        }
-
-        // Not a callable sender
-        return null;
     }
 
     private void confirmDeleteThread(long threadId) {

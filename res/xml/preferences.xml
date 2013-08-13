@@ -91,6 +91,6 @@
     <CheckBoxPreference android:key="new_sms_wakelock"
                         android:title="@string/pref_title_wake_screen_on_incoming_sms"
                         android:summary="@string/pref_summary_wake_screen_on_incoming_sms"
-                        android:defaultValue="true" />
+                        android:defaultValue="false" />
   </PreferenceCategory>
 </PreferenceScreen>

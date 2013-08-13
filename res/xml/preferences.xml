@@ -142,6 +142,11 @@
             android:entries="@array/pref_mms_notification_vibrate_pattern_entries"
             android:entryValues="@array/pref_mms_notification_vibrate_pattern_values"
             android:dialogTitle="@string/pref_title_mms_notification_vibrate_pattern" />
+
+        <CheckBoxPreference android:key="new_sms_wakelock"
+            android:title="@string/pref_title_wake_screen_on_incoming_sms"
+            android:summary="@string/pref_summary_wake_screen_on_incoming_sms"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
     <!-- QuickMessage settings -->

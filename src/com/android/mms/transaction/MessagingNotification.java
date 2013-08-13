@@ -46,6 +46,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.AudioManager;
 import android.net.Uri;
+import android.os.PowerManager;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -927,6 +928,19 @@ public class MessagingNotification {
             String ringtoneStr = sp.getString(MessagingPreferenceActivity.NOTIFICATION_RINGTONE,
                     null);
             noti.setSound(TextUtils.isEmpty(ringtoneStr) ? null : Uri.parse(ringtoneStr));
+            String mWakeLockTag = "WakeLock";
+
+            PowerManager pm = (PowerManager)context.getSystemService(Context.POWER_SERVICE);
+                        PowerManager.WakeLock mWakeLock = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK
+                                | PowerManager.ACQUIRE_CAUSES_WAKEUP, mWakeLockTag);
+
+                        if (sp.getBoolean("new_sms_wakelock", true)) {
+                                if (!pm.isScreenOn()) {
+                                        mWakeLock.acquire();
+                                        // Release it right after because we just acquire the Wakelock to enable the display
+                                        mWakeLock.release();
+                                }
+                        }
             Log.d(TAG, "updateNotification: new message, adding sound to the notification");
         }
 

@@ -778,6 +778,9 @@
 
 <!-- Mark as read -->
     <string name="qm_mark_read">Read</string>
+<!-- Screen on when SMS/MMS is received -->
+    <string name="pref_title_wake_screen_on_incoming_sms">Screen on for new SMS/MMS</string>
+    <string name="pref_summary_wake_screen_on_incoming_sms">The screen will be powered on if a new SMS or MMS is received.</string>
 
 </resources>
 

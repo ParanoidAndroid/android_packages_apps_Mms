@@ -114,7 +114,7 @@
             android:title="@string/pref_title_notification_enabled"
             android:defaultValue="true" />
 
-       <CheckBoxPreference
+        <CheckBoxPreference
             android:key="pref_key_enable_privacy_mode"
             android:layout="?android:attr/preferenceLayoutChild"
             android:dependency="pref_key_enable_notifications"
@@ -122,12 +122,12 @@
             android:title="@string/pref_title_notification_privacy_mode_enabled"
             android:summary="@string/pref_summary_notification_privacy_mode_enabled" />
 
-       <RingtonePreference android:key="pref_key_ringtone"
+        <RingtonePreference android:key="pref_key_ringtone"
             android:title="@string/pref_title_notification_ringtone"
             android:ringtoneType="notification"
             android:dependency="pref_key_enable_notifications"
             android:defaultValue="content://settings/system/notification_sound" />
-       <CheckBoxPreference android:key="pref_key_vibrate"
+        <CheckBoxPreference android:key="pref_key_vibrate"
             android:title="@string/pref_title_notification_vibrateWhen"
             android:dependency="pref_key_enable_notifications"
             android:defaultValue="false" />
@@ -146,7 +146,7 @@
         <CheckBoxPreference android:key="new_sms_wakelock"
             android:title="@string/pref_title_wake_screen_on_incoming_sms"
             android:summary="@string/pref_summary_wake_screen_on_incoming_sms"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <!-- QuickMessage settings -->

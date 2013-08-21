@@ -20,8 +20,9 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.TextUtils;
 
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetEncoder;
+import com.android.internal.telephony.GsmAlphabet;
+import com.android.internal.telephony.EncodeException;
+
 import java.text.Normalizer;
 import java.util.regex.Pattern;
 
@@ -32,10 +33,7 @@ import java.util.regex.Pattern;
  * encoding (160 char limit) to 16-bit Unicode encoding (70 char limit).
  */
 public class UnicodeFilter {
-    private CharsetEncoder gsm =
-            Charset.forName("gsm-03.38-2000").newEncoder();
-
-    private Pattern diacritics =
+    private static final Pattern DIACRITICS_PATTERN =
             Pattern.compile("\\p{InCombiningDiacriticalMarks}");
 
     private boolean mStripNonDecodableOnly;
@@ -50,15 +48,23 @@ public class UnicodeFilter {
 
         for (int i = 0; i < sourceLength; i++) {
             char c = source.charAt(i);
+            boolean canEncodeInGsm;
+
+            try {
+                GsmAlphabet.charToGsm(c, true);
+                canEncodeInGsm = true;
+            } catch (EncodeException e) {
+                canEncodeInGsm = false;
+            }
 
             // Character requires Unicode, try to replace it
-            if (!mStripNonDecodableOnly || !gsm.canEncode(c)) {
+            if (!mStripNonDecodableOnly || !canEncodeInGsm) {
                 String s = String.valueOf(c);
 
                 // Try normalizing the character into Unicode NFKD form and
                 // stripping out diacritic mark characters.
                 s = Normalizer.normalize(s, Normalizer.Form.NFKD);
-                s = diacritics.matcher(s).replaceAll("");
+                s = DIACRITICS_PATTERN.matcher(s).replaceAll("");
 
                 // Special case characters that don't get stripped by the
                 // above technique.

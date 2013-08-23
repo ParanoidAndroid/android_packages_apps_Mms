@@ -934,7 +934,7 @@ public class MessagingNotification {
                         PowerManager.WakeLock mWakeLock = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK
                                 | PowerManager.ACQUIRE_CAUSES_WAKEUP, mWakeLockTag);
 
-                        if (sp.getBoolean("new_sms_wakelock", true)) {
+                        if (sp.getBoolean("new_sms_wakelock", false)) {
                                 if (!pm.isScreenOn()) {
                                         mWakeLock.acquire();
                                         // Release it right after because we just acquire the Wakelock to enable the display

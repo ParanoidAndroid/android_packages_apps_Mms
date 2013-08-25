@@ -93,4 +93,5 @@
     <string name="insert_contact_info_positive_button">插入</string>
     <string name="label_mms_push">彩信推送</string>
     <string name="desc_mms_push">将彩信从发件箱推送到移动网络</string>
+    <string name="menu_resend">"重新发送"</string>
 </resources>

@@ -191,7 +191,11 @@ public class SmilHelper {
             }
         }
 
-        return part;
+        if (part != null) {
+            return part;
+        }
+
+        throw new IllegalArgumentException("No part found for the model.");
     }
 
     private static String unescapeXML(String str) {
@@ -226,6 +230,8 @@ public class SmilHelper {
         } catch (SAXException e) {
             Log.e(TAG, "Failed to parse SMIL document.", e);
         } catch (MmsException e) {
+            Log.e(TAG, "Failed to parse SMIL document.", e);
+        } catch (IllegalArgumentException e) {
             Log.e(TAG, "Failed to parse SMIL document.", e);
         }
         return null;

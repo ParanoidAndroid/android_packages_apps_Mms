@@ -51,16 +51,10 @@ public class SelectRecipientsList extends ListActivity implements
     public static final String PREF_SHOW_GROUPS = "pref_key_show_groups";
 
     private SelectRecipientsListAdapter mListAdapter;
-    private int mSavedFirstVisiblePosition = AdapterView.INVALID_POSITION;
-    private int mSavedFirstItemOffset;
     private HashSet<PhoneNumber> mCheckedPhoneNumbers;
     private boolean mMobileOnly = true;
     private boolean mShowGroups = true;
     private View mProgressSpinner;
-
-    // Keys for extras and icicles
-    private final static String LAST_LIST_POS = "last_list_pos";
-    private final static String LAST_LIST_OFFSET = "last_list_offset";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,15 +78,6 @@ public class SelectRecipientsList extends ListActivity implements
         mCheckedPhoneNumbers = new HashSet<PhoneNumber>();
         getLoaderManager().initLoader(0, null, this);
 
-        if (savedInstanceState != null) {
-            mSavedFirstVisiblePosition = savedInstanceState.getInt(LAST_LIST_POS,
-                    AdapterView.INVALID_POSITION);
-            mSavedFirstItemOffset = savedInstanceState.getInt(LAST_LIST_OFFSET, 0);
-        } else {
-            mSavedFirstVisiblePosition = AdapterView.INVALID_POSITION;
-            mSavedFirstItemOffset = 0;
-        }
-
         ActionBar mActionBar = getActionBar();
         if (mActionBar != null) {
             mActionBar.setDisplayHomeAsUpEnabled(true);
@@ -100,24 +85,8 @@ public class SelectRecipientsList extends ListActivity implements
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt(LAST_LIST_POS, mSavedFirstVisiblePosition);
-        outState.putInt(LAST_LIST_OFFSET, mSavedFirstItemOffset);
-    }
-
-    @Override
     public void onPause() {
         super.onPause();
-
-        // Remember where the list is scrolled to so we can restore the scroll position
-        // when we come back to this activity and *after* we complete querying for the
-        // contacts.
-        ListView listView = getListView();
-        mSavedFirstVisiblePosition = listView.getFirstVisiblePosition();
-        View firstChild = listView.getChildAt(0);
-        mSavedFirstItemOffset = (firstChild == null) ? 0 : firstChild.getTop();
-
         if (mListAdapter != null) {
             unbindListItems();
         }

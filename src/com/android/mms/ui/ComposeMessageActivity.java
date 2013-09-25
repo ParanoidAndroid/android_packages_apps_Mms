@@ -2794,8 +2794,8 @@ public class ComposeMessageActivity extends Activity
 
     private void dialRecipient() {
         if (isRecipientCallable()) {
-            String number = getRecipients().get(0).getNumber();
-            Intent dialIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
+            Contact contact = getRecipients().get(0);
+            Intent dialIntent = new Intent(Intent.ACTION_CALL, contact.getPhoneUri(true));
             startActivity(dialIntent);
         }
     }
@@ -3629,7 +3629,7 @@ public class ComposeMessageActivity extends Activity
         urisCount = 0;
         for (Contact contact : contacts) {
             if (Contact.CONTACT_METHOD_TYPE_PHONE == contact.getContactMethodType()) {
-                    uris[urisCount++] = contact.getPhoneUri();
+                    uris[urisCount++] = contact.getPhoneUri(false);
             }
         }
         if (urisCount > 0) {

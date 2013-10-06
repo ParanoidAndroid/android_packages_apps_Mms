@@ -44,7 +44,7 @@ public class RecipientsListLoader extends AsyncTaskLoader<ArrayList<RecipientsLi
         final Context context = getContext();
         ArrayList<PhoneNumber> phoneNumbers = PhoneNumber.getPhoneNumbers(context);
         if (phoneNumbers == null) {
-            return null;
+            return new ArrayList<Result>();
         }
 
         // Get things ready
